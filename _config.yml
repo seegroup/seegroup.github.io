@@ -1,6 +1,10 @@
 title: SEE Research Group
 description: Software Engineering and Education (SEE) Research Group at Mid Sweden University (MIUN)
 
+# Update these after pushing to GitHub:
+# url: "https://yourusername.github.io"  # Your GitHub Pages URL
+# baseurl: ""  # Leave empty, or "/repo-name" if site is in a subdirectory
+
 markdown: kramdown
 
 collections:

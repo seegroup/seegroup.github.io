@@ -1,0 +1,197 @@
+[
+  {
+    "name": "Magnus Edvall",
+    "graduation_year": 2024,
+    "papers": [
+      {
+        "title": "An LLM Assistant for Software Project Onboarding",
+        "year": 2025,
+        "venue": "SIGSOFT FSE Companion 2025",
+        "doi": "10.1145/3696630.3728719",
+        "url": "https://doi.org/10.1145/3696630.3728719"
+      }
+    ]
+  },
+  {
+    "name": "Knud Ronau Larsen",
+    "graduation_year": 2024,
+    "papers": [
+      {
+        "title": "An LLM Assistant for Software Project Onboarding",
+        "year": 2025,
+        "venue": "SIGSOFT FSE Companion 2025",
+        "doi": "10.1145/3696630.3728719",
+        "url": "https://doi.org/10.1145/3696630.3728719"
+      }
+    ]
+  },
+  {
+    "name": "Simon Karlsson",
+    "graduation_year": 2023,
+    "papers": [
+      {
+        "title": "An empirical investigation of the impact of architectural smells on software maintainability",
+        "year": 2025,
+        "venue": "Journal of Systems and Software",
+        "doi": "10.1016/j.jss.2025.112382",
+        "url": "https://doi.org/10.1016/j.jss.2025.112382"
+      }
+    ]
+  },
+  {
+    "name": "Marcus Haapasaari Lindgren",
+    "graduation_year": 2023,
+    "papers": [
+      {
+        "title": "COMET: A ML-Based Tool for Evaluating the Effectiveness of Software Design Communication",
+        "year": 2023,
+        "venue": "MODELS-C (MoDELS Companion) 2023",
+        "doi": "10.1109/MODELS-C59198.2023.00119",
+        "url": "https://doi.org/10.1109/MODELS-C59198.2023.00119"
+      }
+    ]
+  },
+  {
+    "name": "Jon Persson",
+    "graduation_year": 2023,
+    "papers": [
+      {
+        "title": "COMET: A ML-Based Tool for Evaluating the Effectiveness of Software Design Communication",
+        "year": 2023,
+        "venue": "MODELS-C (MoDELS Companion) 2023",
+        "doi": "10.1109/MODELS-C59198.2023.00119",
+        "url": "https://doi.org/10.1109/MODELS-C59198.2023.00119"
+      }
+    ]
+  },
+  {
+    "name": "Emil Bäckstrand",
+    "graduation_year": 2023,
+    "papers": [
+      {
+        "title": "Unveiling Disparities: NLP Analysis of Software Industry and Vocational Education Gaps",
+        "year": 2024,
+        "venue": "NLBSE 2024 workshop proceedings",
+        "doi": "10.1145/3643787.3648029",
+        "url": "https://doi.org/10.1145/3643787.3648029",
+        "coauthor_with_felix_dobslaw": false
+      }
+    ]
+  },
+  {
+    "name": "Rasmus Djupedal",
+    "graduation_year": 2023,
+    "papers": [
+      {
+        "title": "Unveiling Disparities: NLP Analysis of Software Industry and Vocational Education Gaps",
+        "year": 2024,
+        "venue": "NLBSE 2024 workshop proceedings",
+        "doi": "10.1145/3643787.3648029",
+        "url": "https://doi.org/10.1145/3643787.3648029",
+        "coauthor_with_felix_dobslaw": false
+      }
+    ]
+  },
+  {
+    "name": "Petya Hristova Cvitic",
+    "graduation_year": 2022,
+    "papers": [
+      {
+        "title": "Investigating Software Testing and Maintenance of Open-Source Distributed Ledger",
+        "year": 2023,
+        "venue": "SANER 2023",
+        "doi": "10.1109/SANER56733.2023.00107",
+        "url": "https://doi.org/10.1109/SANER56733.2023.00107"
+      }
+    ]
+  },
+  {
+    "name": "Kristian Angelin",
+    "graduation_year": 2022,
+    "papers": [
+      {
+        "title": "The Gap between Higher Education and the Software Industry - A Case Study on Technology Differences",
+        "year": 2023,
+        "venue": "ECSEE 2023 (ACM ICPS)",
+        "doi": "10.1145/3593663.3593690",
+        "url": "https://doi.org/10.1145/3593663.3593690"
+      }
+    ]
+  },
+  {
+    "name": "Mats Holmberg",
+    "graduation_year": 2021,
+    "papers": [
+      {
+        "title": "An Industrial Case-Study on GUI Testing With RPA",
+        "year": 2022,
+        "venue": "ICSTW 2022 (INTUITESTBEDS)",
+        "doi": "10.1109/ICSTW55395.2022.00043",
+        "url": "https://doi.org/10.1109/ICSTW55395.2022.00043"
+      }
+    ]
+  },
+  {
+    "name": "Eva Thilderkvist",
+    "graduation_year": 2021,
+    "papers": [
+      {
+        "title": "On current limitations of online eye-tracking to study the visual processing of source code",
+        "year": 2024,
+        "venue": "Information and Software Technology",
+        "doi": "10.1016/j.infsof.2024.107502",
+        "url": "https://doi.org/10.1016/j.infsof.2024.107502"
+      }
+    ]
+  },
+  {
+    "name": "Robin Sundström",
+    "graduation_year": 2020,
+    "papers": [
+      {
+        "title": "Free the Bugs: Disclosing Blocking Violations in Reactive Programming",
+        "year": 2020,
+        "venue": "SCAM 2020",
+        "doi": "10.1109/SCAM51674.2020.00018",
+        "url": "https://doi.org/10.1109/SCAM51674.2020.00018"
+      }
+    ]
+  },
+  {
+    "name": "Morgan Vallin",
+    "graduation_year": 2020,
+    "papers": [
+      {
+        "title": "Free the Bugs: Disclosing Blocking Violations in Reactive Programming",
+        "year": 2020,
+        "venue": "SCAM 2020",
+        "doi": "10.1109/SCAM51674.2020.00018",
+        "url": "https://doi.org/10.1109/SCAM51674.2020.00018"
+      }
+    ]
+  },
+  {
+    "name": "Jonathan Bengtsson",
+    "graduation_year": 2020,
+    "papers": [
+      {
+        "title": "Linking Developer Experience to Coding Style in Open-Source Repositories",
+        "year": 2021,
+        "venue": "SANER 2021",
+        "url": "https://ieeexplore.ieee.org/abstract/document/9425965"
+      }
+    ]
+  },
+  {
+    "name": "Heidi Hokka",
+    "graduation_year": 2020,
+    "papers": [
+      {
+        "title": "Linking Developer Experience to Coding Style in Open-Source Repositories",
+        "year": 2021,
+        "venue": "SANER 2021",
+        "url": "https://ieeexplore.ieee.org/abstract/document/9425965"
+      }
+    ]
+  }
+]
