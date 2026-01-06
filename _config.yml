@@ -2,7 +2,7 @@ title: SEE Research Group
 description: Software Engineering and Education (SEE) Research Group at Mid Sweden University (MIUN)
 
 url: "https://seegroup.github.io"
-baseurl: ""  # Empty for organization/user pages
+baseurl: ""  # Empty for organization/user pages (requires repo name: seegroup.github.io)
 
 markdown: kramdown
 

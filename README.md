@@ -1,111 +1,110 @@
 # SEE Research Group Website
 
-Static website for the Software Engineering and Education (SEE) Research Group at Mid Sweden University (MIUN).
+This repository contains the source files for the SEE Research Group website.
 
-**Repository:** [seegroup/seegroup](https://github.com/seegroup/seegroup)  
-**Live Site:** [https://seegroup.github.io](https://seegroup.github.io)
+## Updating Content
 
-## Features
+### Adding or Editing People
 
-- Bilingual support (English/Swedish) with language switcher
-- Responsive design with MIUN-inspired color scheme
-- Auto-generated listings for people, projects, and publications
-- News section with date-based entries
-- Alumni Hall of Fame with co-authored publications
-- Profile images fetched from MIUN pages with caching
-
-## Setup for GitHub Pages
-
-### Automatic Jekyll Build (Recommended)
-
-1. Push this repository to GitHub
-2. Go to repository Settings → Pages
-3. Under "Source", select:
-   - **Branch**: `main` (or `master`)
-   - **Folder**: `/ (root)`
-4. Click "Save"
-5. GitHub will automatically build and deploy your site
-
-The site will be available at `https://seegroup.github.io` (configured in `_config.yml`).
-
-### Local Development
-
-To test locally before pushing:
-
-```bash
-# Install dependencies
-bundle install
-
-# Serve locally
-bundle exec jekyll serve
-
-# Build site
-bundle exec jekyll build
-```
-
-Visit `http://localhost:4000` to preview your site.
-
-## Configuration
-
-The `_config.yml` is configured for the `seegroup.github.io` organization page:
-
-```yaml
-url: "https://seegroup.github.io"
-baseurl: ""  # Empty for organization/user pages
-```
-
-If your repository name is different, update these values accordingly.
-
-## Content Structure
-
-- `_people/` - Individual person profiles (Markdown files with front matter)
-- `_projects/` - Project descriptions
-- `_news/` - News items (date-based filenames: `YYYY-MM-DD-title.md`)
-- `_data/` - Data files (e.g., `alumni_papers.json`)
-- `assets/` - CSS, JavaScript, and images
-  - `assets/css/style.css` - Main stylesheet
-  - `assets/js/lang.js` - Language switching functionality
-  - `assets/js/images.js` - Profile image fetching and caching
-  - `assets/images/see.png` - Group logo
-- `_layouts/` - Page templates
-- `_includes/` - Reusable components (navigation, etc.)
-
-## Adding Content
-
-### Adding a Person
-
-Create a file in `_people/` with front matter:
+Edit files in the `_people/` directory. Each person has a Markdown file with front matter:
 
 ```markdown
 ---
 name: Firstname Lastname
-role: Position
-group: current  # or "former" or "alumni"
+role: Position (e.g., "Associate Professor", "PhD Student")
+group: current  # Options: "current", "former", or "alumni"
 homepage: https://www.miun.se/en/personnel/...
-graduation_year: 2024  # for alumni only
+graduation_year: 2024  # Only for alumni
+active: false  # Set to false to hide from current members (optional)
 ---
 ```
 
+**To add a new person:**
+1. Create a new file: `_people/firstname-lastname.md`
+2. Add the front matter and any content
+3. Commit and push
+
+**To comment out a person:**
+- Set `active: false` in their file, or
+- Change `group: "former"` to move them to former members
+
 ### Adding News
 
-Create a file in `_news/` with date-based filename:
+Create a new file in `_news/` with the format: `YYYY-MM-DD-title.md`
+
+Example: `2026-01-15-hello-world.md`
 
 ```markdown
 ---
 title: News Title
-date: 2026-01-15
 ---
 
-News content here...
+News content here. You can use **markdown** formatting.
 ```
 
-### Adding Publications
+The date is automatically extracted from the filename.
 
-Edit `publications.md` directly. Links are automatically added from the ODT source file.
+### Updating Publications
+
+Edit `publications.md` directly. Add new publications in the appropriate year section.
+
+Format:
+```markdown
+Author names (Year). Title. Venue. <a href="URL" target="_blank" rel="noopener noreferrer">DOI →</a>
+```
+
+### Updating Alumni Papers
+
+Edit `_data/alumni_papers.json` to add or update co-authored papers for alumni.
+
+Example entry:
+```json
+{
+  "name": "Alumni Name",
+  "graduation_year": 2024,
+  "papers": [
+    {
+      "title": "Paper Title",
+      "year": 2025,
+      "venue": "Conference or Journal Name",
+      "url": "https://doi.org/..."
+    }
+  ]
+}
+```
+
+### Updating Contact Information
+
+Edit `contact.md` to update group lead, email, location, or other contact details.
+
+### Updating Projects
+
+Create files in `_projects/` directory:
+
+```markdown
+---
+title: Project Title
+status: Active  # or "Completed", etc.
+---
+
+Project description...
+```
+
+## File Structure
+
+- `_people/` - Person profiles
+- `_projects/` - Project descriptions  
+- `_news/` - News items (date-based filenames)
+- `_data/alumni_papers.json` - Alumni publication data
+- `contact.md` - Contact information
+- `publications.md` - Publications list
+- `index.md` - Homepage content
+- `people.md` - People page (auto-generated from `_people/`)
+- `projects.md` - Projects page (auto-generated from `_projects/`)
 
 ## Notes
 
-- The `_site/` directory is auto-generated and should not be committed (already in `.gitignore`)
-- GitHub Pages will automatically build your site when you push to the main branch
-- The repository must be **public** for free GitHub accounts to use GitHub Pages
-- Profile images are fetched from MIUN pages and cached in browser localStorage
+- Use Markdown for formatting
+- Images go in `assets/images/`
+- The site supports English/Swedish - translations are handled automatically
+- Changes are automatically deployed when pushed to the main branch
