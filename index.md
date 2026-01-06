@@ -6,7 +6,7 @@ title: Home
 
 Software Engineering and Education (SEE) Research Group
 
-We are a research group at Mid Sweden University focusing on **software engineering**, **software testing**, and **generative AI in development and education**.
+<p data-translate="intro">We are a research group at Mid Sweden University focusing on **software engineering**, **software testing**, and **generative AI in development and education**.</p>
 
 <p data-translate="context">Worldwide, there is an increasing demand for software professionals, and software engineers are the fifth most common profession in Sweden today. The SEE Research Group consists of social scientists and computer scientists with the goal of understanding how software is successfully created and how to best learn software development.</p>
 
