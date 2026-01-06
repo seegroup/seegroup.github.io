@@ -50,33 +50,42 @@
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
       
-      const response = await fetch(proxyUrl, {
-        method: 'GET',
-        mode: 'cors',
-        cache: 'no-cache',
-        signal: controller.signal
-      }).catch(err => {
+      let response;
+      try {
+        response = await fetch(proxyUrl, {
+          method: 'GET',
+          mode: 'cors',
+          cache: 'no-cache',
+          signal: controller.signal
+        });
+      } catch (err) {
         clearTimeout(timeoutId);
-        proxyFailureCount++;
-        proxyDisabled = true; // Disable proxy after first failure
-        return null;
-      });
-      
-      clearTimeout(timeoutId);
-      
-      if (!response || !response.ok) {
-        if (response && (response.status >= 500 || response.status === 0)) {
+        // CORS errors, network errors, or abort errors
+        if (err.name === 'TypeError' || err.name === 'AbortError' || err.message?.includes('CORS') || err.message?.includes('Failed to fetch')) {
           proxyFailureCount++;
-          proxyDisabled = true; // Disable proxy after first failure
+          proxyDisabled = true;
         }
         return null;
       }
       
-      const data = await response.json().catch(() => {
-        proxyFailureCount++;
-        proxyDisabled = true; // Disable proxy after first failure
+      clearTimeout(timeoutId);
+      
+      if (!response || !response.ok) {
+        if (response && (response.status >= 500 || response.status === 0 || response.status === 404)) {
+          proxyFailureCount++;
+          proxyDisabled = true;
+        }
         return null;
-      });
+      }
+      
+      let data;
+      try {
+        data = await response.json();
+      } catch (err) {
+        proxyFailureCount++;
+        proxyDisabled = true;
+        return null;
+      }
       
       if (!data || !data.contents) {
         return null;
@@ -137,9 +146,10 @@
       return null;
     } catch (e) {
       // Silently fail - default image will be shown
+      // Disable proxy on any error (except abort which is already handled)
       if (e.name !== 'AbortError') {
         proxyFailureCount++;
-        proxyDisabled = true; // Disable proxy after first failure
+        proxyDisabled = true;
       }
       return null;
     }
@@ -192,12 +202,18 @@
       
       // Fetch images with a small delay between requests to avoid overwhelming the proxy
       for (const person of peopleData) {
+        // Check before each request if proxy is disabled
         if (proxyDisabled || proxyFailureCount >= MAX_PROXY_FAILURES) {
           break; // Stop trying if proxy is disabled or failing
         }
         
         try {
           const imageUrl = await fetchImageFromMIUN(person.url);
+          
+          // Check again after fetch (it might have disabled the proxy)
+          if (proxyDisabled) {
+            break;
+          }
           
           if (imageUrl) {
             updatedCache[person.url] = imageUrl;
@@ -209,6 +225,10 @@
           await new Promise(resolve => setTimeout(resolve, 200));
         } catch (e) {
           // Silently fail - default image is already shown
+          // Proxy will be disabled by fetchImageFromMIUN
+          if (proxyDisabled) {
+            break;
+          }
         }
       }
       

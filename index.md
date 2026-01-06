@@ -39,14 +39,34 @@ We are a research group at Mid Sweden University focusing on **software engineer
   </div>
   {% assign latest_news = site.news | sort: "name" | reverse | first %}
   {% if latest_news %}
-  {% assign date_str = latest_news.name | slice: 0, 10 %}
+  {% assign filepath = latest_news.path | default: latest_news.name %}
+  {% assign filename = filepath | split: "/" | last | remove: ".md" %}
+  {% assign date_str = filename | slice: 0, 10 %}
   {% assign date_parts = date_str | split: "-" %}
+  {% if date_parts.size >= 3 %}
   {% assign year = date_parts[0] %}
-  {% assign month_num = date_parts[1] | plus: 0 %}
-  {% assign day = date_parts[2] | plus: 0 %}
+  {% assign month_str = date_parts[1] %}
+  {% assign day_str = date_parts[2] %}
+  {% if month_str != blank and day_str != blank %}
+  {% assign month_num = month_str | plus: 0 %}
+  {% assign day = day_str | plus: 0 %}
   {% assign month_names = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
   {% assign month_index = month_num | minus: 1 %}
+  {% if month_index >= 0 and month_index < 12 %}
   {% assign month_name = month_names[month_index] %}
+  {% else %}
+  {% assign month_name = "Unknown" %}
+  {% assign day = "?" %}
+  {% endif %}
+  {% else %}
+  {% assign month_name = "Unknown" %}
+  {% assign day = "?" %}
+  {% endif %}
+  {% else %}
+  {% assign month_name = "Unknown" %}
+  {% assign day = "?" %}
+  {% assign year = "?" %}
+  {% endif %}
   <div class="card news-preview-card">
     <div class="badge" data-translate="newsBadge">Latest News</div>
     <h2>{{ latest_news.title }}</h2>
@@ -62,14 +82,34 @@ We are a research group at Mid Sweden University focusing on **software engineer
   <div class="news-list">
 {% assign sorted_news = site.news | sort: "name" | reverse %}
 {% for item in sorted_news limit: 5 %}
-{% assign date_str = item.name | slice: 0, 10 %}
+{% assign filepath = item.path | default: item.name %}
+{% assign filename = filepath | split: "/" | last | remove: ".md" %}
+{% assign date_str = filename | slice: 0, 10 %}
 {% assign date_parts = date_str | split: "-" %}
+{% if date_parts.size >= 3 %}
 {% assign year = date_parts[0] %}
-{% assign month_num = date_parts[1] | plus: 0 %}
-{% assign day = date_parts[2] | plus: 0 %}
+{% assign month_str = date_parts[1] %}
+{% assign day_str = date_parts[2] %}
+{% if month_str != blank and day_str != blank %}
+{% assign month_num = month_str | plus: 0 %}
+{% assign day = day_str | plus: 0 %}
 {% assign month_names = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
 {% assign month_index = month_num | minus: 1 %}
+{% if month_index >= 0 and month_index < 12 %}
 {% assign month_name = month_names[month_index] %}
+{% else %}
+{% assign month_name = "Unknown" %}
+{% assign day = "?" %}
+{% endif %}
+{% else %}
+{% assign month_name = "Unknown" %}
+{% assign day = "?" %}
+{% endif %}
+{% else %}
+{% assign month_name = "Unknown" %}
+{% assign day = "?" %}
+{% assign year = "?" %}
+{% endif %}
 <div class="card">
   <h2 style="margin-top: 0;">{{ item.title }}</h2>
   <p style="color: var(--muted); font-size: 0.875rem; margin-bottom: 0.75rem;">{{ month_name }} {{ day }}, {{ year }}</p>
