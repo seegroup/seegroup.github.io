@@ -180,8 +180,8 @@
     const pagePath = window.location.pathname;
     
     if (pagePath === '/' || pagePath.endsWith('/index.html')) {
-      const intro = document.querySelector('#content h1 + p');
-      if (intro && !intro.hasAttribute('data-translate')) {
+      const intro = document.querySelector('[data-translate="intro"]');
+      if (intro) {
         intro.innerHTML = markdownToHtml(t.index.intro);
       }
       
