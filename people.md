@@ -9,13 +9,14 @@ title: People
 {% assign current_people = site.people | where: "group", "current" | where_exp: "person", "person.active != false" | sort: "name" %}
 <div class="grid">
 {% for p in current_people %}
+  {% assign person_filename = p.path | split: "/" | last | remove: ".md" %}
   {% if p.homepage %}
-  <a href="{{ p.homepage }}" target="_blank" rel="noopener noreferrer" class="card card-link">
+  <a href="{{ p.homepage }}" target="_blank" rel="noopener noreferrer" class="card card-link" data-person="{{ person_filename }}">
     <h2 style="margin-top:0">{{ p.name }}</h2>
     <p><span class="badge">{{ p.role | default: "Member" }}</span></p>
   </a>
   {% else %}
-  <div class="card">
+  <div class="card" data-person="{{ person_filename }}">
     <h2 style="margin-top:0">{{ p.name }}</h2>
     <p><span class="badge">{{ p.role | default: "Member" }}</span></p>
   </div>

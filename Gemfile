@@ -6,3 +6,6 @@ source "https://rubygems.org"
 
 # GitHub Pages gem includes Jekyll and all plugins
 gem "github-pages", group: :jekyll_plugins
+
+# For download_profile_images.rb script
+gem "nokogiri", "~> 1.15"
