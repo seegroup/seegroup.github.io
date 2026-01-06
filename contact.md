@@ -6,9 +6,9 @@ title: Contact
 
 - **Group lead:** Felix Dobslaw
 - **Email:** felix.dobslaw@miun.se
-- **Location:** Östersund / Sundsvall
+- **Location:** Östersund
 
-The group was formed in 2023.
+The group was formed in 2023 as an interdisciplinary collaboration between informatics and computer science researchers. Since then we have gone from 4 to currently 10++ employees with a PhD degree, established regional, national and international collaboration with strong partners.
 
 ## Collaboration
 We welcome collaboration with industry and public partners, and offer supervision for thesis projects.

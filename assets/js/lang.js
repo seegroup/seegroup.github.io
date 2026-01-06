@@ -74,7 +74,7 @@
       },
       index: {
         intro: 'Vi är en forskningsgrupp vid Mittuniversitetet som fokuserar på **programvaruteknik**, **programvarutestning** och **generativ AI inom utveckling och utbildning**.',
-        context: 'Världen över finns en ökande efterfrågan på programvaruprofessionella, och programvaruingenjörer är det femte vanligaste yrket i Sverige idag. SEE Research Group består av samhällsvetare och datavetare med målet att förstå hur programvara skapas framgångsrikt och hur man bäst lär sig programvaruutveckling.',
+        context: 'Världen över finns en ökande efterfrågan på programvaruprofessionella, och programvaruingenjörer är det femte vanligaste yrket i Sverige idag. SEE-forskningsgruppen består av samhällsvetare och datavetare med målet att förstå hur programvara skapas framgångsrikt och hur man bäst lär sig programvaruutveckling.',
         invested: 'Vi är särskilt investerade i:',
         researchDir1: '**Kvalitetssäkring av programvara och AI genom testning och testförstärkning** (kontakta <a href="mailto:felix.dobslaw@miun.se">Felix Dobslaw</a>)',
         researchDir2: '**Gapet mellan utbildning och industrins krav och livslångt lärandes roll** (kontakta <a href="mailto:lena-maria.oberg@miun.se">Lena-Maria Öberg</a>)',
