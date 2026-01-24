@@ -349,7 +349,7 @@ a:hover{
 
 .card.has-image {
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.5rem;
 }
 
@@ -362,6 +362,9 @@ a:hover{
   background: var(--border-light);
   flex-shrink: 0;
   border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-image img {
@@ -375,11 +378,6 @@ a:hover{
   margin-top: 0;
 }
 
-.card.has-image > *:not(.profile-image) {
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
-}
 
 .card:hover {
   box-shadow: var(--shadow-md);

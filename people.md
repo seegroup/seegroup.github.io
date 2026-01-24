@@ -29,10 +29,18 @@ title: People
 {% assign former_people = site.people | where: "group", "former" | sort: "name" %}
 <div class="grid">
 {% for p in former_people %}
-  <div class="card">
+  {% assign person_filename = p.path | split: "/" | last | remove: ".md" %}
+  {% if p.homepage %}
+  <a href="{{ p.homepage }}" target="_blank" rel="noopener noreferrer" class="card card-link" data-person="{{ person_filename }}">
+    <h2 style="margin-top:0">{{ p.name }}</h2>
+    <p><span class="badge">{{ p.role | default: "Former Member" }}</span></p>
+  </a>
+  {% else %}
+  <div class="card" data-person="{{ person_filename }}">
     <h2 style="margin-top:0">{{ p.name }}</h2>
     <p><span class="badge">{{ p.role | default: "Former Member" }}</span></p>
   </div>
+  {% endif %}
 {% endfor %}
 </div>
 
