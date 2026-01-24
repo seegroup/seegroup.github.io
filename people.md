@@ -24,7 +24,7 @@ title: People
 {% endfor %}
 </div>
 
-## Former Members, Affiliates and Collaborators
+## Collaborators, Affiliates and Former Members
 
 {% assign former_people = site.people | where: "group", "former" | sort: "name" %}
 <div class="grid">
