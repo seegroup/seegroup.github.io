@@ -12,6 +12,8 @@ Gren, Lucas · Dobslaw, Felix (2026). The Expert Validation Framework (EVF): Ena
 
 Akbarova, Sabinakhon · Dobslaw, Felix · Feldt, Robert (2026). Understanding on the Edge: LLM-generated Boundary Test Explanations. 7th ACM/IEEE International Conference on Automation of Software Test (AST 2026), accepted for publication. <a href="https://conf.researchr.org/home/ast-2026" target="_blank" rel="noopener noreferrer">venue:ast-2026</a>
 
+Akbarova, Sabinakhon · Dobslaw, Felix · Gomes de Oliveira Neto, Francisco · Feldt, Robert (2026). SETBVE: Quality-Diversity Driven Exploration of Software Boundary Behaviors. ACM Transactions on Software Engineering and Methodology, accepted 9 February 2026. <a href="https://doi.org/10.1145/3797890" target="_blank" rel="noopener noreferrer">doi</a>
+
 ## 2025
 
 Rico, Sergio · Öberg, Lena-Maria (2025). Challenges and Opportunities for Generative AI in Software Engineering: A Managerial View. International Workshop on Envisioning the AI-Augmented Software Development Life Cycle (FSE Companion ’25). <a href="https://dl.acm.org/doi/10.1145/3696630.3728718" target="_blank" rel="noopener noreferrer">publisher:acm-dl</a> <a href="https://doi.org/10.1145/3696630.3728718" target="_blank" rel="noopener noreferrer">doi</a> <a href="https://www.diva-portal.org/smash/get/diva2%3A1994308/FULLTEXT01.pdf" target="_blank" rel="noopener noreferrer">open-access:diva-pdf</a>
