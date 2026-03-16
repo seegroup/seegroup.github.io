@@ -6,7 +6,9 @@ title: Publications
 
 ## 2026
 
-Axetorn, Jonatan · Edholm, Felix · Dobslaw, Felix · Gren, Lucas (2026). Addressing Trust Requirements in the Design of an Open-Source Multi-Agent LLM-Based Domain-Specific Chatbot. Requirements Engineering (Springer Nature), to appear. <a href="https://doi.org/10.21203/rs.3.rs-7494256/v1" target="_blank" rel="noopener noreferrer">preprint:research-square</a>
+Muhammad, Laiq · Dobslaw, Felix (2026). Automatic techniques for issue report classification: A systematic mapping study. Automated Software Engineering (Springer), accepted for publication. (Link to appear.)
+
+Axetorn, Jonatan · Edholm, Felix · Dobslaw, Felix · Gren, Lucas (2026). Addressing Trust Requirements in the Design of an Open-Source Multi-Agent LLM-Based Domain-Specific Chatbot. Requirements Engineering (Springer Nature), open access. <a href="https://doi.org/10.1007/s00766-026-00457-w" target="_blank" rel="noopener noreferrer">doi</a>
 
 Gren, Lucas · Dobslaw, Felix (2026). The Expert Validation Framework (EVF): Enabling Domain Expert Control in AI Engineering. CAIN 2026 Industry Track (ICSE Companion ’26), accepted for publication. <a href="https://conf.researchr.org/home/cain-2026" target="_blank" rel="noopener noreferrer">venue:cain-2026</a> <a href="https://arxiv.org/abs/2601.12327" target="_blank" rel="noopener noreferrer">preprint:arxiv</a>
 
