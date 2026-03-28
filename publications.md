@@ -6,6 +6,8 @@ title: Publications
 
 ## 2026
 
+Dobslaw, Felix · Feldt, Robert · Yoon, Juyeon · Yoo, Shin (2026). Challenges in Testing Large Language Model Based Software: A Faceted Taxonomy. ACM Transactions on Software Engineering and Methodology (TOSEM), special issue on Software Engineering 2030, accepted for publication. (Link to appear.)
+
 Muhammad, Laiq · Dobslaw, Felix (2026). Automatic techniques for issue report classification: A systematic mapping study. Automated Software Engineering (Springer), accepted for publication. (Link to appear.)
 
 Axetorn, Jonatan · Edholm, Felix · Dobslaw, Felix · Gren, Lucas (2026). Addressing Trust Requirements in the Design of an Open-Source Multi-Agent LLM-Based Domain-Specific Chatbot. Requirements Engineering (Springer Nature), open access. <a href="https://doi.org/10.1007/s00766-026-00457-w" target="_blank" rel="noopener noreferrer">doi</a>

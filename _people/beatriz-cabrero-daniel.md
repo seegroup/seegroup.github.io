@@ -1,7 +1,6 @@
 ---
 name: Beatriz Cabrero-Daniel
-role: Associate Senior Lecturer
+role: Assistant Professor
 group: current
-active: false
-homepage: https://www.miun.se/en/personnel/r/beatrizcabrerodaniel/
+homepage: https://scholar.google.de/citations?user=coas24kAAAAJ
 ---
