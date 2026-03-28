@@ -77,4 +77,7 @@ title: Home
 </div>
 {% endfor %}
   </div>
+  <div class="news-archive-link">
+    <a href="{{ '/news' | relative_url }}">All news →</a>
+  </div>
 </div>

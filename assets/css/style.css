@@ -512,6 +512,68 @@ a:hover{
   box-shadow: var(--shadow-lg);
 }
 
+.news-archive-link {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.news-archive-link a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--miun-blue);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.news-archive-link a:hover {
+  border-bottom-color: var(--miun-blue);
+}
+
+.news-year-heading {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 0.5rem;
+}
+
+.news-archive-card {
+  border-left: 4px solid var(--miun-blue);
+  margin-bottom: 0;
+}
+
+.news-archive-card:hover {
+  border-left-color: var(--miun-turq);
+  transform: translateX(4px);
+}
+
+.news-archive-meta {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.news-archive-body {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+}
+
+.news-archive-body p {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.news-archive-body img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
 .news-preview-card {
   border-top: 3px solid var(--miun-blue);
   position: relative;
