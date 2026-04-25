@@ -6,6 +6,8 @@ title: Publications
 
 ## 2026
 
+Barbudo Carrasco, Lais · Engvall, Tove · Dobslaw, Felix (2026). A Conceptual Crosswalk Between Trustworthy Records and Trustworthy AI. *Philosophy & Technology* (Springer Nature), accepted for publication. (Link to appear.)
+
 Dobslaw, Felix · Feldt, Robert · Yoon, Juyeon · Yoo, Shin (2026). Challenges in Testing Large Language Model Based Software: A Faceted Taxonomy. ACM Transactions on Software Engineering and Methodology (TOSEM), special issue on Software Engineering 2030, accepted for publication. (Link to appear.)
 
 Muhammad, Laiq · Dobslaw, Felix (2026). Automatic techniques for issue report classification: A systematic mapping study. Automated Software Engineering (Springer), accepted for publication. (Link to appear.)
