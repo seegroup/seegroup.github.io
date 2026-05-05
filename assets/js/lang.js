@@ -4,7 +4,7 @@
       nav: {
         home: 'Home',
         people: 'People',
-        projects: 'Projects',
+        news: 'News',
         publications: 'Publications',
         contact: 'Contact'
       },
@@ -18,7 +18,7 @@
         researchTitle: 'What we do',
         researchDesc: 'Applied research in software testing, trustworthy AI, and empirical studies of developer work and learning.',
         researchBadge: 'Research',
-        researchLink: 'See projects →',
+        researchLink: 'See publications →',
         peopleTitle: 'Who we are',
         peopleDesc: 'Senior researchers, postdocs, and PhD students collaborating across software engineering and education.',
         peopleBadge: 'People',
@@ -49,9 +49,6 @@
         alumniDesc: 'A list of former undergraduate alumni we co-published software engineering articles with, organized by graduation year.',
         graduated: 'Graduated'
       },
-      projects: {
-        title: 'Projects'
-      },
       publications: {
         title: 'Publications'
       },
@@ -67,7 +64,7 @@
       nav: {
         home: 'Hem',
         people: 'Personer',
-        projects: 'Projekt',
+        news: 'Nyheter',
         publications: 'Publikationer',
         contact: 'Kontakt'
       },
@@ -81,7 +78,7 @@
         researchTitle: 'Vad vi gör',
         researchDesc: 'Tillämpad forskning inom programvarutestning, pålitlig AI och empiriska studier av utvecklares arbete och lärande.',
         researchBadge: 'Forskning',
-        researchLink: 'Se projekt →',
+        researchLink: 'Se publikationer →',
         peopleTitle: 'Vilka vi är',
         peopleDesc: 'Seniora forskare, postdocs och doktorander som samarbetar inom programvaruteknik och utbildning.',
         peopleBadge: 'Personer',
@@ -111,9 +108,6 @@
         alumni: 'Alumni Hall of Fame',
         alumniDesc: 'En lista över tidigare grundutbildningsalumner som vi har sampublikerat programvaruteknikartiklar med, organiserad efter examenår.',
         graduated: 'Examen'
-      },
-      projects: {
-        title: 'Projekt'
       },
       publications: {
         title: 'Publikationer'
@@ -162,7 +156,7 @@
     if (navLinks.length >= 5) {
       navLinks[0].textContent = t.nav.home;
       navLinks[1].textContent = t.nav.people;
-      navLinks[2].textContent = t.nav.projects;
+      navLinks[2].textContent = t.nav.news;
       navLinks[3].textContent = t.nav.publications;
       navLinks[4].textContent = t.nav.contact;
     }
@@ -342,11 +336,6 @@
           if (year) badge.textContent = t.people.graduated + ' ' + year[0];
         }
       });
-    }
-
-    if (pagePath.includes('/projects')) {
-      const h1 = document.querySelector('#content h1');
-      if (h1) h1.textContent = t.projects.title;
     }
 
     if (pagePath.includes('/publications')) {

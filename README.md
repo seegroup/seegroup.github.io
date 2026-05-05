@@ -89,23 +89,9 @@ Example entry:
 
 Edit `contact.md` to update group lead, email, location, or other contact details.
 
-### Updating Projects
-
-Create files in `_projects/` directory:
-
-```markdown
----
-title: Project Title
-status: Active  # or "Completed", etc.
----
-
-Project description...
-```
-
 ## File Structure
 
 - `_people/` - Person profiles
-- `_projects/` - Project descriptions  
 - `_news/` - News items (date-based filenames)
 - `_data/alumni_papers.json` - Alumni publication data
 - `assets/images/people/` - Profile images (downloaded via script)
@@ -113,7 +99,6 @@ Project description...
 - `publications.md` - Publications list
 - `index.md` - Homepage content
 - `people.md` - People page (auto-generated from `_people/`)
-- `projects.md` - Projects page (auto-generated from `_projects/`)
 - `download_profile_images.rb` - Script to download profile images from MIUN pages
 
 ## Notes
