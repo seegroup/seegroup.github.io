@@ -10,9 +10,6 @@ collections:
   people:
     output: true
     permalink: /people/:name/
-  projects:
-    output: true
-    permalink: /projects/:name/
   news:
     output: false
 
