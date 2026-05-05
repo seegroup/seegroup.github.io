@@ -19,7 +19,7 @@ title: Home
     <div class="badge" data-translate="researchBadge">Research</div>
     <h2 data-translate="researchTitle">What we do</h2>
     <p data-translate="researchDesc">Applied research in software testing, trustworthy AI, and empirical studies of developer work and learning.</p>
-    <p><a href="{{ '/projects' | relative_url }}" data-translate="researchLink">See projects →</a></p>
+    <p><a href="{{ '/publications' | relative_url }}" data-translate="researchLink">See publications →</a></p>
   </div>
 
   <div class="card">
