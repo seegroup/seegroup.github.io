@@ -6,11 +6,11 @@ title: Publications
 
 ## 2026
 
-Barbudo Carrasco, Lais · Engvall, Tove · Dobslaw, Felix (2026). A Conceptual Crosswalk Between Trustworthy Records and Trustworthy AI. *Philosophy & Technology* (Springer Nature), accepted for publication. (Link to appear.)
+Barbudo Carrasco, Laís · Engvall, Tove · Dobslaw, Felix (2026). A Conceptual Crosswalk Between Trustworthy Records and Trustworthy AI. *Philosophy & Technology* 39(2). <a href="https://doi.org/10.1007/s13347-026-01112-6" target="_blank" rel="noopener noreferrer">DOI →</a>
 
-Dobslaw, Felix · Feldt, Robert · Yoon, Juyeon · Yoo, Shin (2026). Challenges in Testing Large Language Model Based Software: A Faceted Taxonomy. ACM Transactions on Software Engineering and Methodology (TOSEM), special issue on Software Engineering 2030, accepted for publication. (Link to appear.)
+Dobslaw, Felix · Feldt, Robert · Yoon, Juyeon · Yoo, Shin (2026). Challenges in Testing Large Language Model Based Software: A Faceted Taxonomy. *ACM Transactions on Software Engineering and Methodology* (TOSEM), special issue on Software Engineering 2030. <a href="https://doi.org/10.1145/3806396" target="_blank" rel="noopener noreferrer">DOI →</a>
 
-Muhammad, Laiq · Dobslaw, Felix (2026). Automatic techniques for issue report classification: A systematic mapping study. Automated Software Engineering (Springer), accepted for publication. (Link to appear.)
+Muhammad, Laiq · Dobslaw, Felix (2026). Automatic techniques for issue report classification: A systematic mapping study. *Automated Software Engineering* 33(3), article 72. <a href="https://doi.org/10.1007/s10515-026-00616-x" target="_blank" rel="noopener noreferrer">DOI →</a>
 
 Axetorn, Jonatan · Edholm, Felix · Dobslaw, Felix · Gren, Lucas (2026). Addressing Trust Requirements in the Design of an Open-Source Multi-Agent LLM-Based Domain-Specific Chatbot. Requirements Engineering (Springer Nature), open access. <a href="https://doi.org/10.1007/s00766-026-00457-w" target="_blank" rel="noopener noreferrer">doi</a>
 
