@@ -20,6 +20,8 @@ Akbarova, Sabinakhon · Dobslaw, Felix · Feldt, Robert (2026). Understanding on
 
 Akbarova, Sabinakhon · Dobslaw, Felix · Gomes de Oliveira Neto, Francisco · Feldt, Robert (2026). SETBVE: Quality-Diversity Driven Exploration of Software Boundary Behaviors. ACM Transactions on Software Engineering and Methodology, accepted 9 February 2026. <a href="https://doi.org/10.1145/3797890" target="_blank" rel="noopener noreferrer">doi</a>
 
+Jolak, Rodi · Mohamad, Mazen · Avula, Ramana Reddy · Meek, Jason · Åström, Alexander (2026). SCENE: Guidelines for Security Chaos Engineering based on a systematic literature review. *Journal of Systems and Software* 239, article 112896. <a href="https://www.sciencedirect.com/science/article/pii/S0164121226001299" target="_blank" rel="noopener noreferrer">publisher:sciencedirect</a> <a href="https://doi.org/10.1016/j.jss.2026.112896" target="_blank" rel="noopener noreferrer">DOI →</a>
+
 ## 2025
 
 Rico, Sergio · Öberg, Lena-Maria (2025). Challenges and Opportunities for Generative AI in Software Engineering: A Managerial View. International Workshop on Envisioning the AI-Augmented Software Development Life Cycle (FSE Companion ’25). <a href="https://dl.acm.org/doi/10.1145/3696630.3728718" target="_blank" rel="noopener noreferrer">publisher:acm-dl</a> <a href="https://doi.org/10.1145/3696630.3728718" target="_blank" rel="noopener noreferrer">doi</a> <a href="https://www.diva-portal.org/smash/get/diva2%3A1994308/FULLTEXT01.pdf" target="_blank" rel="noopener noreferrer">open-access:diva-pdf</a>
