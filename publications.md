@@ -6,6 +6,8 @@ title: Publications
 
 ## 2026
 
+Dobslaw, Felix · Gren, Lucas · Borg, Markus · Sterner, Erik (2026). AI Transformation: Ready or Already? *IEEE Software* 43(3), pp. 8–12. <a href="https://doi.org/10.1109/MS.2026.3662854" target="_blank" rel="noopener noreferrer">DOI →</a>
+
 Barbudo Carrasco, Laís · Engvall, Tove · Dobslaw, Felix (2026). A Conceptual Crosswalk Between Trustworthy Records and Trustworthy AI. *Philosophy & Technology* 39(2). <a href="https://doi.org/10.1007/s13347-026-01112-6" target="_blank" rel="noopener noreferrer">DOI →</a>
 
 Dobslaw, Felix · Feldt, Robert · Yoon, Juyeon · Yoo, Shin (2026). Challenges in Testing Large Language Model Based Software: A Faceted Taxonomy. *ACM Transactions on Software Engineering and Methodology* (TOSEM), special issue on Software Engineering 2030. <a href="https://doi.org/10.1145/3806396" target="_blank" rel="noopener noreferrer">DOI →</a>
