@@ -8,7 +8,9 @@ title: Home
 
 <p data-translate="context">In the long term, this also leads to an improved ability to use AI in an ethically responsible and sustainable way.</p>
 
-<p data-translate="context">The main objective of the project is aligned with the **INTERREG** programmes priority of creating a smarter cross-border region, developing and improving research and innovation capacity, and the use of advanced technology.</p>
+<p data-translate="context">The main objective of the project is aligned with the <b>INTERREG</b> programmes priority of creating a smarter cross-border region, developing and improving research and innovation capacity, and the use of advanced technology.</p>
+
+<img alt="" src="https://miun.imagevault.media/publishedmedia/2geg23qr8fhy57mnxakn/Interreg-Sverige-Norge-16x9.webp">
 
 <div class="grid">
   <div class="card">
