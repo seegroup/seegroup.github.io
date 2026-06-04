@@ -8,10 +8,10 @@ title: DO-AI
 
 <p data-translate="context">In the long term, this also leads to an improved ability to use AI in an ethically responsible and sustainable way.</p>
 
-<p data-translate="context">The main objective of the project is aligned with the <b>INTERREG</b> programmes priority of creating a smarter cross-border region, developing and improving research and innovation capacity, and the use of advanced technology.</p>
+<p data-translate="context">The main objective of the project is aligned with the <b>Interreg</b> programmes priority of creating a smarter cross-border region, developing and improving research and innovation capacity, and the use of advanced technology.</p>
 
-<img alt="Interreg logotype" src="https://miun.imagevault.media/publishedmedia/2geg23qr8fhy57mnxakn/Interreg-Sverige-Norge-16x9.webp" width="45%" style="max-width: 500px">
-<img alt="Interreg logotype" src="../assets/images/do-ai-logo-green.png" width="45%" style="max-width: 500px">
+<img alt="Interreg logotype" src="https://miun.imagevault.media/publishedmedia/2geg23qr8fhy57mnxakn/Interreg-Sverige-Norge-16x9.webp" width="45%" style="max-width: 500px; clip-path: inset(25% 0% 25% 0%); display:inline-block; vertical-align:middle;">
+<img alt="DO-AI logotype" src="../assets/images/do-ai-logo-green.png" width="45%" style="max-width: 500px; clip-path: inset(5% 0% 10% 0%); display:inline-block; vertical-align:middle;">
 
 <div class="grid">
   <div class="card">
