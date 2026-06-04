@@ -13,29 +13,6 @@ title: DO-AI
 <img alt="Interreg logotype" src="https://miun.imagevault.media/publishedmedia/2geg23qr8fhy57mnxakn/Interreg-Sverige-Norge-16x9.webp" width="45%" style="max-width: 500px; clip-path: inset(25% 0% 25% 0%); display:inline-block; vertical-align:middle;">
 <img alt="DO-AI logotype" src="../assets/images/do-ai-logo-green.png" width="45%" style="max-width: 500px; clip-path: inset(5% 0% 10% 0%); display:inline-block; vertical-align:middle;">
 
-<div class="grid">
-  <div class="card">
-    <div class="badge" data-translate="researchBadge">Research</div>
-    <h2 data-translate="researchTitle">What we do</h2>
-    <p data-translate="researchDesc">Applied research in software testing, trustworthy AI, and empirical studies of developer work and learning.</p>
-    <p><a href="{{ '../publications' | relative_url }}" data-translate="researchLink">See publications →</a></p>
-  </div>
-
-  <div class="card">
-    <div class="badge" data-translate="peopleBadge">People</div>
-    <h2 data-translate="peopleTitle">Who we are</h2>
-    <p data-translate="peopleDesc">Senior researchers, postdocs, and PhD students collaborating across software engineering and education.</p>
-    <p><a href="{{ '../people' | relative_url }}" data-translate="peopleLink">Meet the group →</a></p>
-  </div>
-
-  <div class="card">
-    <div class="badge" data-translate="contactBadge">Contact</div>
-    <h2 data-translate="contactTitle">Collaborate</h2>
-    <p data-translate="contactDesc">Interested in collaborating with us or supervising a thesis project?</p>
-    <p><a href="{{ '../contact' | relative_url }}" data-translate="contactLink">Get in touch →</a></p>
-  </div>
-</div>
-
 <div id="news" class="news-section">
   <h2 data-translate="news">News</h2>
   <div class="news-list">
