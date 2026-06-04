@@ -40,6 +40,7 @@ title: DO-AI
   <h2 data-translate="news">News</h2>
   <div class="news-list">
 {% assign sorted_news = site.news | sort: "name" | reverse %}
+{% assign sorted_news = sorted_news | where: "project", "doai" %}
 {% for item in sorted_news limit: 5 %}
 {% assign filepath = item.path | default: item.name %}
 {% assign filename = filepath | split: "/" | last | remove: ".md" %}
