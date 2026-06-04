@@ -10,7 +10,8 @@ title: DO-AI
 
 <p data-translate="context">The main objective of the project is aligned with the <b>INTERREG</b> programmes priority of creating a smarter cross-border region, developing and improving research and innovation capacity, and the use of advanced technology.</p>
 
-<img alt="Interreg logotype" src="https://miun.imagevault.media/publishedmedia/2geg23qr8fhy57mnxakn/Interreg-Sverige-Norge-16x9.webp"  width="100%" style="max-width: 500px">
+<img alt="Interreg logotype" src="https://miun.imagevault.media/publishedmedia/2geg23qr8fhy57mnxakn/Interreg-Sverige-Norge-16x9.webp" width="45%" style="max-width: 500px">
+<img alt="Interreg logotype" src="../assets/images/do-ai-logo-green.png" width="45%" style="max-width: 500px">
 
 <div class="grid">
   <div class="card">
