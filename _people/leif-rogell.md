@@ -1,5 +1,5 @@
 ---
 name: Leif Rogell
 group: alumni
-graduation_year: 2026
+graduation_year: 2025
 ---
