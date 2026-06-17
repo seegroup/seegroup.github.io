@@ -6,6 +6,8 @@ title: Publications
 
 ## 2026
 
+Rogell, Leif · Truong Ho-Quang · Shahzad, Raja Khurram · Jolak, Rodi (2026). Eliminating Trust in the Cloud: Design, Implementation and Evaluation of an End-to-End Encrypted Git Service. *Array* (Elsevier), accepted for publication. <a href="https://www.sciencedirect.com/journal/array" target="_blank" rel="noopener noreferrer">venue:array</a>
+
 Dobslaw, Felix · Gren, Lucas · Borg, Markus · Sterner, Erik (2026). AI Transformation: Ready or Already? *IEEE Software* 43(3), pp. 8–12. <a href="https://doi.org/10.1109/MS.2026.3662854" target="_blank" rel="noopener noreferrer">DOI →</a>
 
 Barbudo Carrasco, Laís · Engvall, Tove · Dobslaw, Felix (2026). A Conceptual Crosswalk Between Trustworthy Records and Trustworthy AI. *Philosophy & Technology* 39(2). <a href="https://doi.org/10.1007/s13347-026-01112-6" target="_blank" rel="noopener noreferrer">DOI →</a>

@@ -61,7 +61,7 @@ A list of former undergraduate alumni we co-published software engineering artic
         <p style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Co-authored</p>
         {% for paper in alumni_paper_data.papers %}
           {% assign is_journal = false %}
-          {% if paper.venue contains "Journal" or paper.venue == "Information and Software Technology" or paper.venue == "PeerJ Computer Science" %}
+          {% if paper.venue contains "Journal" or paper.venue == "Information and Software Technology" or paper.venue == "PeerJ Computer Science" or paper.venue == "Array" %}
             {% assign is_journal = true %}
           {% endif %}
           <div class="{% if is_journal %}paper-journal{% endif %}" style="margin-bottom: 1rem;">

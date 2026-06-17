@@ -1,5 +1,17 @@
 [
   {
+    "name": "Leif Rogell",
+    "graduation_year": 2026,
+    "papers": [
+      {
+        "title": "Eliminating Trust in the Cloud: Design, Implementation and Evaluation of an End-to-End Encrypted Git Service",
+        "year": 2026,
+        "venue": "Array",
+        "publisher_url": "https://www.sciencedirect.com/journal/array"
+      }
+    ]
+  },
+  {
     "name": "Magnus Edvall",
     "graduation_year": 2024,
     "papers": [
