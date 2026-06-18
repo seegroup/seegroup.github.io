@@ -1,6 +1,6 @@
 ---
 name: Khan Mohammad Habibullah
-role: Lecturer
+role: Postdoc
 group: current
 homepage: https://www.miun.se/Personal/h/khanmohammadhabibullah/
 ---
