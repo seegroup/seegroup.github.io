@@ -24,7 +24,7 @@ Axetorn, Jonatan · Edholm, Felix · Dobslaw, Felix · Gren, Lucas (2026). Addre
 
 Gren, Lucas · Dobslaw, Felix (2026). The Expert Validation Framework (EVF): Enabling Domain Expert Control in AI Engineering. *CAIN 2026 Industry Track* (ICSE Companion ’26), accepted for publication. <a href="https://conf.researchr.org/home/cain-2026" target="_blank" rel="noopener noreferrer">Venue →</a> <a href="https://arxiv.org/abs/2601.12327" target="_blank" rel="noopener noreferrer">Preprint →</a>
 
-Akbarova, Sabinakhon · Dobslaw, Felix · Feldt, Robert (2026). Understanding on the Edge: LLM-generated Boundary Test Explanations. *7th ACM/IEEE International Conference on Automation of Software Test* (AST 2026), accepted for publication. <a href="https://conf.researchr.org/home/ast-2026" target="_blank" rel="noopener noreferrer">Venue →</a>
+Akbarova, Sabinakhon · Dobslaw, Felix · Feldt, Robert (2026). Understanding on the Edge: LLM-generated Boundary Test Explanations. *7th ACM/IEEE International Conference on Automation of Software Test* (AST 2026). <a href="https://dl.acm.org/doi/10.1145/3793654.3793754" target="_blank" rel="noopener noreferrer">Publisher →</a> <a href="https://doi.org/10.1145/3793654.3793754" target="_blank" rel="noopener noreferrer">DOI →</a> <a href="https://arxiv.org/abs/2601.22791" target="_blank" rel="noopener noreferrer">Preprint →</a>
 
 Akbarova, Sabinakhon · Dobslaw, Felix · Gomes de Oliveira Neto, Francisco · Feldt, Robert (2026). SETBVE: Quality-Diversity Driven Exploration of Software Boundary Behaviors. *ACM Transactions on Software Engineering and Methodology*, accepted 9 February 2026. <a href="https://doi.org/10.1145/3797890" target="_blank" rel="noopener noreferrer">DOI →</a>
 
