@@ -10,7 +10,7 @@ title: Decision Aware Human-AI Collaboration
 
 <p>The project runs from April 2026 to April 2028 and is led by <b>Sergio Rico</b>, with <b>Awais Ahmad</b> and <b>Felix Dobslaw</b> at Mid Sweden University. It is funded by <b>Vinnova</b>, Sweden's innovation agency (ref. 2026-00111).</p>
 
-<img alt="Funded by Vinnova" src="../assets/images/funded-by-vinnova.svg" width="40%" style="max-width: 320px; display:block; margin: 1rem 0;">
+<img alt="Med finansiering från Vinnova" src="../assets/images/med-finansiering-fran-vinnova.svg" width="40%" style="max-width: 320px; display:block; margin: 1rem 0;">
 
 <div id="news" class="news-section">
   <h2 data-translate="news">News</h2>
