@@ -1,4 +1,5 @@
 ---
+project: decision-aware
 title: SEE Research Group receives Vinnova grant for Human-AI Collaboration project
 ---
 

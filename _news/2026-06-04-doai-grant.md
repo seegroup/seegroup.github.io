@@ -1,4 +1,5 @@
 ---
+project: saip
 title: SEE group receives 6.9 MSEK ESF grant for AI Transformation Arena Jämtland
 ---
 
