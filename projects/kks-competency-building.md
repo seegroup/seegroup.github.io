@@ -6,9 +6,9 @@ title: KKS Competency Building
 
 <p>The Knowledge Foundation (KK-stiftelsen) funds two adjunct positions that bring industry expertise into the SEE group. Each is a 20% position that combines research, supervision and teaching, with joint publications, new grant applications and a lasting partnership between Mid Sweden University and the company as the intended outcomes.</p>
 
-<h2>Truong Ho-Quang, Volvo Cars (June 2025 – May 2027)</h2>
+<h2>Truong Ho-Quang, Volvo Trucks (June 2025 – May 2027)</h2>
 
-<p><b>Truong Ho-Quang</b> joins from <b>Volvo Cars</b> as Adjunct Lecturer in software engineering. He brings expertise in software architecture and quality assurance to the group's work on complex, safety-critical software systems, including AI-augmented testing and verification. He co-authors research with the group, supports outreach to regional industry, and contributes to the master's programme in AI transformation.</p>
+<p><b>Truong Ho-Quang</b> joins from <b>Volvo Trucks</b> as Adjunct Lecturer in software engineering. He brings expertise in software architecture and quality assurance to the group's work on complex, safety-critical software systems, including AI-augmented testing and verification. He co-authors research with the group, supports outreach to regional industry, and contributes to the master's programme in AI transformation.</p>
 
 <h2>Lucas Gren, Getinge (October 2026 – September 2029)</h2>
 
