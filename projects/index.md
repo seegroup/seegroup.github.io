@@ -30,7 +30,7 @@ title: Projects
       <td>January 2026</td>
       <td>December 2028</td>
       <td>Lena-Maria Öberg</td>
-      <td>Rejwana Siddiq, Thomas Persson, Cat Buu Ngoc Nguyen</td>
+      <td>Beatriz Cabrero-Daniel, Rejwana Siddiq, Thomas Persson, Cat Buu Ngoc Nguyen</td>
     </tr>
     <tr>
       <td><a href="{{ '/projects/decision-aware' | relative_url }}">Decision Aware Human-AI Collaboration</a></td>
