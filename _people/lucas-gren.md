@@ -1,6 +1,6 @@
 ---
 name: Lucas Gren
-role: Adjunct Senior Lecturer
+role: Adjunct Lecturer
 group: current
 homepage: https://www.miun.se/Personal/l/lucasgren/
 ---
