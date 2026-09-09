@@ -6,7 +6,7 @@
   <a href="{{ '/contact' | relative_url }}" class="{% if page.url contains '/contact' %}active{% endif %}">Contact</a>
   <!--  BEA WAS HERE, TO BE REMOVED AND DONE PROPERLY -->
   <div class="dropdown">
-    <a href="#">Projects</a>
+    <a href="{{ '/projects/' | relative_url }}" class="{% if page.url contains '/projects' %}active{% endif %}">Projects</a>
     <div class="dropdown-content">
       <a href="{{ '/projects/doai' | relative_url }}">DO-AI</a>
       <a href="{{ '/projects/saip' | relative_url }}">SAIP</a>

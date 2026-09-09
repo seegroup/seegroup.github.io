@@ -741,3 +741,34 @@ a:hover{
   display: block;
   background: var(--bg);
 }
+
+/* Project overview table */
+.table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.projects-table th,
+.projects-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.projects-table th {
+  color: var(--miun-blue);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.projects-table td:nth-child(2),
+.projects-table td:nth-child(3) {
+  white-space: nowrap;
+}
