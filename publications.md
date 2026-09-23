@@ -30,6 +30,8 @@ Akbarova, Sabinakhon · Dobslaw, Felix · Gomes de Oliveira Neto, Francisco · F
 
 Jolak, Rodi · Mohamad, Mazen · Avula, Ramana Reddy · Meek, Jason · Åström, Alexander (2026). SCENE: Guidelines for Security Chaos Engineering based on a systematic literature review. *Journal of Systems and Software* 239, article 112896. <a href="https://www.sciencedirect.com/science/article/pii/S0164121226001299" target="_blank" rel="noopener noreferrer">Publisher →</a> <a href="https://doi.org/10.1016/j.jss.2026.112896" target="_blank" rel="noopener noreferrer">DOI →</a>
 
+Oni, Rowshan Mannan · Khan, Fairuz · Ador, Khalid Hasan · Hasan, Shahriar · Habibullah, Khan Mohammad (2026). Multimodal Semantic Communication for 6G and Beyond: AI-Driven Architectures, Trends, and Challenges. *IEEE Open Journal of the Communications Society* 7, pp. 7182–7223. <a href="https://ieeexplore.ieee.org/document/11574021" target="_blank" rel="noopener noreferrer">Publisher →</a> <a href="https://doi.org/10.1109/OJCOMS.2026.3705905" target="_blank" rel="noopener noreferrer">DOI →</a>
+
 ## 2025
 
 Rico, Sergio · Öberg, Lena-Maria (2025). Challenges and Opportunities for Generative AI in Software Engineering: A Managerial View. *International Workshop on Envisioning the AI-Augmented Software Development Life Cycle* (FSE Companion ’25). <a href="https://dl.acm.org/doi/10.1145/3696630.3728718" target="_blank" rel="noopener noreferrer">Publisher →</a> <a href="https://doi.org/10.1145/3696630.3728718" target="_blank" rel="noopener noreferrer">DOI →</a> <a href="https://www.diva-portal.org/smash/get/diva2%3A1994308/FULLTEXT01.pdf" target="_blank" rel="noopener noreferrer">PDF →</a>
