@@ -6,6 +6,8 @@ title: Publications
 
 ## 2026
 
+Oni, Rowshan Mannan · Khan, Fairuz · Ador, Khalid Hasan · Hasan, Shahriar · Habibullah, Khan Mohammad (2026). Multimodal Semantic Communication for 6G and Beyond: AI-Driven Architectures, Trends, and Challenges. *IEEE Open Journal of the Communications Society* 7, pp. 7182–7223. <a href="https://ieeexplore.ieee.org/document/11574021" target="_blank" rel="noopener noreferrer">Publisher →</a> <a href="https://doi.org/10.1109/OJCOMS.2026.3705905" target="_blank" rel="noopener noreferrer">DOI →</a>
+
 Rogell, Leif · Truong Ho-Quang · Shahzad, Raja Khurram · Jolak, Rodi (2026). Eliminating Trust in the Cloud: Design, Implementation and Evaluation of an End-to-End Encrypted Git Service. *Array* (Elsevier), accepted for publication. <a href="https://www.sciencedirect.com/journal/array" target="_blank" rel="noopener noreferrer">Venue →</a>
 
 Cabrero-Daniel, Beatriz · Börjesson, Simon · Ersmark, Erik · Nugues, Pierre · Eliasson, Klara · Berger, Christian (2026). On Forecasting Truck Driving Manoeuvrers with Foundation Models for Time Series Data. *IEEE International Conference on Intelligent Transportation Systems* (ITSC), accepted for publication.
@@ -29,8 +31,6 @@ Akbarova, Sabinakhon · Dobslaw, Felix · Feldt, Robert (2026). Understanding on
 Akbarova, Sabinakhon · Dobslaw, Felix · Gomes de Oliveira Neto, Francisco · Feldt, Robert (2026). SETBVE: Quality-Diversity Driven Exploration of Software Boundary Behaviors. *ACM Transactions on Software Engineering and Methodology*, accepted 9 February 2026. <a href="https://doi.org/10.1145/3797890" target="_blank" rel="noopener noreferrer">DOI →</a>
 
 Jolak, Rodi · Mohamad, Mazen · Avula, Ramana Reddy · Meek, Jason · Åström, Alexander (2026). SCENE: Guidelines for Security Chaos Engineering based on a systematic literature review. *Journal of Systems and Software* 239, article 112896. <a href="https://www.sciencedirect.com/science/article/pii/S0164121226001299" target="_blank" rel="noopener noreferrer">Publisher →</a> <a href="https://doi.org/10.1016/j.jss.2026.112896" target="_blank" rel="noopener noreferrer">DOI →</a>
-
-Oni, Rowshan Mannan · Khan, Fairuz · Ador, Khalid Hasan · Hasan, Shahriar · Habibullah, Khan Mohammad (2026). Multimodal Semantic Communication for 6G and Beyond: AI-Driven Architectures, Trends, and Challenges. *IEEE Open Journal of the Communications Society* 7, pp. 7182–7223. <a href="https://ieeexplore.ieee.org/document/11574021" target="_blank" rel="noopener noreferrer">Publisher →</a> <a href="https://doi.org/10.1109/OJCOMS.2026.3705905" target="_blank" rel="noopener noreferrer">DOI →</a>
 
 ## 2025
 
