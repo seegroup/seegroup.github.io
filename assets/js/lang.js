@@ -52,6 +52,13 @@
       publications: {
         title: 'Publications'
       },
+      saip: {
+        intro: 'SAIP builds a regional arena for software and AI transformation in Jämtland Härjedalen. The project brings together companies, the public sector, researchers and students to develop new knowledge, build collaborations and strengthen the region\'s ability to plan and carry out AI-related change.',
+        target: 'The primary target group is companies in the region, in particular small and medium-sized enterprises that meet growing digitalisation needs without in-house resources for advanced software development or AI. Activities include a structured needs analysis, workshops and seminars, and a recurring participant-driven unconference with engagement from the national software engineering research community.',
+        period: 'The project runs from September 2026 to June 2029 and is led by **Felix Dobslaw** together with **Anna Sörensson** at Mid Sweden University. It is funded by the **European Social Fund Plus** (ESF+) through the Swedish ESF Council and co-financed by **Region Jämtland Härjedalen**.',
+        news: 'News',
+        newsLink: 'All news →'
+      },
       footer: {
         researchGroup: 'Research group at Mid Sweden University',
         updated: 'Updated content via Markdown'
@@ -111,6 +118,13 @@
       },
       publications: {
         title: 'Publikationer'
+      },
+      saip: {
+        intro: 'SAIP bygger en regional arena för mjukvaru- och AI-transformation i Jämtland Härjedalen. Projektet samlar företag, offentlig sektor, forskare och studenter för att utveckla ny kunskap, bygga samarbeten och stärka regionens förmåga att planera och genomföra AI-relaterad förändring.',
+        target: 'Den främsta målgruppen är företag i regionen, särskilt små och medelstora företag som möter växande digitaliseringsbehov utan egna resurser för avancerad mjukvaruutveckling eller AI. I projektet ingår en strukturerad behovsanalys, workshoppar och seminarier, och en återkommande deltagardriven unconference där det nationella forskarsamhället inom software engineering medverkar.',
+        period: 'Projektet pågår från september 2026 till juni 2029 och leds av **Felix Dobslaw** tillsammans med **Anna Sörensson** vid Mittuniversitetet. Det finansieras av **Europeiska socialfonden+** (ESF+) genom Svenska ESF-rådet och medfinansieras av **Region Jämtland Härjedalen**.',
+        news: 'Nyheter',
+        newsLink: 'Alla nyheter →'
       },
       footer: {
         researchGroup: 'Forskningsgrupp vid Mittuniversitetet',
@@ -336,6 +350,19 @@
           if (year) badge.textContent = t.people.graduated + ' ' + year[0];
         }
       });
+    }
+
+    if (pagePath.includes('/projects/saip')) {
+      ['intro', 'target', 'period'].forEach(key => {
+        const el = document.querySelector('[data-translate="saip-' + key + '"]');
+        if (el) el.innerHTML = markdownToHtml(t.saip[key]);
+      });
+
+      const newsHeading = document.querySelector('[data-translate="news"]');
+      if (newsHeading) newsHeading.textContent = t.saip.news;
+
+      const newsLink = document.querySelector('[data-translate="newsLink"]');
+      if (newsLink) newsLink.textContent = t.saip.newsLink;
     }
 
     if (pagePath.includes('/publications')) {
