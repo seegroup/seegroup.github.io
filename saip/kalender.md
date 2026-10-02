@@ -21,12 +21,13 @@ permalink: /saip/kalender/
 {% assign first = items[0] %}
 {% assign month_key = first.start | date: "%Y-%m" %}
 {% if month_key != current_month %}
-{% unless forloop.first %}</section>
+{% unless forloop.first %}</details>
 {% endunless %}
 {% assign current_month = month_key %}
 {% assign m = first.start | date: "%-m" | minus: 1 %}
-<section class="month">
-<h2>{{ month_names[m] }} {{ first.start | date: "%Y" }}</h2>
+<details class="month" open data-month="{{ month_key }}" data-name="{{ month_names[m] | downcase }}">
+<summary><h2>{{ month_names[m] }} {{ first.start | date: "%Y" }}</h2><span class="month-count"></span></summary>
+<p class="month-past" hidden><button type="button" class="toggle-past" aria-expanded="false"></button></p>
 {% endif %}
 {% assign wd = first.start | date: "%u" | minus: 1 %}
 {% assign m1 = first.start | date: "%-m" | minus: 1 %}
@@ -50,85 +51,66 @@ permalink: /saip/kalender/
 {% endfor %}
 </ul>
 </div>
-{% if forloop.last %}</section>
+{% if forloop.last %}</details>
 {% endif %}
 {% endfor %}
-<details id="archive" hidden>
-<summary>Tidigare evenemang <span id="archive-count"></span></summary>
-{% assign seen = "|" %}
-{% assign current_month = "" %}
-{% assign days_desc = days | reverse %}
-{% for day in days_desc %}
-{% assign items = day.items | sort: "time" | reverse %}
-{% for e in items %}
-{% assign first = e %}
-{% assign last = e %}
-{% assign count = 1 %}
-{% if e.series %}
-{% assign key = "|" | append: e.series | append: "|" %}
-{% if seen contains key %}{% continue %}{% endif %}
-{% assign seen = seen | append: e.series | append: "|" %}
-{% assign members = site.data.saip_events | where: "series", e.series | sort: "start" %}
-{% assign first = members | first %}
-{% assign last = members | last %}
-{% assign count = members.size %}
-{% endif %}
-{% assign last_day = last.end | default: last.start %}
-{% assign month_key = last_day | date: "%Y-%m" %}
-{% if month_key != current_month %}
-{% if current_month != "" %}</ul>
-</div>
-{% endif %}
-{% assign current_month = month_key %}
-{% assign m = last_day | date: "%-m" | minus: 1 %}
-<div class="past-month">
-<h3>{{ month_names[m] }} {{ last_day | date: "%Y" }}</h3>
-<ul class="past">
-{% endif %}
-{% assign d1 = first.start | date: "%-d" %}
-{% assign m1 = first.start | date: "%-m" | minus: 1 %}
-{% assign d2 = last_day | date: "%-d" %}
-{% assign m2 = last_day | date: "%-m" | minus: 1 %}
-{% assign same = false %}{% if d1 == d2 and m1 == m2 %}{% assign same = true %}{% endif %}
-<li data-end="{{ last_day | date: '%Y-%m-%d' }}"><span class="past-date">{% if same %}{{ d1 }} {{ month_short[m1] }}{% elsif m1 == m2 %}{{ d1 }}–{{ d2 }} {{ month_short[m1] }}{% else %}{{ d1 }} {{ month_short[m1] }}–{{ d2 }} {{ month_short[m2] }}{% endif %}</span><span>{% if e.series %}<a href="{{ e.series_url | default: e.url }}">{{ e.series | escape }}</a>, {{ count }} pass{% else %}<a href="{{ e.url }}">{{ e.title | escape }}</a>, {{ e.organiser | escape }}{% endif %}</span></li>
-{% endfor %}
-{% if forloop.last and current_month != "" %}</ul>
-</div>
-{% endif %}
-{% endfor %}
-</details>
 <script>
 (function () {
   var now = new Date();
   var pad = function (n) { return (n < 10 ? "0" : "") + n; };
   var today = now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate());
+  var months = document.querySelectorAll("details.month");
+  var current = null;
   var i;
-  function hideEmpty(selector, rowSelector) {
-    var groups = document.querySelectorAll(selector);
-    for (i = 0; i < groups.length; i++) {
-      groups[i].hidden = groups[i].querySelectorAll(rowSelector + ":not([hidden])").length === 0;
+  function each(list, fn) { for (var k = 0; k < list.length; k++) { fn(list[k]); } }
+  function setPastVisible(month, visible) {
+    each(month.querySelectorAll("li.event"), function (row) {
+      row.hidden = !visible && row.getAttribute("data-end") < today;
+    });
+    each(month.querySelectorAll("div.day"), function (day) {
+      day.hidden = day.querySelectorAll("li.event:not([hidden])").length === 0;
+    });
+  }
+  each(months, function (month) {
+    var rows = month.querySelectorAll("li.event");
+    var gone = 0;
+    each(rows, function (row) { if (row.getAttribute("data-end") < today) { gone++; } });
+    var coming = rows.length - gone;
+    var count = month.querySelector(".month-count");
+    month.open = false;
+    if (coming === 0) {
+      month.className += " past";
+      count.textContent = rows.length + " tidigare";
+      return;
     }
-  }
-  var rows = document.querySelectorAll("li.event");
-  var upcoming = 0;
-  for (i = 0; i < rows.length; i++) {
-    rows[i].hidden = rows[i].getAttribute("data-end") < today;
-    if (!rows[i].hidden) { upcoming++; }
-  }
-  hideEmpty("div.day", "li.event");
-  hideEmpty("section.month", "li.event");
-  if (upcoming === 0) { document.getElementById("no-upcoming").hidden = false; }
-  var pastRows = document.querySelectorAll("ul.past li");
-  var gone = 0;
-  for (i = 0; i < pastRows.length; i++) {
-    pastRows[i].hidden = pastRows[i].getAttribute("data-end") >= today;
-    if (!pastRows[i].hidden) { gone++; }
-  }
-  hideEmpty("div.past-month", "ul.past li");
-  if (gone > 0) {
-    document.getElementById("archive-count").textContent = "(" + gone + ")";
-    document.getElementById("archive").hidden = false;
-  }
+    count.textContent = coming + " kommande";
+    if (current) { return; }
+    current = month;
+    month.className += " current";
+    if (gone > 0) {
+      var button = month.querySelector(".toggle-past");
+      var shown = false;
+      var label = function () {
+        button.textContent = (shown ? "Dölj" : "Visa") + " tidigare i " + month.getAttribute("data-name") + " (" + gone + ")";
+        button.setAttribute("aria-expanded", shown ? "true" : "false");
+      };
+      label();
+      setPastVisible(month, false);
+      month.querySelector(".month-past").hidden = false;
+      button.addEventListener("click", function () {
+        shown = !shown;
+        setPastVisible(month, shown);
+        label();
+      });
+    }
+  });
+  if (current) { current.open = true; } else { document.getElementById("no-upcoming").hidden = false; }
+  each(months, function (month) {
+    month.addEventListener("toggle", function () {
+      if (!month.open) { return; }
+      each(months, function (other) { if (other !== month) { other.open = false; } });
+    });
+  });
 })();
 </script>
 </div>
