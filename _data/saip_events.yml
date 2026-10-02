@@ -15,15 +15,93 @@
   url: https://www.ostersund.se/naringsliv-och-arbete/aktivitetskalender-naringsliv-och-arbete/2026-06-12-forelasning-for-dig-som-kvinna-och-foretagare--anvandbar-ai-i-vardagen.html
   category: ai
 
-- title: Northern Devs Week
+- title: "Northern Devs Week: Små förändringar – stor effekt"
   start: 2026-10-12
-  end: 2026-10-15
-  time: "12:00–13:00 och från 16:30 varje dag"
+  time: "12:00–13:00"
   place: Östersund
-  venue: hos värdföretagen
-  organiser: Northern Tech Republic
-  url: https://www.northerntechrepublic.com/ndw
+  venue: "Skatteverket, Forskarens väg 13, hus UF"
+  organiser: Skatteverket
+  url: https://www.eventbrite.com/e/northern-devs-week-sma-forandringar-stor-effekt-tickets-2002116882491
   category: tech
+  cost: Gratis
+
+- title: "Northern Devs Week: Framväxten av den intelligenta verksamheten – AI blir inte smartare än sin kontext"
+  start: 2026-10-12
+  time: "16:30–18:30"
+  place: Östersund
+  venue: "Sogeti, Kyrkgatan 52"
+  organiser: Sogeti
+  url: https://www.eventbrite.com/e/nortern-devs-week-framvaxten-av-den-intelligenta-verksamheten-tickets-2002020551362
+  category: ai
+  cost: Gratis
+
+- title: "Northern Devs Week: När AI ökar utvecklingstakten flyttar flaskhalsen"
+  start: 2026-10-13
+  time: "12:00–13:00"
+  place: Östersund
+  venue: "Tegelmagasinet, Biblioteksgatan 9"
+  organiser: Forefront
+  url: https://www.eventbrite.se/e/northern-devs-week-nar-ai-okar-utvecklingstakten-flyttar-flaskhalsen-tickets-2001326935739
+  category: ai
+  cost: Gratis
+
+- title: "Northern Devs Week: AI-driven utveckling – är hypen verklig?"
+  start: 2026-10-13
+  time: "16:30–19:30"
+  place: Östersund
+  venue: "Knowit, Rådhusgatan 56"
+  organiser: Knowit
+  url: https://www.eventbrite.com/e/northern-devs-week-knowit-tickets-2001581773967
+  category: ai
+  cost: Gratis
+
+- title: "Northern Devs Week: Att designa med AI: från prompt till produktion"
+  start: 2026-10-14
+  time: "08:00–09:00"
+  place: Östersund
+  venue: "Adeprimo, Zätagränd 11"
+  organiser: Adeprimo
+  url: https://www.northerntechrepublic.com/ndw
+  category: ai
+
+- title: "Northern Devs Week: AI som utvecklarkollega: Vad har fungerat för oss i praktiken?"
+  start: 2026-10-14
+  time: "12:00–13:00"
+  place: Östersund
+  venue: "Sopra Steria, Storgatan 39"
+  organiser: Sopra Steria
+  url: https://www.eventbrite.com/e/northern-devs-week-ai-som-utvecklarkollega-biljetter-2001213641874
+  category: ai
+  cost: Gratis
+
+- title: "Northern Devs Week: Riskerar din app att ersättas av en prompt?"
+  start: 2026-10-14
+  time: "16:30–17:30"
+  place: Östersund
+  venue: "Framna, Samuel Permans gata 7"
+  organiser: Framna
+  url: https://www.eventbrite.com/e/riskerar-din-app-att-ersattas-av-en-prompt-tickets-2001879979909
+  category: ai
+  cost: Gratis
+
+- title: "Northern Devs Week: SSG lyfter kreativitet och innovation"
+  start: 2026-10-15
+  time: "12:00–13:00"
+  place: Östersund
+  venue: "Gomorron Östersund, Prästgatan 42"
+  organiser: SSG
+  url: https://www.eventbrite.se/e/northern-devs-week-ssg-lyfter-kreativitet-och-innovation-tickets-2002112065082
+  category: tech
+  cost: Gratis
+
+- title: "Northern Devs Week: After work"
+  start: 2026-10-15
+  time: "17:00–22:00"
+  place: Östersund
+  organiser: Samling Näringsliv
+  url: https://www.eventbrite.se/e/northern-devs-week-after-work-tickets-2001839468739
+  category: tech
+  cost: Gratis
 
 - title: Säkra ditt företag mot cyberhot – kunskapsdag i Östersund
   start: 2026-10-20

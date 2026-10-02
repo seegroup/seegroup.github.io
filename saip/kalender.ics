@@ -2,7 +2,9 @@
 layout: null
 permalink: /saip/kalender.ics
 ---
-{%- assign events = site.data.saip_events | sort: "start" -%}
+{%- assign days = site.data.saip_events | group_by_exp: "e", "e.start | date: '%Y-%m-%d'" | sort: "name" -%}
+{%- assign events = "" | split: "" -%}
+{%- for day in days -%}{%- assign items = day.items | sort: "time" -%}{%- assign events = events | concat: items -%}{%- endfor -%}
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//SAIP//Kalender//SV
