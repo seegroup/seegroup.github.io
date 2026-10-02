@@ -4,6 +4,10 @@ title: SAIP
 
 # SAIP – Software and AI Transformation Platform
 
+<div class="card" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem;">
+  <p style="margin: 0;"><b>SAIP has its own website.</b> Information for companies and organisations in Jämtland Härjedalen, in Swedish, is at <a href="{{ '/saip/' | relative_url }}">saip.se →</a></p>
+</div>
+
 <p data-translate="saip-intro">SAIP builds a regional arena for software and AI transformation in Jämtland Härjedalen. The project brings together companies, the public sector, researchers and students to develop new knowledge, build collaborations and strengthen the region's ability to plan and carry out AI-related change.</p>
 
 <p data-translate="saip-target">The primary target group is companies in the region, in particular small and medium-sized enterprises that meet growing digitalisation needs without in-house resources for advanced software development or AI. Activities include a structured needs analysis, workshops and seminars, and a recurring participant-driven unconference with engagement from the national software engineering research community.</p>

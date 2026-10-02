@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% if page.title %}{{ page.title }} · {% endif %}SAIP</title>
+  <meta name="description" content="{{ page.description | default: 'SAIP – Software and AI Transformation Platform. Mittuniversitetets projekt för mjukvara och AI i Jämtlands län, 2026–2029.' }}" />
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --surface: #ffffff;
+      --text: #1f2a2e;
+      --muted: #5b6770;
+      --accent: #0f4c5c;
+      --accent-dark: #0b3a46;
+      --line: #dcd7cd;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+    }
+    a { color: var(--accent); }
+    a:hover { color: var(--accent-dark); }
+    .wrap { max-width: 42rem; margin: 0 auto; padding: 0 1.25rem; }
+    .site-header { background: var(--accent); color: #fff; }
+    .site-header .wrap { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem 1.5rem; padding-top: 1.1rem; padding-bottom: 1.1rem; }
+    .brand { color: #fff; text-decoration: none; display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap; }
+    .brand-name { font-size: 1.6rem; font-weight: 700; letter-spacing: 0.08em; }
+    .brand-tag { font-size: 0.9rem; opacity: 0.9; }
+    .site-nav a { color: #fff; text-decoration: none; margin-left: 1.25rem; font-size: 0.95rem; border-bottom: 1px solid transparent; }
+    .site-nav a:hover, .site-nav a.active { border-bottom-color: #fff; color: #fff; }
+    main { padding: 2rem 0 3rem; }
+    h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 1.25rem; color: var(--accent-dark); }
+    h2 { font-size: 1.3rem; margin: 2.25rem 0 0.75rem; color: var(--accent-dark); }
+    p { margin: 0 0 1rem; }
+    .cta {
+      display: block;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 1rem 1.25rem;
+      border-radius: 0.5rem;
+      margin: 1.5rem 0;
+    }
+    .cta:hover { background: var(--accent-dark); color: #fff; }
+    .box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 0.5rem;
+      padding: 1.25rem 1.25rem 0.25rem;
+      margin: 1.5rem 0;
+    }
+    .box .cta { margin-bottom: 1rem; }
+    details { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 0.75rem 0; margin: 1.5rem 0; font-size: 0.95rem; color: var(--muted); }
+    summary { cursor: pointer; color: var(--text); font-weight: 600; }
+    details p { margin-top: 0.75rem; }
+    .small { font-size: 0.95rem; color: var(--muted); }
+    .site-footer { border-top: 1px solid var(--line); background: var(--surface); padding: 1.75rem 0 2.25rem; font-size: 0.9rem; color: var(--muted); }
+    .funders { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 2.5rem; margin: 0 0 1.5rem; }
+    .funder { display: flex; flex-direction: column; gap: 0.35rem; }
+    .funder img { display: block; height: auto; }
+    .funder-eu img { width: 260px; max-width: 100%; }
+    .funder-rjh img { width: 240px; max-width: 100%; }
+    .funder-label { font-size: 0.85rem; color: var(--text); }
+    .site-footer p { margin: 0 0 0.5rem; }
+    @media (max-width: 480px) {
+      .brand-name { font-size: 1.4rem; }
+      h1 { font-size: 1.6rem; }
+      .site-nav a { margin-left: 0; margin-right: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="{{ '/saip/' | relative_url }}">
+        <span class="brand-name">SAIP</span>
+        <span class="brand-tag">Software and AI Transformation Platform</span>
+      </a>
+      <nav class="site-nav" aria-label="Huvudmeny">
+        <a href="{{ '/saip/' | relative_url }}" class="{% if page.url == '/saip/' %}active{% endif %}">Om projektet</a>
+        <a href="{{ '/saip/villvetamer/' | relative_url }}" class="{% if page.url contains 'villvetamer' %}active{% endif %}">Vill veta mer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="funders">
+        <div class="funder funder-eu">
+          <img src="{{ '/assets/images/eu-medfinansieras.svg' | relative_url }}" alt="Europeiska unionens flagga med texten Medfinansieras av Europeiska unionen" />
+        </div>
+        <div class="funder funder-rjh">
+          <span class="funder-label">Medfinansieras av</span>
+          <img src="{{ '/assets/images/region-jamtland-harjedalen.svg' | relative_url }}" alt="Region Jämtland Härjedalens logotyp" />
+        </div>
+      </div>
+      <p>SAIP drivs av forskargruppen <a href="{{ '/' | relative_url }}">SEE, Software Engineering and Education</a>, vid Mittuniversitetet. Projektet finansieras av Europeiska socialfonden+ genom Svenska ESF-rådet och medfinansieras av Region Jämtland Härjedalen.</p>
+      <p>Kontakt: Felix Dobslaw, projektledare, <a href="mailto:felix.dobslaw@miun.se">felix.dobslaw@miun.se</a></p>
+    </div>
+  </footer>
+</body>
+</html>
