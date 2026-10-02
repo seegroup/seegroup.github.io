@@ -20,7 +20,8 @@ UID:{{ e.start | date: "%Y%m%d" }}-{{ e.title | slugify: "latin" }}@saip
 DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
 DTSTART;VALUE=DATE:{{ e.start | date: "%Y%m%d" }}
 DTEND;VALUE=DATE:{{ last_day | date: "%s" | plus: 129600 | date: "%Y%m%d" }}
-SUMMARY:{{ e.title | replace: "\", "\\" | replace: ",", "\," | replace: ";", "\;" }}
+{%- capture what %}{% if e.series %}{{ e.series }}: {% endif %}{{ e.title }}{% endcapture %}
+SUMMARY:{{ what | replace: "\", "\\" | replace: ",", "\," | replace: ";", "\;" }}
 LOCATION:{{ where | replace: "\", "\\" | replace: ",", "\," | replace: ";", "\;" }}
 DESCRIPTION:{{ about | replace: "\", "\\" | replace: ",", "\," | replace: ";", "\;" }}
 URL:{{ e.url }}

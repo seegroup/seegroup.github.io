@@ -2,7 +2,7 @@
 # Bara evenemang om mjukvara, AI, digitalisering och teknik.
 # Alltid: title, start (ISO-datum), time, place, organiser, url (arrangörens egen sida),
 # category (ai, tech, digitalisering, saip).
-# När det finns: end (flerdagars), venue, cost (pris, eller "Gratis" när sidan säger det),
+# När det finns: series (namnet på veckan eller serien som passet ingår i), end (flerdagars), venue, cost (pris, eller "Gratis" när sidan säger det),
 # deadline (sista anmälningsdag, ISO-datum), saip (true för SAIP:s egna), note (en kort rad).
 # Alla uppgifter nedan lästes på arrangörens sida den 2 oktober 2026.
 
@@ -15,27 +15,30 @@
   url: https://www.ostersund.se/naringsliv-och-arbete/aktivitetskalender-naringsliv-och-arbete/2026-06-12-forelasning-for-dig-som-kvinna-och-foretagare--anvandbar-ai-i-vardagen.html
   category: ai
 
-- title: "Northern Devs Week: Små förändringar – stor effekt"
+- title: "Små förändringar – stor effekt"
+  series: Northern Devs Week
   start: 2026-10-12
   time: "12:00–13:00"
   place: Östersund
-  venue: "Skatteverket, Forskarens väg 13, hus UF"
+  venue: "Forskarens väg 13, hus UF"
   organiser: Skatteverket
   url: https://www.eventbrite.com/e/northern-devs-week-sma-forandringar-stor-effekt-tickets-2002116882491
   category: tech
   cost: Gratis
 
-- title: "Northern Devs Week: Framväxten av den intelligenta verksamheten – AI blir inte smartare än sin kontext"
+- title: "Framväxten av den intelligenta verksamheten – AI blir inte smartare än sin kontext"
+  series: Northern Devs Week
   start: 2026-10-12
   time: "16:30–18:30"
   place: Östersund
-  venue: "Sogeti, Kyrkgatan 52"
+  venue: "Kyrkgatan 52"
   organiser: Sogeti
   url: https://www.eventbrite.com/e/nortern-devs-week-framvaxten-av-den-intelligenta-verksamheten-tickets-2002020551362
   category: ai
   cost: Gratis
 
-- title: "Northern Devs Week: När AI ökar utvecklingstakten flyttar flaskhalsen"
+- title: "När AI ökar utvecklingstakten flyttar flaskhalsen"
+  series: Northern Devs Week
   start: 2026-10-13
   time: "12:00–13:00"
   place: Östersund
@@ -45,46 +48,51 @@
   category: ai
   cost: Gratis
 
-- title: "Northern Devs Week: AI-driven utveckling – är hypen verklig?"
+- title: "AI-driven utveckling – är hypen verklig?"
+  series: Northern Devs Week
   start: 2026-10-13
   time: "16:30–19:30"
   place: Östersund
-  venue: "Knowit, Rådhusgatan 56"
+  venue: "Rådhusgatan 56"
   organiser: Knowit
   url: https://www.eventbrite.com/e/northern-devs-week-knowit-tickets-2001581773967
   category: ai
   cost: Gratis
 
-- title: "Northern Devs Week: Att designa med AI: från prompt till produktion"
+- title: "Att designa med AI: från prompt till produktion"
+  series: Northern Devs Week
   start: 2026-10-14
   time: "08:00–09:00"
   place: Östersund
-  venue: "Adeprimo, Zätagränd 11"
+  venue: "Zätagränd 11"
   organiser: Adeprimo
   url: https://www.northerntechrepublic.com/ndw
   category: ai
 
-- title: "Northern Devs Week: AI som utvecklarkollega: Vad har fungerat för oss i praktiken?"
+- title: "AI som utvecklarkollega: Vad har fungerat för oss i praktiken?"
+  series: Northern Devs Week
   start: 2026-10-14
   time: "12:00–13:00"
   place: Östersund
-  venue: "Sopra Steria, Storgatan 39"
+  venue: "Storgatan 39"
   organiser: Sopra Steria
   url: https://www.eventbrite.com/e/northern-devs-week-ai-som-utvecklarkollega-biljetter-2001213641874
   category: ai
   cost: Gratis
 
-- title: "Northern Devs Week: Riskerar din app att ersättas av en prompt?"
+- title: "Riskerar din app att ersättas av en prompt?"
+  series: Northern Devs Week
   start: 2026-10-14
   time: "16:30–17:30"
   place: Östersund
-  venue: "Framna, Samuel Permans gata 7"
+  venue: "Samuel Permans gata 7"
   organiser: Framna
   url: https://www.eventbrite.com/e/riskerar-din-app-att-ersattas-av-en-prompt-tickets-2001879979909
   category: ai
   cost: Gratis
 
-- title: "Northern Devs Week: SSG lyfter kreativitet och innovation"
+- title: "SSG lyfter kreativitet och innovation"
+  series: Northern Devs Week
   start: 2026-10-15
   time: "12:00–13:00"
   place: Östersund
@@ -94,7 +102,8 @@
   category: tech
   cost: Gratis
 
-- title: "Northern Devs Week: After work"
+- title: "After work"
+  series: Northern Devs Week
   start: 2026-10-15
   time: "17:00–22:00"
   place: Östersund
