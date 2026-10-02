@@ -334,3 +334,66 @@
   cost: 500 kr exkl. moms
   deadline: 2027-01-19
 
+# September 2026, då SAIP startade. Lagt till i efterhand, lästa på arrangörernas sidor den 2 oktober 2026.
+
+- title: "AI-studion: Ansvarsfull AI-användning i praktiken"
+  start: 2026-09-09
+  time: "09:00–10:25"
+  place: Online
+  organiser: "AI Sweden"
+  url: https://www.ai.se/sv/event/ansvarsfull-ai-vad-innebar-det-i-praktiken
+  category: ai
+
+- title: "In conversation: Glocal perspectives on AI adoption across sectors"
+  start: 2026-09-16
+  time: "13:00–14:00"
+  place: Online
+  organiser: "AI Sweden"
+  url: https://www.ai.se/sv/event/conversation-glocal-perspectives-ai-adoption-across-sectors
+  category: ai
+  cost: Gratis
+
+- title: "Forskningsseminarium e-hälsa: Är LLM redo att ta plats i hälso- och sjukvårdens administration?"
+  start: 2026-09-17
+  time: "15:00–16:00"
+  place: Online
+  organiser: "Health Data Sweden"
+  url: https://www.healthdatasweden.eu/eventkalender/forskningsseminarium-e-halsa-17-sep
+  category: ai
+
+- title: "Digital teknik i fastighetssektorn"
+  start: 2026-09-18
+  time: "10:30–13:30"
+  place: Östersund
+  venue: "C:nen, Prästgatan 39"
+  organiser: "Bron Innovation"
+  url: https://www.broninnovation.se/eventkalender/digital-teknik-i-fastighetssektorn-18sept
+  category: tech
+  cost: Gratis
+
+- title: "AI i välfärden – vad borde vi egentligen forska om?"
+  start: 2026-09-25
+  time: "10:00–10:30"
+  place: Online
+  organiser: "WASP-HS"
+  url: https://wasp-hs.org/event3/ai-i-valfarden-vad-borde-vi-egentligen-forska-om/
+  category: ai
+
+- title: "Pulsen på TechSverige – technätverk Östersund"
+  start: 2026-09-25
+  time: "15:00–17:00"
+  place: Östersund
+  venue: "Bron Innovation, Samuel Permans gata 7"
+  organiser: "Bron Innovation"
+  url: https://www.broninnovation.se/eventkalender/natverkstraff-techsverige-25sept
+  category: tech
+  cost: Gratis
+
+- title: "Så påverkar AI svensk ekonomi och arbetsmarknad – webbinarium och lansering av ny rapport om AI"
+  start: 2026-09-30
+  time: "09:00–10:15"
+  place: Online
+  organiser: "Tillväxtanalys"
+  url: https://sv-se.eu.invajo.com/event/tillvaxtanalys/sapaverkaraisvenskekonomiocharbetsmarknad
+  category: ai
+
