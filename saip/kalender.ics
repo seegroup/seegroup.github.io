@@ -12,7 +12,7 @@ X-WR-CALNAME:SAIP – tech och AI i Jämtlands län
 {%- for e in events %}
 {%- assign last_day = e.end | default: e.start %}
 {%- capture where %}{{ e.place }}{% if e.venue %}, {{ e.venue }}{% endif %}{% endcapture %}
-{%- capture about %}{% if e.time %}{{ e.time }}. {% endif %}Arrangör: {{ e.organiser }}.{% if e.note %} {{ e.note }}.{% endif %} {{ e.url }}{% endcapture %}
+{%- capture about %}{{ e.time }}. Arrangör: {{ e.organiser }}.{% if e.cost %} {{ e.cost }}.{% endif %}{% if e.deadline %} Anmälan senast {{ e.deadline | date: "%Y-%m-%d" }}.{% endif %}{% if e.note %} {{ e.note }}{% endif %} {{ e.url }}{% endcapture %}
 BEGIN:VEVENT
 UID:{{ e.start | date: "%Y%m%d" }}-{{ e.title | slugify: "latin" }}@saip
 DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}

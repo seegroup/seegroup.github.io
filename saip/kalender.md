@@ -42,8 +42,10 @@ permalink: /saip/kalender/
 </div>
 <div class="event-body">
 <a class="event-title" href="{{ e.url }}">{{ e.title | escape }}</a>{% if e.saip %}<span class="mark" title="Ordnas av SAIP">SAIP</span>{% endif %}
-<span class="small">{% if e.time %}{{ e.time }} · {% endif %}{{ e.place }}{% if e.venue %}, {{ e.venue | escape }}{% endif %} · {{ e.organiser | escape }}</span>
-{% if e.note %}<span class="small">{{ e.note | escape }}</span>{% endif %}
+<span class="small">{{ e.time }} · {{ e.place }}{% if e.venue %}, {{ e.venue | escape }}{% endif %}</span>
+<span class="small">{{ e.organiser | escape }}</span>
+{% if e.cost or e.deadline %}{% assign dd = e.deadline | date: "%-d" %}{% assign dm = e.deadline | date: "%-m" | minus: 1 %}<span class="small">{% if e.cost %}{{ e.cost | escape }}{% endif %}{% if e.cost and e.deadline %} · {% endif %}{% if e.deadline %}Anmälan senast {{ dd }} {{ month_short[dm] }}{% endif %}</span>
+{% endif %}{% if e.note %}<span class="small">{{ e.note | escape }}</span>{% endif %}
 </div>
 </li>
 {% if forloop.last %}</ul>
