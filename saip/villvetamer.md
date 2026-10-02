@@ -5,7 +5,7 @@ description: Lämna namn och e-post så bjuder SAIP in dig till seminarier och t
 permalink: /saip/villvetamer/
 # Länk till anmälningsformuläret i Microsoft Forms (Mittuniversitetets miljö).
 # Tom form_url gör att knappen i stället öppnar ett mejl till Felix.
-form_url: ""
+form_url: "https://forms.cloud.microsoft/e/wDK96bY4Lz"
 # Valfria förifyllda länkar per utdelningstillfälle. Nyckeln är värdet på ?k= i QR-koden.
 form_urls:
   lantbruk: ""
