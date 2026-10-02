@@ -1,5 +1,6 @@
 # Evenemang i SAIP:s kalender (/saip/kalender/). En post per evenemang.
-# Bara evenemang om mjukvara, AI, digitalisering och teknik.
+# Evenemang i Jämtlands län om mjukvara, AI, digitalisering och teknik,
+# och nationella evenemang om AI som hålls enbart online.
 # Alltid: title, start (ISO-datum), time, place, organiser, url (arrangörens egen sida),
 # category (ai, tech, digitalisering, saip).
 # När det finns: series (namnet på veckan eller serien som passet ingår i), series_url (seriens egen sida), end (flerdagars), venue, cost (pris, eller "Gratis" när sidan säger det),
@@ -149,3 +150,187 @@
   organiser: Mittuniversitetet, Forum för digitalisering och CER
   url: https://www.miun.se/Forskning/forskargrupper/fodi/evenemang/2026-11/upphandling-avgor-framtidens-digitalisering--men-varfor-gar-det-sa-ofta-fel/
   category: digitalisering
+
+# Nationella evenemang om AI, enbart online. Lästa på arrangörernas sidor den 2 oktober 2026.
+
+- title: "Från chat till agent: kom igång med Claude Code"
+  start: 2026-10-05
+  time: "12:00–12:35"
+  place: Online
+  organiser: "BG Institute"
+  url: https://www.bginstitute.se/webbinarium/fran-chat-till-agent-kom-igang-med-claude-code/
+  category: ai
+  cost: Gratis
+
+- title: "AI och robotar i äldreomsorgen"
+  start: 2026-10-06
+  time: "13:00–15:15"
+  place: Online
+  organiser: "SKR"
+  url: https://skr.se/evenemang/evenemangskalender/aiochrobotarialdreomsorgen.11745.html
+  category: ai
+  cost: Gratis
+  deadline: 2026-10-05
+
+- title: "AI och investeringar: hype, substans och allt däremellan"
+  start: 2026-10-07
+  time: "12:00–13:00"
+  place: Online
+  organiser: "AI Sweden"
+  url: https://www.ai.se/sv/event/ai-och-investeringar-hype-substans-och-allt-daremellan
+  category: ai
+
+- title: "Lunchseminarium med Tove Engvall: klimat, AI och risker"
+  start: 2026-10-13
+  time: "12:00–12:45"
+  place: Online
+  organiser: "Mittuniversitetet, RCR"
+  url: https://www.miun.se/Forskning/forskningscentra/rcr/kalendarium/2026-3/lunchseminarium-med-tove-engvall/
+  category: ai
+
+- title: "AI Governance – så skapar du effektiv styrning av AI"
+  start: 2026-10-14
+  time: "12:00–12:35"
+  place: Online
+  organiser: "BG Institute"
+  url: https://www.bginstitute.se/webbinarium/ai-governance-sa-skapar-du-effektiv-styrning-av-ai/
+  category: ai
+  cost: Gratis
+
+- title: "AI-studion: Från sökmotorer till agenter – nu förändras kundernas köpbeteende"
+  start: 2026-10-15
+  time: "09:00–10:30"
+  place: Online
+  organiser: "AI Sweden"
+  url: https://www.ai.se/sv/event/fran-sokmotorer-till-agenter-nu-forandras-kundernas-kopbeteende
+  category: ai
+  cost: Gratis
+
+- title: "AI förändrar jobbet – vilka förmågor behöver du nu?"
+  start: 2026-10-16
+  time: "12:00–12:50"
+  place: Online
+  organiser: "Sveriges Ingenjörer"
+  url: https://www.sverigesingenjorer.se/kalendarium/261016-ai-forandrar-jobbet--vilka-formagor-behover-du-nu/
+  category: ai
+
+- title: "Säker AI-användning i vården"
+  start: 2026-10-21
+  time: "10:00–11:00"
+  place: Online
+  organiser: "IMY och Läkemedelsverket"
+  url: https://www.imy.se/verksamhet/vagledning-och-stod/utbildningar-och-konferenser/saker-ai-anvandning-i-varden/
+  category: ai
+  cost: Gratis
+
+- title: "Workshop – AI:s framtida påverkan på vården"
+  start: 2026-10-22
+  time: "10:00–12:00"
+  place: Online
+  organiser: "Health Data Sweden och KTH"
+  url: https://www.healthdatasweden.eu/eventkalender/workshop-ais-framtida-paverkan-pa-varden
+  category: ai
+
+- title: "Kan AI-infrastruktur styras i välfärden?"
+  start: 2026-10-23
+  time: "10:00–10:30"
+  place: Online
+  organiser: "WASP-HS"
+  url: https://wasp-hs.org/event3/kan-ai-infrastruktur-styras-i-valfarden/
+  category: ai
+
+- title: "GenAI Lunch n' Learn: Meet your AI coworker (på engelska)"
+  start: 2026-10-23
+  time: "12:00–13:00"
+  place: Online
+  organiser: "AI Sweden"
+  url: https://www.ai.se/sv/event/gen-ai-lunch-n-learn-meet-your-ai-coworker-pa-engelska
+  category: ai
+
+- title: "När AI införs i välfärden räcker inte principer"
+  start: 2026-11-06
+  time: "10:00–10:30"
+  place: Online
+  organiser: "WASP-HS"
+  url: https://wasp-hs.org/event3/nar-ai-infors-i-varden-racker-inte-principer/
+  category: ai
+
+- title: "Lunchseminarium med Niklas Humble: Prompt Injections in Higher Education"
+  start: 2026-11-11
+  time: "12:00–12:45"
+  place: Online
+  organiser: "Mittuniversitetet, RCR"
+  url: https://www.miun.se/Forskning/forskningscentra/rcr/kalendarium/2026-3/lunchseminarium-niklas-humble/
+  category: ai
+
+- title: "AI i HR-arbetet – del 1: Från prompt till arbetsflöde"
+  start: 2026-11-13
+  time: "10:00–11:30"
+  place: Online
+  organiser: "SKR"
+  url: https://skr.se/evenemang/evenemangskalender/aiihrarbetetdel1franprompttillarbetsflode.11780.html
+  category: ai
+  cost: 500 kr exkl. moms
+  deadline: 2026-11-11
+
+- title: "När AI skriver koden: så förändras utvecklarens roll i grunden"
+  start: 2026-11-13
+  time: "12:00–12:50"
+  place: Online
+  organiser: "Sveriges Ingenjörer"
+  url: https://www.sverigesingenjorer.se/kalendarium/261113-nar-ai-skriver-koden-sa-forandras-utvecklarens-roll-i-grunden/
+  category: ai
+
+- title: "GenAI Lunch n' Learn: The always-on AI agent (på engelska)"
+  start: 2026-11-20
+  time: "12:00–13:00"
+  place: Online
+  organiser: "AI Sweden"
+  url: https://www.ai.se/sv/event/genai-lunch-n-learn-always-ai-agent-pa-engelska
+  category: ai
+
+- title: "AI för ekonomer – smartare arbetsflöden och nya möjligheter"
+  start: 2026-11-25
+  time: "12:00–12:35"
+  place: Online
+  organiser: "BG Institute"
+  url: https://www.bginstitute.se/webbinarium/ai-for-ekonomer-smartare-arbetsfloden-och-nya-mojligheter/
+  category: ai
+  cost: Gratis
+
+- title: "AI i HR-arbetet – del 2: AI som samarbetspartner"
+  start: 2026-12-02
+  time: "13:00–14:30"
+  place: Online
+  organiser: "SKR"
+  url: https://skr.se/evenemang/evenemangskalender/aiihrarbetetdel2aisomsamarbetspartner.11781.html
+  category: ai
+  cost: 500 kr exkl. moms
+  deadline: 2026-11-30
+
+- title: "GenAI Lunch n' Learn: How to lead a team of AI agents"
+  start: 2026-12-04
+  time: "12:00–13:00"
+  place: Online
+  organiser: "AI Sweden"
+  url: https://www.ai.se/sv/event/genai-lunch-n-learn-how-lead-team-ai-agents
+  category: ai
+
+- title: "Digital morgonträff – AI förändrar spelplanen – är ditt företag redo?"
+  start: 2026-12-10
+  time: "07:45–08:45"
+  place: Online
+  organiser: "Luleå tekniska universitet"
+  url: https://www.ltu.se/aktuellt/kalender/event/2026-06-18-digital-morgontraff---ai-forandrar-spelplanen---ar-ditt-foretag-redo
+  category: ai
+
+- title: "AI i HR-arbetet – del 3: Ansvarsfull AI-användning"
+  start: 2027-01-21
+  time: "13:00–14:30"
+  place: Online
+  organiser: "SKR"
+  url: https://skr.se/evenemang/evenemangskalender/aiihrarbetetdel3ansvarsfullaianvandning.11782.html
+  category: ai
+  cost: 500 kr exkl. moms
+  deadline: 2027-01-19
+

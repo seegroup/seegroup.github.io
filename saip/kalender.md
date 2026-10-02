@@ -1,13 +1,13 @@
 ---
 layout: saip
 title: Kalender
-description: Kommande evenemang om mjukvara, AI, digitalisering och teknik i Jämtlands län, samlade på ett ställe.
+description: Kommande evenemang om mjukvara, AI, digitalisering och teknik i Jämtlands län, och nationella webbinarier om AI, samlade på ett ställe.
 permalink: /saip/kalender/
 ---
 
 # Kalender
 
-<p>Här samlar vi kommande evenemang om mjukvara, AI, digitalisering och teknik i Jämtlands län, oavsett vem som ordnar dem. Varje rad länkar till arrangörens egen sida, där du hittar program och anmälan. Saknar du något? <a href="#tipsa">Tipsa oss gärna</a>.</p>
+<p>Här samlar vi kommande evenemang om mjukvara, AI, digitalisering och teknik i Jämtlands län, oavsett vem som ordnar dem. Listan har också nationella webbinarier om AI som du kan följa på nätet. Varje rad länkar till arrangörens egen sida, där du hittar program och anmälan. Saknar du något? <a href="#tipsa">Tipsa oss gärna</a>.</p>
 
 {% assign days = site.data.saip_events | group_by_exp: "e", "e.start | date: '%Y-%m-%d'" | sort: "name" %}
 {% assign month_names = "Januari,Februari,Mars,April,Maj,Juni,Juli,Augusti,September,Oktober,November,December" | split: "," %}
