@@ -2,8 +2,10 @@
 # Bara evenemang om mjukvara, AI, digitalisering och teknik.
 # Alltid: title, start (ISO-datum), time, place, organiser, url (arrangörens egen sida),
 # category (ai, tech, digitalisering, saip).
-# När det finns: series (namnet på veckan eller serien som passet ingår i), end (flerdagars), venue, cost (pris, eller "Gratis" när sidan säger det),
+# När det finns: series (namnet på veckan eller serien som passet ingår i), series_url (seriens egen sida), end (flerdagars), venue, cost (pris, eller "Gratis" när sidan säger det),
 # deadline (sista anmälningsdag, ISO-datum), saip (true för SAIP:s egna), note (en kort rad).
+# Ta inte bort passerade evenemang. Sidan flyttar dem själv till "Tidigare evenemang",
+# där en serie visas som en rad.
 # Alla uppgifter nedan lästes på arrangörens sida den 2 oktober 2026.
 
 - title: Användbar AI i vardagen – föreläsning för dig som kvinna och företagare
@@ -17,6 +19,7 @@
 
 - title: "Små förändringar – stor effekt"
   series: Northern Devs Week
+  series_url: https://www.northerntechrepublic.com/ndw
   start: 2026-10-12
   time: "12:00–13:00"
   place: Östersund
@@ -28,6 +31,7 @@
 
 - title: "Framväxten av den intelligenta verksamheten – AI blir inte smartare än sin kontext"
   series: Northern Devs Week
+  series_url: https://www.northerntechrepublic.com/ndw
   start: 2026-10-12
   time: "16:30–18:30"
   place: Östersund
@@ -39,6 +43,7 @@
 
 - title: "När AI ökar utvecklingstakten flyttar flaskhalsen"
   series: Northern Devs Week
+  series_url: https://www.northerntechrepublic.com/ndw
   start: 2026-10-13
   time: "12:00–13:00"
   place: Östersund
@@ -50,6 +55,7 @@
 
 - title: "AI-driven utveckling – är hypen verklig?"
   series: Northern Devs Week
+  series_url: https://www.northerntechrepublic.com/ndw
   start: 2026-10-13
   time: "16:30–19:30"
   place: Östersund
@@ -61,6 +67,7 @@
 
 - title: "Att designa med AI: från prompt till produktion"
   series: Northern Devs Week
+  series_url: https://www.northerntechrepublic.com/ndw
   start: 2026-10-14
   time: "08:00–09:00"
   place: Östersund
@@ -71,6 +78,7 @@
 
 - title: "AI som utvecklarkollega: Vad har fungerat för oss i praktiken?"
   series: Northern Devs Week
+  series_url: https://www.northerntechrepublic.com/ndw
   start: 2026-10-14
   time: "12:00–13:00"
   place: Östersund
@@ -82,6 +90,7 @@
 
 - title: "Riskerar din app att ersättas av en prompt?"
   series: Northern Devs Week
+  series_url: https://www.northerntechrepublic.com/ndw
   start: 2026-10-14
   time: "16:30–17:30"
   place: Östersund
@@ -93,6 +102,7 @@
 
 - title: "SSG lyfter kreativitet och innovation"
   series: Northern Devs Week
+  series_url: https://www.northerntechrepublic.com/ndw
   start: 2026-10-15
   time: "12:00–13:00"
   place: Östersund
@@ -104,6 +114,7 @@
 
 - title: "After work"
   series: Northern Devs Week
+  series_url: https://www.northerntechrepublic.com/ndw
   start: 2026-10-15
   time: "17:00–22:00"
   place: Östersund

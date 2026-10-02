@@ -14,7 +14,6 @@ permalink: /saip/kalender/
 {% assign month_short = "jan,feb,mar,apr,maj,jun,jul,aug,sep,okt,nov,dec" | split: "," %}
 {% assign weekdays = "Måndag,Tisdag,Onsdag,Torsdag,Fredag,Lördag,Söndag" | split: "," %}
 <div markdown="0">
-<p id="past-control" hidden><button type="button" class="toggle-past" id="toggle-past" aria-expanded="false">Visa tidigare evenemang</button></p>
 <p id="no-upcoming" hidden>Just nu finns inga kommande evenemang i listan.</p>
 {% assign current_month = "" %}
 {% for day in days %}
@@ -54,44 +53,81 @@ permalink: /saip/kalender/
 {% if forloop.last %}</section>
 {% endif %}
 {% endfor %}
+<details id="archive" hidden>
+<summary>Tidigare evenemang <span id="archive-count"></span></summary>
+{% assign seen = "|" %}
+{% assign current_month = "" %}
+{% assign days_desc = days | reverse %}
+{% for day in days_desc %}
+{% assign items = day.items | sort: "time" | reverse %}
+{% for e in items %}
+{% assign first = e %}
+{% assign last = e %}
+{% assign count = 1 %}
+{% if e.series %}
+{% assign key = "|" | append: e.series | append: "|" %}
+{% if seen contains key %}{% continue %}{% endif %}
+{% assign seen = seen | append: e.series | append: "|" %}
+{% assign members = site.data.saip_events | where: "series", e.series | sort: "start" %}
+{% assign first = members | first %}
+{% assign last = members | last %}
+{% assign count = members.size %}
+{% endif %}
+{% assign last_day = last.end | default: last.start %}
+{% assign month_key = last_day | date: "%Y-%m" %}
+{% if month_key != current_month %}
+{% if current_month != "" %}</ul>
+</div>
+{% endif %}
+{% assign current_month = month_key %}
+{% assign m = last_day | date: "%-m" | minus: 1 %}
+<div class="past-month">
+<h3>{{ month_names[m] }} {{ last_day | date: "%Y" }}</h3>
+<ul class="past">
+{% endif %}
+{% assign d1 = first.start | date: "%-d" %}
+{% assign m1 = first.start | date: "%-m" | minus: 1 %}
+{% assign d2 = last_day | date: "%-d" %}
+{% assign m2 = last_day | date: "%-m" | minus: 1 %}
+{% assign same = false %}{% if d1 == d2 and m1 == m2 %}{% assign same = true %}{% endif %}
+<li data-end="{{ last_day | date: '%Y-%m-%d' }}"><span class="past-date">{% if same %}{{ d1 }} {{ month_short[m1] }}{% elsif m1 == m2 %}{{ d1 }}–{{ d2 }} {{ month_short[m1] }}{% else %}{{ d1 }} {{ month_short[m1] }}–{{ d2 }} {{ month_short[m2] }}{% endif %}</span><span>{% if e.series %}<a href="{{ e.series_url | default: e.url }}">{{ e.series | escape }}</a>, {{ count }} pass{% else %}<a href="{{ e.url }}">{{ e.title | escape }}</a>, {{ e.organiser | escape }}{% endif %}</span></li>
+{% endfor %}
+{% if forloop.last and current_month != "" %}</ul>
+</div>
+{% endif %}
+{% endfor %}
+</details>
 <script>
 (function () {
   var now = new Date();
   var pad = function (n) { return (n < 10 ? "0" : "") + n; };
   var today = now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate());
-  var months = document.querySelectorAll("section.month");
-  var past = [];
-  var upcoming = 0;
-  var showPast = false;
-  var i, j;
-  for (i = 0; i < months.length; i++) {
-    var rows = months[i].querySelectorAll("li.event");
-    for (j = 0; j < rows.length; j++) {
-      if (rows[j].getAttribute("data-end") < today) { past.push(rows[j]); } else { upcoming++; }
-    }
-  }
-  var days = document.querySelectorAll("div.day");
-  function hideEmpty(groups) {
+  var i;
+  function hideEmpty(selector, rowSelector) {
+    var groups = document.querySelectorAll(selector);
     for (i = 0; i < groups.length; i++) {
-      groups[i].hidden = groups[i].querySelectorAll("li.event:not([hidden])").length === 0;
+      groups[i].hidden = groups[i].querySelectorAll(rowSelector + ":not([hidden])").length === 0;
     }
   }
-  function render() {
-    for (i = 0; i < past.length; i++) { past[i].hidden = !showPast; }
-    hideEmpty(days);
-    hideEmpty(months);
+  var rows = document.querySelectorAll("li.event");
+  var upcoming = 0;
+  for (i = 0; i < rows.length; i++) {
+    rows[i].hidden = rows[i].getAttribute("data-end") < today;
+    if (!rows[i].hidden) { upcoming++; }
   }
-  render();
+  hideEmpty("div.day", "li.event");
+  hideEmpty("section.month", "li.event");
   if (upcoming === 0) { document.getElementById("no-upcoming").hidden = false; }
-  if (past.length > 0) {
-    var button = document.getElementById("toggle-past");
-    document.getElementById("past-control").hidden = false;
-    button.addEventListener("click", function () {
-      showPast = !showPast;
-      button.textContent = showPast ? "Dölj tidigare evenemang" : "Visa tidigare evenemang";
-      button.setAttribute("aria-expanded", showPast ? "true" : "false");
-      render();
-    });
+  var pastRows = document.querySelectorAll("ul.past li");
+  var gone = 0;
+  for (i = 0; i < pastRows.length; i++) {
+    pastRows[i].hidden = pastRows[i].getAttribute("data-end") >= today;
+    if (!pastRows[i].hidden) { gone++; }
+  }
+  hideEmpty("div.past-month", "ul.past li");
+  if (gone > 0) {
+    document.getElementById("archive-count").textContent = "(" + gone + ")";
+    document.getElementById("archive").hidden = false;
   }
 })();
 </script>
