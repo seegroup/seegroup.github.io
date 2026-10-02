@@ -64,6 +64,16 @@
     summary { cursor: pointer; color: var(--text); font-weight: 600; }
     details p { margin-top: 0.75rem; }
     .small { font-size: 0.95rem; color: var(--muted); }
+    .events { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+    .event { display: flex; gap: 1rem; padding: 0.85rem 0; border-bottom: 1px solid var(--line); }
+    .event-date { flex: 0 0 5.5rem; font-weight: 600; color: var(--accent-dark); line-height: 1.35; }
+    .event-date .small { display: block; font-weight: 400; }
+    .event-body { flex: 1 1 auto; min-width: 0; }
+    .event-title { font-weight: 600; }
+    .event-body .small { display: block; }
+    .mark { display: inline-block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; color: var(--accent); border: 1px solid var(--accent); border-radius: 0.25rem; padding: 0 0.35rem; margin-left: 0.35rem; vertical-align: 0.1em; }
+    .toggle-past { font: inherit; font-size: 0.95rem; color: var(--accent); background: none; border: 0; padding: 0; text-decoration: underline; cursor: pointer; }
+    [hidden] { display: none !important; }
     .site-footer { border-top: 1px solid var(--line); background: var(--surface); padding: 1.75rem 0 2.25rem; font-size: 0.9rem; color: var(--muted); }
     .funders { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 2.5rem; margin: 0 0 1.5rem; }
     .funder { display: flex; flex-direction: column; gap: 0.35rem; }
@@ -89,6 +99,7 @@
       <nav class="site-nav" aria-label="Huvudmeny">
         <a href="{{ '/saip/' | relative_url }}" class="{% if page.url == '/saip/' %}active{% endif %}">Om projektet</a>
         <a href="{{ '/saip/villvetamer/' | relative_url }}" class="{% if page.url contains 'villvetamer' %}active{% endif %}">Vill veta mer</a>
+        <a href="{{ '/saip/kalender/' | relative_url }}" class="{% if page.url contains 'kalender' %}active{% endif %}">Kalender</a>
       </nav>
     </div>
   </header>

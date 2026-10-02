@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /saip/kalender.ics
+---
+{%- assign events = site.data.saip_events | sort: "start" -%}
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SAIP//Kalender//SV
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SAIP – tech och AI i Jämtlands län
+{%- for e in events %}
+{%- assign last_day = e.end | default: e.start %}
+{%- capture where %}{{ e.place }}{% if e.venue %}, {{ e.venue }}{% endif %}{% endcapture %}
+{%- capture about %}{% if e.time %}{{ e.time }}. {% endif %}Arrangör: {{ e.organiser }}.{% if e.note %} {{ e.note }}.{% endif %} {{ e.url }}{% endcapture %}
+BEGIN:VEVENT
+UID:{{ e.start | date: "%Y%m%d" }}-{{ e.title | slugify: "latin" }}@saip
+DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
+DTSTART;VALUE=DATE:{{ e.start | date: "%Y%m%d" }}
+DTEND;VALUE=DATE:{{ last_day | date: "%s" | plus: 129600 | date: "%Y%m%d" }}
+SUMMARY:{{ e.title | replace: "\", "\\" | replace: ",", "\," | replace: ";", "\;" }}
+LOCATION:{{ where | replace: "\", "\\" | replace: ",", "\," | replace: ";", "\;" }}
+DESCRIPTION:{{ about | replace: "\", "\\" | replace: ",", "\," | replace: ";", "\;" }}
+URL:{{ e.url }}
+END:VEVENT
+{%- endfor %}
+END:VCALENDAR

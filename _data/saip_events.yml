@@ -1,0 +1,121 @@
+# Evenemang i SAIP:s kalender (/saip/kalender/). En post per evenemang.
+# Fält: title, start (ISO-datum), end (flerdagars), time, place, venue, organiser,
+# url (arrangörens egen sida), category (ai, tech, digitalisering, naringsliv, saip),
+# saip (true för SAIP:s egna), note (en kort rad).
+# Alla datum nedan lästes på arrangörens sida den 2 oktober 2026.
+
+- title: Torstamässan
+  start: 2026-10-03
+  time: "10:00–15:00"
+  place: Ås
+  venue: Torsta
+  organiser: Torsta AB
+  url: https://torsta.se/massan/
+  category: naringsliv
+  saip: false
+  note: Skogs- och lantbruksmässa. Fri entré.
+
+- title: Användbar AI i vardagen – föreläsning för dig som kvinna och företagare
+  start: 2026-10-07
+  time: "08:15–09:45"
+  place: Östersund
+  venue: Kommunhuset, ingång Södra Gröngatan
+  organiser: Östersunds kommun
+  url: https://www.ostersund.se/naringsliv-och-arbete/aktivitetskalender-naringsliv-och-arbete/2026-06-12-forelasning-for-dig-som-kvinna-och-foretagare--anvandbar-ai-i-vardagen.html
+  category: ai
+  saip: false
+
+- title: Northern Devs Week
+  start: 2026-10-12
+  end: 2026-10-15
+  time: "Lunch- och kvällspass varje dag"
+  place: Östersund
+  venue: hos värdföretagen
+  organiser: Northern Tech Republic
+  url: https://www.northerntechrepublic.com/ndw
+  category: tech
+  saip: false
+  note: Varje pass bokas för sig och har begränsat antal platser.
+
+- title: "Företagsfrukost: Framtidens Östersund – beredskap, kompetens och tillväxt"
+  start: 2026-10-14
+  time: "07:30–09:00"
+  place: Östersund
+  venue: Aulan på Österäng
+  organiser: Östersunds kommun
+  url: https://www.ostersund.se/naringsliv-och-arbete/aktivitetskalender-naringsliv-och-arbete/2026-10-02-foretagsfrukost-14-oktober.html
+  category: naringsliv
+  saip: false
+  note: Sista anmälningsdag 11 oktober
+
+- title: Turismdagen Jämtland Härjedalen
+  start: 2026-10-15
+  time: "09:00–16:30, middag på kvällen"
+  place: Östersund
+  venue: C:nen och Restaurang W
+  organiser: Jämtland Härjedalen Turism
+  url: https://jht.se/save-the-date-turismdagen-jamtland-harjedalen-15-okt-2026/
+  category: naringsliv
+  saip: false
+  note: Sista anmälningsdag 4 oktober
+
+- title: Industriforum 2026
+  start: 2026-10-20
+  time: "09:00–16:00"
+  place: Östersund
+  venue: Storsjöteatern
+  organiser: IUC Jämtland Härjedalen
+  url: https://iucjamtlandharjedalen.se/event/industriforum-2026/
+  category: naringsliv
+  saip: false
+  note: Anmälan stänger 14 oktober
+
+- title: Säkra ditt företag mot cyberhot – kunskapsdag i Östersund
+  start: 2026-10-20
+  time: "10:00–15:00"
+  place: Östersund
+  venue: Storsjöteatern och Norra Station Café
+  organiser: Bron Innovation
+  url: https://www.broninnovation.se/eventkalender/cyberforsvar-david-jacoby-20okt
+  category: tech
+  saip: false
+  note: Föreläsningen på förmiddagen ingår i Industriforum, workshopen 12:30–14:15 bokas för sig.
+
+- title: Digital jäntkraft no. 12 @Sogeti
+  start: 2026-10-21
+  time: "17:00–19:00"
+  place: Östersund
+  venue: Sogeti, Kyrkgatan 52
+  organiser: Digital Jäntkraft i Östersund
+  url: https://www.meetup.com/digital-jantkraft-i-ostersund-meetup/events/316746611/
+  category: tech
+  saip: false
+  note: Träff för kvinnor som arbetar med digital produktutveckling.
+
+- title: Guldgalan
+  start: 2026-11-05
+  time: "09:00–15:30, galakväll från 18:00"
+  place: Östersund
+  venue: Clarion Hotel Grand och Storsjöteatern
+  organiser: Guldgalan
+  url: https://www.guldgalan.se/
+  category: naringsliv
+  saip: false
+
+- title: Upphandling avgör framtidens digitalisering – men varför går det så ofta fel?
+  start: 2026-11-18
+  time: "13:00–16:00"
+  place: Online
+  organiser: Mittuniversitetet, Forum för digitalisering och CER
+  url: https://www.miun.se/Forskning/forskargrupper/fodi/evenemang/2026-11/upphandling-avgor-framtidens-digitalisering--men-varfor-gar-det-sa-ofta-fel/
+  category: digitalisering
+  saip: false
+
+- title: Åre Business Forum
+  start: 2027-04-07
+  end: 2027-04-09
+  place: Åre
+  organiser: Åre Business Forum
+  url: https://arebusinessforum.se/
+  category: naringsliv
+  saip: false
