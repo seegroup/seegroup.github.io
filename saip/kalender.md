@@ -35,7 +35,7 @@ permalink: /saip/kalender/
 {% assign day_series = nil %}
 {% if series_names.size == 1 and first.series %}{% assign day_series = first.series %}{% endif %}
 <div class="day">
-<h3><time datetime="{{ day.name }}">{{ weekdays[wd] }} {{ first.start | date: "%-d" }} {{ month_short[m1] }}</time>{% if day_series %}<span class="day-series">{{ day_series | escape }}</span>{% endif %}</h3>
+<h3><time datetime="{{ day.name }}">{{ weekdays[wd] }} {{ first.start | date: "%-d" }} {{ month_short[m1] }}</time>{% if day_series %}<span class="day-series">{{ day_series | escape }}</span>{% endif %}<span class="day-in"></span></h3>
 <ul class="events">
 {% for e in items %}
 {% assign last_day = e.end | default: e.start %}
@@ -103,6 +103,17 @@ permalink: /saip/kalender/
         label();
       });
     }
+  });
+  var midnight = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  each(document.querySelectorAll("div.day"), function (day) {
+    var d = day.querySelector("time").getAttribute("datetime").split("-");
+    var ahead = Math.round((Date.UTC(+d[0], d[1] - 1, +d[2]) - midnight) / 86400000);
+    var text = "";
+    if (ahead === 0) { text = "i dag"; }
+    else if (ahead === 1) { text = "i morgon"; }
+    else if (ahead > 1 && ahead < 14) { text = "om " + ahead + " dagar"; }
+    else if (ahead >= 14) { text = "om " + Math.round(ahead / 7) + " veckor"; }
+    day.querySelector(".day-in").textContent = text;
   });
   if (current) { current.open = true; } else { document.getElementById("no-upcoming").hidden = false; }
   each(months, function (month) {
