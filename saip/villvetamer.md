@@ -25,7 +25,7 @@ form_urls:
 
 {% assign form_href = page.form_url %}{% if form_href == "" %}{% assign form_href = "mailto:felix.dobslaw@miun.se?subject=SAIP%20%E2%80%93%20jag%20vill%20veta%20mer" %}{% endif %}
 <div markdown="0">
-<a id="form-link" class="cta" href="{{ form_href }}" {% for pair in page.form_urls %}{% if pair[1] != "" %}data-k-{{ pair[0] }}="{{ pair[1] }}" {% endif %}{% endfor %}>Intressforfrågan</a>
+<a id="form-link" class="cta" href="{{ form_href }}" {% for pair in page.form_urls %}{% if pair[1] != "" %}data-k-{{ pair[0] }}="{{ pair[1] }}" {% endif %}{% endfor %}>Intresseförfrågan</a>
 <script>
 (function () {
   var k = new URLSearchParams(location.search).get("k");
