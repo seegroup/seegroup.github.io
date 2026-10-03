@@ -11,6 +11,8 @@ PRODID:-//SAIP//Kalender//SV
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:SAIP – tech och AI i Jämtlands län
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
 {%- for e in events %}
 {%- assign last_day = e.end | default: e.start %}
 {%- capture where %}{{ e.place }}{% if e.venue %}, {{ e.venue }}{% endif %}{% endcapture %}

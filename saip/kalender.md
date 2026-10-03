@@ -128,7 +128,9 @@ wide: true
 </div>
 
 <div class="box" id="tipsa" markdown="0">
-<p><a href="{{ '/saip/kalender.ics' | relative_url }}">Prenumerera i din kalender</a>. Lägg till länken som internetkalender i Outlook, Google Kalender eller Apple Kalender, så dyker nya evenemang upp av sig själva.</p>
+{% capture ics_url %}{{ site.url }}{{ '/saip/kalender.ics' | relative_url }}{% endcapture %}
+<p><a href="{{ ics_url | replace_first: 'https://', 'webcal://' | replace_first: 'http://', 'webcal://' }}">Prenumerera i din kalender</a>. Då dyker nya evenemang upp av sig själva i din egen kalender. Fungerar inte länken, så kopiera adressen nedan och lägg till den som internetkalender: i Outlook under "Lägg till kalender" och "Från internet", i Google Kalender under "Andra kalendrar" och "Från webbadress", i Apple Kalender under "Arkiv" och "Ny kalenderprenumeration". Ladda inte ner filen och importera den, för då blir det en kopia som inte uppdateras.</p>
+<p><code class="ics-url">{{ ics_url }}</code></p>
 <p>Ordnar du något som borde stå här, eller känner du till ett evenemang som saknas? <a href="mailto:felix.dobslaw@miun.se?subject=SAIP%20kalender%20%E2%80%93%20tips%20om%20evenemang">Tipsa om ett evenemang</a>. Skriv vad det är, när och var, och gärna en länk.</p>
 </div>
 
