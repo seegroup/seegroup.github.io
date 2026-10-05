@@ -4,7 +4,7 @@ title: Om projektet
 permalink: /saip/
 ---
 
-# SAIP – Software and AI Transformation Platform
+# SAIP – Software and AI Transformation Platform – Jämtland
 
 <p>SAIP är Mittuniversitetets plattform för företag och offentliga verksamheter i Jämtlands län som vill använda mjukvara och AI i praktiken. Projektet pågår september 2026 till juni 2029 och drivs av forskargruppen SEE, Software Engineering and Education.</p>
 
