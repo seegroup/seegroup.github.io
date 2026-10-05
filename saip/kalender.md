@@ -41,7 +41,7 @@ wide: true
 <tbody class="day">
 {% for e in items %}
 {% assign last_day = e.end | default: e.start %}
-<tr class="event" data-end="{{ last_day | date: '%Y-%m-%d' }}">
+<tr class="event" data-end="{{ last_day | date: '%Y-%m-%d' }}" data-time="{{ e.time | escape }}">
 {% if forloop.first %}<th scope="rowgroup" class="c-day" rowspan="{{ items.size }}"><time datetime="{{ day.name }}">{{ weekdays[wd] }} {{ first.start | date: "%-d" }} {{ month_short[m1] }}</time><span class="day-in"></span>{% if day_series %}<span class="day-series">{{ day_series | escape }}</span>{% endif %}</th>{% endif %}
 <td class="c-time">{{ e.time }}</td>
 <td class="c-title"><a href="{{ e.url }}">{{ e.title | escape }}</a>{% if e.saip %}<span class="mark" title="Ordnas av SAIP">SAIP</span>{% endif %}{% if e.end and e.end != e.start %}{% assign d2 = e.end | date: "%-d" %}{% assign m2 = e.end | date: "%-m" | minus: 1 %}<span class="sub">Till och med {{ d2 }} {{ month_short[m2] }}</span>{% endif %}{% if e.series and day_series == nil %}<span class="sub">{{ e.series | escape }}</span>{% endif %}{% if e.note %}<span class="sub">{{ e.note | escape }}</span>{% endif %}</td>
@@ -63,7 +63,18 @@ wide: true
   var months = document.querySelectorAll("details.month");
   var current = null;
   var i;
+  var clock = pad(now.getHours()) + ":" + pad(now.getMinutes());
   function each(list, fn) { for (var k = 0; k < list.length; k++) { fn(list[k]); } }
+  // Ett evenemang är över när sista dagen har passerat, eller när sluttiden i dag har passerat.
+  function isOver(row) {
+    var end = row.getAttribute("data-end");
+    if (end !== today) { return end < today; }
+    var times = (row.getAttribute("data-time") || "").match(/\d{1,2}[:.]\d{2}/g);
+    if (!times || times.length < 2) { return false; }
+    var last = times[times.length - 1].replace(".", ":");
+    if (last.length < 5) { last = "0" + last; }
+    return last <= clock;
+  }
   function setPastVisible(month, visible) {
     each(month.querySelectorAll("tr.event"), function (row) {
       row.hidden = !visible && row.getAttribute("data-end") < today;
@@ -75,11 +86,18 @@ wide: true
   each(months, function (month) {
     var rows = month.querySelectorAll("tr.event");
     var gone = 0;
-    each(rows, function (row) { if (row.getAttribute("data-end") < today) { gone++; } });
-    var coming = rows.length - gone;
+    var over = 0;
+    each(rows, function (row) {
+      if (row.getAttribute("data-end") < today) { gone++; }
+      if (isOver(row)) { over++; row.className += " gone"; }
+    });
+    each(month.querySelectorAll("tbody.day"), function (day) {
+      if (day.querySelectorAll("tr.event:not(.gone)").length === 0) { day.className += " gone"; }
+    });
+    var coming = rows.length - over;
     var count = month.querySelector(".month-count");
     month.open = false;
-    if (coming === 0) {
+    if (gone === rows.length) {
       month.className += " past";
       count.textContent = rows.length + " tidigare";
       return;
@@ -110,7 +128,8 @@ wide: true
     var d = day.querySelector("time").getAttribute("datetime").split("-");
     var ahead = Math.round((Date.UTC(+d[0], d[1] - 1, +d[2]) - midnight) / 86400000);
     var text = "";
-    if (ahead === 0) { text = "i dag"; }
+    if (day.className.indexOf("gone") !== -1) { text = ahead === 0 ? "tidigare i dag" : "har varit"; }
+    else if (ahead === 0) { text = "i dag"; }
     else if (ahead === 1) { text = "i morgon"; }
     else if (ahead > 1 && ahead < 14) { text = "om " + ahead + " dagar"; }
     else if (ahead >= 14) { text = "om " + Math.round(ahead / 7) + " veckor"; }

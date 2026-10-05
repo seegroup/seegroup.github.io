@@ -17,6 +17,7 @@
       --green: #00843d;
       --green-dark: #006830;
       --line: #d5dfda;
+      --gone: #707a81;
       --tint: #e8f1f9;
       --shadow: 0 1px 2px rgba(0, 45, 90, 0.06), 0 8px 24px rgba(0, 45, 90, 0.07);
     }
@@ -110,6 +111,12 @@
     .c-title { width: 38%; }
     .sub { display: block; font-size: 0.85rem; color: var(--muted); }
     .c-org, .c-cost { color: var(--muted); }
+    /* Evenemang som har varit: grå text, vanlig vikt, ingen färg kvar */
+    tr.event.gone td, tr.event.gone .sub, tbody.day.gone .c-day, tbody.day.gone .c-day span { color: var(--gone); }
+    tbody.day.gone .c-day { font-weight: 400; }
+    tr.event.gone .c-title a { color: var(--gone); font-weight: 400; }
+    tr.event.gone .c-title a:hover { color: var(--text); }
+    tr.event.gone .mark { color: var(--gone); background: #eceff0; }
     @media (max-width: 760px) {
       table.events, table.events tbody, table.events tr, table.events td, table.events tbody th { display: block; }
       table.events thead { display: none; }
