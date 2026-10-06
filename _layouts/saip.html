@@ -39,7 +39,9 @@
     /* flaggans tre fält som tunn rand under sidhuvudet */
     .site-header::after { content: ""; display: block; height: 12px; background: linear-gradient(var(--accent) 0 4px, #fff 4px 8px, var(--green) 8px 12px); }
     .site-header .wrap { max-width: 66rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 0.8rem; padding-bottom: 0.8rem; }
-    .head-main { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 1.5rem; min-width: 0; }
+    .head-see { flex: 0 0 auto; line-height: 0; }
+    .head-see img { display: block; width: 78px; height: auto; border-radius: 6px; }
+    .head-main { flex: 1 1 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 1.5rem; min-width: 0; }
     .head-logo { flex: 0 0 auto; line-height: 0; }
     .head-logo img { display: block; width: 104px; height: auto; }
     .brand { color: var(--accent-dark); text-decoration: none; display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }
@@ -166,10 +168,15 @@
       main > .wrap { margin: 0 0.75rem; padding: 1.5rem 1.1rem 1rem; }
       .site-header { position: static; }
     }
+    @media (max-width: 600px) {
+      .site-header .wrap { flex-wrap: wrap; row-gap: 0.5rem; }
+      .head-main { order: 3; flex: 1 1 100%; }
+    }
     @media (max-width: 480px) {
       .brand-name { font-size: 1.3rem; }
       h1 { font-size: 1.7rem; }
       .head-logo img { width: 80px; }
+      .head-see img { width: 56px; }
     }
   </style>
   <script>if (!('CSSViewTransitionRule' in window)) document.documentElement.classList.add('no-vt');</script>
@@ -177,6 +184,7 @@
 <body{% if page.wide %} class="wide"{% endif %}>
   <header class="site-header">
     <div class="wrap">
+      <a class="head-see" href="{{ '/' | relative_url }}" title="Forskargruppen SEE vid Mittuniversitetet"><img src="{{ '/assets/images/see-header.jpg' | relative_url }}" alt="Forskargruppen SEE, Software Engineering and Education" width="78" height="52" /></a>
       <div class="head-main">
       <a class="brand" href="{{ '/saip/' | relative_url }}">
         <span class="brand-name">SAIP</span>
