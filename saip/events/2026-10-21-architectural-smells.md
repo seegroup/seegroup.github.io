@@ -9,7 +9,7 @@ start: 2026-10-21
 time: "16:00–18:00"
 place: Östersund
 venue: Q-huset, campus Östersund, entré B
-address: "Mittuniversitetet. Vi möter upp vid entrén från 15:45."
+address: "Mittuniversitetet. Vi möter upp vid entrén från 15:55."
 cost: Gratis, pizza och dryck ingår
 language: Föredraget på engelska, samtalet på svenska och engelska
 signup: https://forms.cloud.microsoft/e/wDK96bY4Lz  # platshållare: intresseformuläret, byt till träffens egen anmälan
@@ -34,7 +34,7 @@ Vi vill lika gärna lyssna som prata. Hur håller ni koll på er arkitektur i da
 
 **16:00 Vad är SAIP?** Tio minuter om projektet, varför Mittuniversitetet gör det, och hur ni kan påverka vad vi gör i höst.
 
-**16:15 Architectural smells, code health, and what any of this has to do with Street Fighter 3.** Föredrag på engelska, cirka 40 minuter med frågor. En arkitekturlukt är ett återkommande mönster i hur ett system hänger ihop, som paket som beror på varandra i en cirkel. Koden fungerar, men varje ändring blir lite dyrare än den borde. I en studie från 2025 följde vi sju sådana lukter genom 378 versioner av åtta öppna projekt och mätte vad som hände med testbarhet och modularitet. En del stämde med vad alla antagit, en del gjorde det inte. Sedan tar vi steget till i dag: CodeScene lät i höstas AI-agenter refaktorera 300 000 rader C-kod på tre veckor, med måttet Code Health som enda kvalitetssignal. Koden var Street Fighter III: 3rd Strike. Vad säger ett sådant mått egentligen, och hur långt kan man lita på det när en agent styr efter det?
+**16:10 Architectural smells, code health, and what any of this has to do with Street Fighter 3.** Föredrag på engelska, cirka 45 minuter med frågor. En arkitekturlukt är ett återkommande mönster i hur ett system hänger ihop, som paket som beror på varandra i en cirkel. Koden fungerar, men varje ändring blir lite dyrare än den borde. I en studie från 2025 följde vi sju sådana lukter genom 378 versioner av åtta öppna projekt och mätte vad som hände med testbarhet och modularitet. En del stämde med vad alla antagit, en del gjorde det inte. Sedan tar vi steget till i dag: CodeScene lät i höstas AI-agenter refaktorera 300 000 rader C-kod på tre veckor, med måttet Code Health som enda kvalitetssignal. Koden var Street Fighter III: 3rd Strike. Vad säger ett sådant mått egentligen, och hur långt kan man lita på det när en agent styr efter det?
 
 <img class="event-inline" src="{{ '/assets/images/saip/events/round-1-fight.png' | relative_url }}" alt="Round 1, fight, i arkadstil" width="1200" height="320" />
 
