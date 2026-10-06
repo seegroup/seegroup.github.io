@@ -1,5 +1,6 @@
 ---
 layout: saip
+bild: host
 title: Vill du veta mer om AI i din verksamhet?
 description: Lämna namn och e-post så bjuder SAIP in dig till seminarier och träffar om mjukvara och AI i Jämtlands län.
 permalink: /saip/villvetamer/

@@ -1,5 +1,6 @@
 ---
 layout: saip
+bild: brittsommar
 title: Om projektet
 permalink: /saip/
 ---

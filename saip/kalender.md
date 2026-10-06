@@ -1,5 +1,6 @@
 ---
 layout: saip
+bild: vinter
 title: Kalender
 description: Kommande evenemang om mjukvara, AI, digitalisering och teknik i Jämtlands län, och nationella webbinarier om AI, samlade på ett ställe.
 permalink: /saip/kalender/

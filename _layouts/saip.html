@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="sv">
+<html lang="sv"{% if page.bild %} data-bild="{{ page.bild }}"{% endif %}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -60,7 +60,8 @@
       -webkit-mask-image: linear-gradient(#000 80%, transparent);
       mask-image: linear-gradient(#000 80%, transparent);
     }
-    /* Årstidsversioner av landskapet. Väljs med ?bild=sommar|brittsommar|host|vinter i adressen. */
+    /* Årstidsversioner av landskapet. Varje sida väljer sin med bild: i front matter; ?bild=... i adressen byter tillfälligt. */
+    html[data-bild="forsommar"] main::before { background-image: url("{{ '/assets/images/saip-landskap-forsommar.webp' | relative_url }}"); }
     html[data-bild="sommar"] main::before { background-image: url("{{ '/assets/images/saip-landskap-sommar.webp' | relative_url }}"); }
     html[data-bild="brittsommar"] main::before { background-image: url("{{ '/assets/images/saip-landskap-brittsommar.webp' | relative_url }}"); }
     html[data-bild="host"] main::before { background-image: url("{{ '/assets/images/saip-landskap-host.webp' | relative_url }}"); }
