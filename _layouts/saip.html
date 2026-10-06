@@ -129,34 +129,18 @@
     .c-title { width: 38%; }
     .sub { display: block; font-size: 0.85rem; color: var(--muted); }
     .c-org, .c-cost { color: var(--muted); }
-    /* Våra egna träffar, alltid överst och alltid synliga */
-    .saip-strip { margin: 1.25rem 0 2rem; }
-    .saip-strip > h2 { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--saip-dark); margin: 0 0 0.6rem; }
-    .saip-strip ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.7rem; }
-    .saip-card { display: flex; flex-direction: column; background: var(--surface); border: 2px solid var(--saip); border-left-width: 7px; border-radius: 10px; padding: 0.65rem 0.85rem; box-shadow: var(--shadow); }
-    .saip-card .where { margin-bottom: 0.5rem; }
-    .saip-card a.reg { margin-top: auto; align-self: flex-start; }
-    .saip-card .when { display: block; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--saip-dark); }
-    .saip-card a { display: block; font-weight: 700; color: var(--text); text-decoration: none; margin: 0.2rem 0 0.25rem; line-height: 1.3; }
-    .saip-card a:hover { color: var(--saip-dark); text-decoration: underline; }
-    .saip-card .where { display: block; font-size: 0.85rem; color: var(--muted); }
     /* Anmälningsknapp, orange och tydlig */
     a.reg { display: inline-block; white-space: nowrap; margin-top: 0.5rem; background: var(--saip); color: #fff; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.02em; text-decoration: none; border-radius: 999px; padding: 0.3rem 0.95rem; box-shadow: 0 1px 2px rgba(184, 67, 10, 0.25); transition: background-color 0.15s, transform 0.1s; }
     a.reg:hover { background: var(--saip-dark); color: #fff; text-decoration: none; transform: translateY(-1px); }
     a.reg:active { transform: none; }
-    td.c-cost a.reg { display: block; width: fit-content; margin-top: 0.35rem; }
+    .c-title a.reg { margin: 0 0 0 0.45rem; vertical-align: 0.05em; }
     tr.event.gone a.reg { background: var(--gone); box-shadow: none; }
     /* SAIP:s egna rader i tabellen: orange ram, orange ton, orange märke */
     tr.event.is-saip > * { background: var(--saip-tint); box-shadow: inset 0 2px 0 var(--saip), inset 0 -2px 0 var(--saip); }
     tr.event.is-saip > :first-child { box-shadow: inset 0 2px 0 var(--saip), inset 0 -2px 0 var(--saip), inset 7px 0 0 var(--saip); }
     tr.event.is-saip > :last-child { box-shadow: inset 0 2px 0 var(--saip), inset 0 -2px 0 var(--saip), inset -2px 0 0 var(--saip); }
     tr.event.is-saip .c-title a { color: var(--saip-dark); }
-    tr.event.is-saip .mark { color: #fff; background: var(--saip); }
     tr.event.is-saip.gone > *, tr.event.is-saip.gone > :first-child, tr.event.is-saip.gone > :last-child { background: #f4f5f6; box-shadow: inset 3px 0 0 var(--gone); }
-    tr.event.is-saip.gone .mark { color: var(--gone); background: #eceff0; }
-    /* Månader som är hopfällda men har en av våra träffar */
-    .month-saip { display: none; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; color: #fff; background: var(--saip); border-radius: 999px; padding: 0 0.5rem; margin-left: 0.5rem; }
-    details.month.has-saip .month-saip { display: inline-block; }
     /* Evenemang som har varit: grå text, vanlig vikt, ingen färg kvar */
     tr.event.gone td, tr.event.gone .sub, tbody.day.gone .c-day, tbody.day.gone .c-day span { color: var(--gone); }
     tbody.day.gone .c-day { font-weight: 400; }

@@ -16,24 +16,6 @@ wide: true
 {% assign month_short = "jan,feb,mar,apr,maj,jun,jul,aug,sep,okt,nov,dec" | split: "," %}
 {% assign weekdays = "Mån,Tis,Ons,Tors,Fre,Lör,Sön" | split: "," %}
 <div markdown="0">
-{% assign ours = site.data.saip_events | where: "saip", true | sort: "start" %}
-{% if ours.size > 0 %}
-<div class="saip-strip" id="saip-strip">
-<h2>Våra egna träffar</h2>
-<ul>
-{% for e in ours %}
-{% assign owd = e.start | date: "%u" | minus: 1 %}
-{% assign om = e.start | date: "%-m" | minus: 1 %}
-<li class="saip-card" data-end="{{ e.end | default: e.start | date: '%Y-%m-%d' }}" data-time="{{ e.time | escape }}">
-<span class="when">{{ weekdays[owd] }} {{ e.start | date: "%-d" }} {{ month_short[om] }} · {{ e.time }}</span>
-<a href="{{ e.url }}">{{ e.title | escape }}</a>
-<span class="where">{{ e.place }}{% if e.venue %}, {{ e.venue | escape }}{% endif %}</span>
-<a class="reg" href="{{ e.url }}">Anmäl dig</a>
-</li>
-{% endfor %}
-</ul>
-</div>
-{% endif %}
 <p id="no-upcoming" hidden>Just nu finns inga kommande evenemang i listan.</p>
 {% assign current_month = "" %}
 {% for day in days %}
@@ -47,7 +29,7 @@ wide: true
 {% assign current_month = month_key %}
 {% assign m = first.start | date: "%-m" | minus: 1 %}
 <details class="month" open data-month="{{ month_key }}" data-name="{{ month_names[m] | downcase }}">
-<summary><h2>{{ month_names[m] }} {{ first.start | date: "%Y" }}</h2><span class="month-count"></span><span class="month-saip">SAIP</span></summary>
+<summary><h2>{{ month_names[m] }} {{ first.start | date: "%Y" }}</h2><span class="month-count"></span></summary>
 <p class="month-past" hidden><button type="button" class="toggle-past" aria-expanded="false"></button></p>
 <table class="events">
 <thead><tr><th scope="col">Dag</th><th scope="col">Tid</th><th scope="col">Evenemang</th><th scope="col">Plats</th><th scope="col">Arrangör</th><th scope="col">Kostnad och anmälan</th></tr></thead>
@@ -63,10 +45,10 @@ wide: true
 <tr class="event{% if e.saip %} is-saip{% endif %}" data-end="{{ last_day | date: '%Y-%m-%d' }}" data-time="{{ e.time | escape }}">
 {% if forloop.first %}<th scope="rowgroup" class="c-day" rowspan="{{ items.size }}"><time datetime="{{ day.name }}">{{ weekdays[wd] }} {{ first.start | date: "%-d" }} {{ month_short[m1] }}</time><span class="day-in"></span>{% if day_series %}<span class="day-series">{{ day_series | escape }}</span>{% endif %}</th>{% endif %}
 <td class="c-time">{{ e.time }}</td>
-<td class="c-title"><a href="{{ e.url }}">{{ e.title | escape }}</a>{% if e.saip %}<span class="mark" title="Ordnas av SAIP">SAIP</span>{% endif %}{% if e.end and e.end != e.start %}{% assign d2 = e.end | date: "%-d" %}{% assign m2 = e.end | date: "%-m" | minus: 1 %}<span class="sub">Till och med {{ d2 }} {{ month_short[m2] }}</span>{% endif %}{% if e.series and day_series == nil %}<span class="sub">{{ e.series | escape }}</span>{% endif %}{% if e.note %}<span class="sub">{{ e.note | escape }}</span>{% endif %}</td>
+<td class="c-title"><a href="{{ e.url }}">{{ e.title | escape }}</a>{% if e.saip %}<a class="reg" href="{{ e.url }}">Anmäl dig</a>{% endif %}{% if e.end and e.end != e.start %}{% assign d2 = e.end | date: "%-d" %}{% assign m2 = e.end | date: "%-m" | minus: 1 %}<span class="sub">Till och med {{ d2 }} {{ month_short[m2] }}</span>{% endif %}{% if e.series and day_series == nil %}<span class="sub">{{ e.series | escape }}</span>{% endif %}{% if e.note %}<span class="sub">{{ e.note | escape }}</span>{% endif %}</td>
 <td class="c-place">{{ e.place }}{% if e.venue %}<span class="sub">{{ e.venue | escape }}</span>{% endif %}</td>
 <td class="c-org">{{ e.organiser | escape }}</td>
-<td class="c-cost">{% if e.cost %}{{ e.cost | escape }}{% endif %}{% if e.deadline %}{% assign dd = e.deadline | date: "%-d" %}{% assign dm = e.deadline | date: "%-m" | minus: 1 %}<span class="{% if e.cost %}sub{% endif %}">Anmälan senast {{ dd }} {{ month_short[dm] }}</span>{% endif %}{% if e.saip %}<a class="reg" href="{{ e.url }}">Anmäl dig</a>{% endif %}</td>
+<td class="c-cost">{% if e.cost %}{{ e.cost | escape }}{% endif %}{% if e.deadline %}{% assign dd = e.deadline | date: "%-d" %}{% assign dm = e.deadline | date: "%-m" | minus: 1 %}<span class="{% if e.cost %}sub{% endif %}">Anmälan senast {{ dd }} {{ month_short[dm] }}</span>{% endif %}</td>
 </tr>
 {% endfor %}
 </tbody>
@@ -155,17 +137,6 @@ wide: true
     day.querySelector(".day-in").textContent = text;
   });
   if (current) { current.open = true; } else { document.getElementById("no-upcoming").hidden = false; }
-  each(months, function (month) {
-    if (month.querySelectorAll("tr.event.is-saip:not(.gone)").length > 0) { month.className += " has-saip"; }
-  });
-  var strip = document.getElementById("saip-strip");
-  if (strip) {
-    var left = 0;
-    each(strip.querySelectorAll("li.saip-card"), function (card) {
-      if (isOver(card)) { card.hidden = true; } else { left++; }
-    });
-    if (left === 0) { strip.hidden = true; }
-  }
   each(months, function (month) {
     month.addEventListener("toggle", function () {
       if (!month.open) { return; }
