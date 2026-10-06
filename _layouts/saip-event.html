@@ -1,0 +1,66 @@
+---
+layout: saip
+---
+{% comment %}
+Sida för en av SAIP:s egna träffar, under /saip/events/. Allt om träffen står i sidans front matter:
+  title, lead (ingress), start (ISO-datum), end (valfritt, flerdagars), time, place, venue, address,
+  cost, signup (länk till anmälan; saknas den visas knappen grå med texten "Anmälan öppnar snart"),
+  image, image_alt, image_credit (valfritt), speakers (lista: name, role, bio, photo, url), kalender_id
+  (raden i kalendern som sidan länkar tillbaka till, t.ex. ev-20261021-lets-talk-...).
+Brödtexten är programmet och beskrivningen.
+{% endcomment %}
+{% assign month_names = "januari,februari,mars,april,maj,juni,juli,augusti,september,oktober,november,december" | split: "," %}
+{% assign weekdays = "Måndag,Tisdag,Onsdag,Torsdag,Fredag,Lördag,Söndag" | split: "," %}
+{% assign wd = page.start | date: "%u" | minus: 1 %}
+{% assign mo = page.start | date: "%-m" | minus: 1 %}
+<article class="event-page">
+  {% if page.image %}
+  <figure class="event-hero">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' | escape }}" width="1600" height="720" />
+    {% if page.image_credit %}<figcaption>{{ page.image_credit | escape }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+
+  <p class="event-eyebrow"><span class="event-kind">SAIP-träff</span> <time datetime="{{ page.start }}">{{ weekdays[wd] }} {{ page.start | date: "%-d" }} {{ month_names[mo] }} {{ page.start | date: "%Y" }}</time></p>
+  <h1>{{ page.title }}</h1>
+  {% if page.lead %}<p class="event-lead">{{ page.lead }}</p>{% endif %}
+
+  <dl class="event-facts">
+    <div><dt>När</dt><dd><time datetime="{{ page.start }}">{{ weekdays[wd] }} {{ page.start | date: "%-d" }} {{ month_names[mo] }}</time>{% if page.time %}, kl. {{ page.time }}{% endif %}</dd></div>
+    <div><dt>Var</dt><dd>{{ page.venue | default: page.place }}{% if page.address %}<span class="sub">{{ page.address }}</span>{% elsif page.venue %}<span class="sub">{{ page.place }}</span>{% endif %}</dd></div>
+    {% if page.cost %}<div><dt>Kostnad</dt><dd>{{ page.cost }}</dd></div>{% endif %}
+    {% if page.language %}<div><dt>Språk</dt><dd>{{ page.language }}</dd></div>{% endif %}
+  </dl>
+
+  <div class="event-signup">
+    {% if page.signup %}
+    <a class="reg big" href="{{ page.signup }}">Anmäl dig</a>
+    {% if page.deadline %}{% assign dm = page.deadline | date: "%-m" | minus: 1 %}{% endif %}
+    <p class="small">Anmälan är gratis och tar en minut.{% if page.deadline %} Sista anmälningsdag {{ page.deadline | date: "%-d" }} {{ month_names[dm] }}.{% endif %}</p>
+    {% else %}
+    <span class="reg big off">Anmälan öppnar snart</span>
+    <p class="small">Vill du ha en påminnelse när anmälan öppnar? <a href="{{ '/saip/villvetamer/' | relative_url }}">Lämna namn och e-post</a>, så hör vi av oss.</p>
+    {% endif %}
+  </div>
+
+  <div class="event-body">
+    {{ content }}
+  </div>
+
+  {% if page.speakers %}
+  <section class="event-speakers">
+    <h2>{% if page.speakers.size == 1 %}Talare{% else %}Talare{% endif %}</h2>
+    {% for s in page.speakers %}
+    <div class="speaker">
+      {% if s.photo %}<img class="speaker-photo" src="{{ s.photo | relative_url }}" alt="{{ s.name | escape }}" width="96" height="96" />{% endif %}
+      <div>
+        <p class="speaker-name">{% if s.url %}<a href="{{ s.url }}">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}{% if s.role %} <span class="speaker-role">{{ s.role }}</span>{% endif %}</p>
+        {% if s.bio %}<p class="speaker-bio">{{ s.bio }}</p>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <p class="event-back"><a href="{{ '/saip/kalender/' | relative_url }}{% if page.kalender_id %}#{{ page.kalender_id }}{% endif %}">← Alla evenemang i kalendern</a></p>
+</article>

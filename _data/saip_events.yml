@@ -5,7 +5,7 @@
 # category (ai, tech, digitalisering, saip).
 # När det finns: series (namnet på veckan eller serien som passet ingår i), series_url (seriens egen sida), end (flerdagars), venue, cost (pris, eller "Gratis" när sidan säger det),
 # deadline (sista anmälningsdag, ISO-datum), saip (true för SAIP:s egna), note (en kort rad),
-# signup (länk till anmälan för SAIP:s egna; utan den visas knappen Anmäl dig grå tills anmälan öppnar).
+# För SAIP:s egna pekar url på träffens egen sida under /saip/events/ (datum-handle), där anmälan finns.
 # Ta inte bort passerade evenemang. Sidan flyttar dem själv till "Tidigare evenemang",
 # där en serie visas som en rad.
 # Alla uppgifter nedan lästes på arrangörens sida den 2 oktober 2026.
@@ -403,16 +403,17 @@
 # ton och en accentlinje i kalendern. Tider och lokaler som står som
 # "Meddelas senare" fylls i när de är bestämda.
 
-- title: "Let's talk Software Engineering, and not AI today"
+- title: "Topic today: Architectural Smells (not AI)"
   start: 2026-10-21
-  time: "17:00–19:00"
+  time: "16:00–18:00"
   place: Östersund
+  venue: "Q-huset, campus Östersund, entré B"
   organiser: "SAIP, Mittuniversitetet"
-  url: https://seegroup.github.io/saip/villvetamer/
+  url: https://seegroup.github.io/saip/events/2026-10-21-architectural-smells/
   category: tech
   saip: true
   cost: Gratis
-  note: "Veckan efter Northern Devs Week tar vi en kväll om mjukvaran under. Lokal meddelas."
+  note: "SAIP:s första träff. Föredrag på engelska om arkitekturlukter och code health, sedan pizza och samtal om vad ni mäter."
 
 - title: "Transforming HR"
   start: 2026-11-03
