@@ -171,9 +171,14 @@
     /* Våra träffar i månadsrubriken, så de syns även när månaden är hopfälld */
     .month-peek { flex: 1 0 100%; margin: 0.5rem 0 0.15rem 1.55rem; }
     details.month[open] .month-peek { display: none; }
-    span.peek { display: block; font-size: 0.9rem; font-weight: 400; color: var(--text); background: var(--saip-tint); border-left: 5px solid var(--saip); border-radius: 0 6px 6px 0; padding: 0.4rem 0.7rem; margin-top: 0.35rem; }
-    span.peek b { color: var(--saip-dark); font-weight: 700; margin-right: 0.3rem; }
-    span.peek a.reg { margin: 0 0 0 0.5rem; }
+    button.peek { display: block; width: 100%; text-align: left; font: inherit; font-size: 0.95rem; font-weight: 400; color: var(--text); cursor: pointer;
+      background: var(--saip-tint); border: 2px solid var(--saip); border-left-width: 7px; border-radius: 0; padding: 0.45rem 0.85rem; margin-top: 0.4rem; }
+    button.peek:hover, button.peek:focus-visible { background: #ffe6d5; }
+    button.peek b { color: var(--saip-dark); font-weight: 700; margin-right: 0.35rem; }
+    button.peek .t { color: var(--saip-dark); font-weight: 600; }
+    /* Raden blinkar till när man hoppat dit från rubriken */
+    tr.event.is-saip.flash > * { animation: saip-flash 1.8s ease-out; }
+    @keyframes saip-flash { 0%, 25% { background: #ffd9bf; } 100% { background: var(--saip-tint); } }
     details.month.past .month-peek { display: none; }
     .mark { display: inline-block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; color: var(--accent-dark); background: var(--tint); border-radius: 999px; padding: 0 0.5rem; margin-left: 0.35rem; vertical-align: 0.1em; }
     .ics-url { font-size: 0.9rem; overflow-wrap: anywhere; user-select: all; }
