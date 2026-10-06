@@ -56,10 +56,15 @@
     main { position: relative; isolation: isolate; padding: 9.5rem 0 3.5rem; }
     main::before {
       content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; height: 24rem;
-      background: #dcecf7 url("{{ '/assets/images/saip-landskap.webp' | relative_url }}") center bottom / cover no-repeat;
+      background: #dcecf7 url("{{ '/assets/images/saip-landskap-forsommar.webp' | relative_url }}") center bottom / cover no-repeat;
       -webkit-mask-image: linear-gradient(#000 80%, transparent);
       mask-image: linear-gradient(#000 80%, transparent);
     }
+    /* Årstidsversioner av landskapet. Väljs med ?bild=sommar|brittsommar|host|vinter i adressen. */
+    html[data-bild="sommar"] main::before { background-image: url("{{ '/assets/images/saip-landskap-sommar.webp' | relative_url }}"); }
+    html[data-bild="brittsommar"] main::before { background-image: url("{{ '/assets/images/saip-landskap-brittsommar.webp' | relative_url }}"); }
+    html[data-bild="host"] main::before { background-image: url("{{ '/assets/images/saip-landskap-host.webp' | relative_url }}"); }
+    html[data-bild="vinter"] main::before { background-image: url("{{ '/assets/images/saip-landskap-vinter.webp' | relative_url }}"); }
     main > .wrap { background: var(--surface); border-radius: 1rem; box-shadow: var(--shadow); padding: 2.25rem 2.25rem 1.75rem; max-width: 46.5rem; }
     h1 { font-size: 2.2rem; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 1.25rem; color: var(--accent-dark); text-wrap: balance; }
     h2 { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.01em; margin: 2.25rem 0 0.75rem; color: var(--accent-dark); }
@@ -188,6 +193,7 @@
     }
   </style>
   <script>if (!('CSSViewTransitionRule' in window)) document.documentElement.classList.add('no-vt');</script>
+  <script>(function () { var b = new URLSearchParams(location.search).get('bild'); if (b) document.documentElement.dataset.bild = b; })();</script>
 </head>
 <body{% if page.wide %} class="wide"{% endif %}>
   <header class="site-header">
