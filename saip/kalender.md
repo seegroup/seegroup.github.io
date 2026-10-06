@@ -137,7 +137,8 @@ wide: true
     else if (ahead >= 14) { text = "om " + Math.round(ahead / 7) + " veckor"; }
     day.querySelector(".day-in").textContent = text;
   });
-  if (current) { current.open = true; } else { document.getElementById("no-upcoming").hidden = false; }
+  // Ingen månad är öppen från början. Listan i rubriken visar våra träffar ändå.
+  if (!current) { document.getElementById("no-upcoming").hidden = false; }
   each(document.querySelectorAll("span.peek"), function (peek) {
     if (isOver(peek)) { peek.hidden = true; }
   });

@@ -102,12 +102,12 @@
     .small { font-size: 0.95rem; color: var(--muted); }
     details.month { font-size: inherit; color: inherit; margin: 0; padding: 0.55rem 0; border-top: 1px solid var(--line); border-bottom: 0; }
     details.month:last-of-type { border-bottom: 1px solid var(--line); }
-    details.month > summary { display: flex; align-items: baseline; gap: 0.75rem; font-weight: 400; }
+    details.month > summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.75rem; font-weight: 400; }
     details.month > summary::before { content: "+"; flex: 0 0 0.8rem; color: var(--muted); }
     details.month[open] > summary::before { content: "–"; }
     details.month > summary::-webkit-details-marker { display: none; }
-    details.month h2 { display: inline; margin: 0; font-size: 1.1rem; }
-    .month-count { font-size: 0.9rem; color: var(--muted); }
+    details.month h2 { display: inline; margin: 0; font-size: 1.1rem; white-space: nowrap; }
+    .month-count { font-size: 0.9rem; color: var(--muted); white-space: nowrap; }
     details.month.current h2 { font-size: 1.4rem; }
     details.month.current[open] { border-top: 3px solid var(--green); }
     details.month.past h2 { font-size: 0.95rem; font-weight: 400; color: var(--muted); }
@@ -169,7 +169,7 @@
       tr.event.is-saip.gone { border-color: var(--line); }
     }
     /* Våra träffar i månadsrubriken, så de syns även när månaden är hopfälld */
-    .month-peek { display: block; margin: 0.5rem 0 0; }
+    .month-peek { flex: 1 0 100%; margin: 0.5rem 0 0.15rem 1.55rem; }
     details.month[open] .month-peek { display: none; }
     span.peek { display: block; font-size: 0.9rem; font-weight: 400; color: var(--text); background: var(--saip-tint); border-left: 5px solid var(--saip); border-radius: 0 6px 6px 0; padding: 0.4rem 0.7rem; margin-top: 0.35rem; }
     span.peek b { color: var(--saip-dark); font-weight: 700; margin-right: 0.3rem; }
