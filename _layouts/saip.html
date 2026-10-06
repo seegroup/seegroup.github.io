@@ -173,8 +173,8 @@
     .funder { display: flex; align-items: center; gap: 0.75rem; }
     .funder img { display: block; height: auto; }
     .funder-eu img { width: 260px; max-width: 100%; }
-    .funder-rjh img { width: 240px; max-width: 100%; }
-    .site-footer p.funder-label { font-size: 0.85rem; color: var(--text); margin: 0 0 0.75rem; }
+    /* Regionens logotyp ska vara minst lika stor som övriga finansiärers (RJH:s allmänna villkor, avsnitt 3). */
+    .funder-rjh img { width: 320px; max-width: 100%; }
     .site-footer p { margin: 0 0 0.5rem; }
     @media (max-width: 760px) {
       main { padding: 6rem 0 2.5rem; }
@@ -223,13 +223,12 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <p class="funder-label">Medfinansieras av</p>
       <div class="funders">
         <div class="funder funder-eu">
           <img src="{{ '/assets/images/eu-medfinansieras.svg' | relative_url }}" alt="Europeiska unionens flagga med texten Medfinansieras av Europeiska unionen" />
         </div>
         <div class="funder funder-rjh">
-          <img src="{{ '/assets/images/region-jamtland-harjedalen.svg' | relative_url }}" alt="Region Jämtland Härjedalens logotyp" />
+          <img src="{{ '/assets/images/region-jh-medfinansieras-av.svg' | relative_url }}" alt="Medfinansieras av Region Jämtland Härjedalen" />
         </div>
       </div>
       <p>SAIP drivs av forskargruppen <a href="{{ '/' | relative_url }}">SEE, Software Engineering and Education</a>, vid Mittuniversitetet. Projektet finansieras av Europeiska socialfonden+ genom Svenska ESF-rådet och medfinansieras av Region Jämtland Härjedalen.</p>
