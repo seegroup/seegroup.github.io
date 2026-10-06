@@ -52,7 +52,14 @@
     .site-nav a { color: var(--text); text-decoration: none; font-size: 0.95rem; font-weight: 500; padding: 0.3rem 0.75rem; border-radius: 999px; transition: background-color 0.15s, color 0.15s; }
     .site-nav a:hover { background: var(--tint); color: var(--accent-dark); }
     .site-nav a.active { background: var(--accent); color: #fff; }
-    main { padding: 2.5rem 0 3.5rem; }
+    /* Målat landskap bakom innehållets överkant: fjäll, skog och sjö. Bilden tonar ut nedåt i sidans bakgrund. */
+    main { position: relative; isolation: isolate; padding: 9.5rem 0 3.5rem; }
+    main::before {
+      content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; height: 24rem;
+      background: #c9e2f1 url("{{ '/assets/images/saip-landskap.webp' | relative_url }}") center bottom / cover no-repeat;
+      -webkit-mask-image: linear-gradient(#000 80%, transparent);
+      mask-image: linear-gradient(#000 80%, transparent);
+    }
     main > .wrap { background: var(--surface); border-radius: 1rem; box-shadow: var(--shadow); padding: 2.25rem 2.25rem 1.75rem; max-width: 46.5rem; }
     h1 { font-size: 2.2rem; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 1.25rem; color: var(--accent-dark); text-wrap: balance; }
     h2 { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.01em; margin: 2.25rem 0 0.75rem; color: var(--accent-dark); }
@@ -164,7 +171,8 @@
     .site-footer p.funder-label { font-size: 0.85rem; color: var(--text); margin: 0 0 0.75rem; }
     .site-footer p { margin: 0 0 0.5rem; }
     @media (max-width: 760px) {
-      main { padding: 1.25rem 0 2.5rem; }
+      main { padding: 6rem 0 2.5rem; }
+      main::before { height: 11.5rem; }
       main > .wrap { margin: 0 0.75rem; padding: 1.5rem 1.1rem 1rem; }
       .site-header { position: static; }
     }
