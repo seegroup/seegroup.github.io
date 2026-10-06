@@ -15,7 +15,7 @@ title: SAIP
 <p data-translate="saip-period">The project runs from September 2026 to June 2029 and is led by <b>Felix Dobslaw</b> together with <b>Anna Sörensson</b> at Mid Sweden University. It is funded by the <b>European Social Fund Plus</b> (ESF+) through the Swedish ESF Council and co-financed by <b>Region Jämtland Härjedalen</b>.</p>
 
 <img alt="Co-funded by the European Union" src="../assets/images/eu-medfinansieras.svg" width="45%" style="max-width: 420px; display:inline-block; vertical-align:middle; margin: 1rem 2rem 1rem 0;">
-<img alt="Region Jämtland Härjedalen logotype" src="../assets/images/region-jamtland-harjedalen.svg" width="40%" style="max-width: 360px; display:inline-block; vertical-align:middle; margin: 1rem 0;">
+<img alt="Medfinansieras av Region Jämtland Härjedalen (co-funded by Region Jämtland Härjedalen)" src="../assets/images/region-jh-medfinansieras-av.svg" width="47%" style="max-width: 440px; display:inline-block; vertical-align:middle; margin: 1rem 0;">
 
 <div id="news" class="news-section">
   <h2 data-translate="news">News</h2>
