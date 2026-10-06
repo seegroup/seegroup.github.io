@@ -30,7 +30,7 @@ wide: true
 {% assign current_month = month_key %}
 {% assign m = first.start | date: "%-m" | minus: 1 %}
 <details class="month" open data-month="{{ month_key }}" data-name="{{ month_names[m] | downcase }}">
-<summary><h2>{{ month_names[m] }} {{ first.start | date: "%Y" }}</h2><span class="month-count"></span><span class="month-peek">{% for se in ours %}{% assign se_key = se.start | date: "%Y-%m" %}{% if se_key == month_key %}{% assign swd = se.start | date: "%u" | minus: 1 %}{% assign sm = se.start | date: "%-m" | minus: 1 %}<button type="button" class="peek" data-end="{{ se.end | default: se.start | date: '%Y-%m-%d' }}" data-time="{{ se.time | escape }}" data-target="ev-{{ se.start | date: '%Y%m%d' }}-{{ se.title | slugify: 'latin' }}"><b>{{ weekdays[swd] }} {{ se.start | date: "%-d" }} {{ month_short[sm] }}</b> {{ se.time }} · <span class="t">{{ se.title | escape }}</span></button>{% endif %}{% endfor %}</span></summary>
+<summary><h2>{{ month_names[m] }} {{ first.start | date: "%Y" }}</h2><span class="month-count"></span><span class="month-peek">{% for se in ours %}{% assign se_key = se.start | date: "%Y-%m" %}{% if se_key == month_key %}{% assign swd = se.start | date: "%u" | minus: 1 %}{% assign sm = se.start | date: "%-m" | minus: 1 %}<button type="button" class="peek" data-end="{{ se.end | default: se.start | date: '%Y-%m-%d' }}" data-time="{{ se.time | escape }}" data-target="ev-{{ se.start | date: '%Y%m%d' }}-{{ se.title | slugify: 'latin' }}"><b>{{ weekdays[swd] }} {{ se.start | date: "%-d" }} {{ month_short[sm] }}</b> <span class="pt">{{ se.time }}</span> <span class="t">{{ se.title | escape }}</span></button>{% endif %}{% endfor %}</span></summary>
 <p class="month-past" hidden><button type="button" class="toggle-past" aria-expanded="false"></button></p>
 <table class="events">
 <thead><tr><th scope="col">Dag</th><th scope="col">Tid</th><th scope="col">Evenemang</th><th scope="col">Plats</th><th scope="col">Arrangör</th><th scope="col">Kostnad och anmälan</th></tr></thead>
@@ -41,10 +41,11 @@ wide: true
 {% assign day_series = nil %}
 {% if series_names.size == 1 and first.series %}{% assign day_series = first.series %}{% endif %}
 <tbody class="day">
+{% assign prev_saip = false %}
 {% for e in items %}
 {% assign last_day = e.end | default: e.start %}
 <tr class="event{% if e.saip %} is-saip{% endif %}"{% if e.saip %} id="ev-{{ e.start | date: '%Y%m%d' }}-{{ e.title | slugify: 'latin' }}"{% endif %} data-end="{{ last_day | date: '%Y-%m-%d' }}" data-time="{{ e.time | escape }}">
-{% if forloop.first %}<th scope="rowgroup" class="c-day" rowspan="{{ items.size }}"><time datetime="{{ day.name }}">{{ weekdays[wd] }} {{ first.start | date: "%-d" }} {{ month_short[m1] }}</time><span class="day-in"></span>{% if day_series %}<span class="day-series">{{ day_series | escape }}</span>{% endif %}</th>{% endif %}
+{% if forloop.first or e.saip or prev_saip %}<th scope="row" class="c-day"><time datetime="{{ day.name }}">{{ weekdays[wd] }} {{ first.start | date: "%-d" }} {{ month_short[m1] }}</time><span class="day-in"></span>{% if day_series and forloop.first %}<span class="day-series">{{ day_series | escape }}</span>{% endif %}</th>{% else %}<td class="c-day rep"></td>{% endif %}{% assign prev_saip = e.saip %}
 <td class="c-time">{{ e.time }}</td>
 <td class="c-title"><a href="{{ e.url }}">{{ e.title | escape }}</a>{% if e.saip %}{% if e.signup %}<a class="reg" href="{{ e.signup }}">Anmäl dig</a>{% else %}<span class="reg off" title="Anmälan öppnar senare">Anmäl dig</span>{% endif %}{% endif %}{% if e.end and e.end != e.start %}{% assign d2 = e.end | date: "%-d" %}{% assign m2 = e.end | date: "%-m" | minus: 1 %}<span class="sub">Till och med {{ d2 }} {{ month_short[m2] }}</span>{% endif %}{% if e.series and day_series == nil %}<span class="sub">{{ e.series | escape }}</span>{% endif %}{% if e.note %}<span class="sub">{{ e.note | escape }}</span>{% endif %}</td>
 <td class="c-place">{{ e.place }}{% if e.venue %}<span class="sub">{{ e.venue | escape }}</span>{% endif %}</td>
@@ -135,7 +136,7 @@ wide: true
     else if (ahead === 1) { text = "i morgon"; }
     else if (ahead > 1 && ahead < 14) { text = "om " + ahead + " dagar"; }
     else if (ahead >= 14) { text = "om " + Math.round(ahead / 7) + " veckor"; }
-    day.querySelector(".day-in").textContent = text;
+    each(day.querySelectorAll(".day-in"), function (el) { el.textContent = text; });
   });
   // Ingen månad är öppen från början. Listan i rubriken visar våra träffar ändå.
   if (!current) { document.getElementById("no-upcoming").hidden = false; }
