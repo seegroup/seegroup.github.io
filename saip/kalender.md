@@ -15,6 +15,7 @@ wide: true
 {% assign month_names = "Januari,Februari,Mars,April,Maj,Juni,Juli,Augusti,September,Oktober,November,December" | split: "," %}
 {% assign month_short = "jan,feb,mar,apr,maj,jun,jul,aug,sep,okt,nov,dec" | split: "," %}
 {% assign weekdays = "Mån,Tis,Ons,Tors,Fre,Lör,Sön" | split: "," %}
+{% assign ours = site.data.saip_events | where: "saip", true | sort: "start" %}
 <div markdown="0">
 <p id="no-upcoming" hidden>Just nu finns inga kommande evenemang i listan.</p>
 {% assign current_month = "" %}
@@ -29,7 +30,7 @@ wide: true
 {% assign current_month = month_key %}
 {% assign m = first.start | date: "%-m" | minus: 1 %}
 <details class="month" open data-month="{{ month_key }}" data-name="{{ month_names[m] | downcase }}">
-<summary><h2>{{ month_names[m] }} {{ first.start | date: "%Y" }}</h2><span class="month-count"></span></summary>
+<summary><h2>{{ month_names[m] }} {{ first.start | date: "%Y" }}</h2><span class="month-count"></span><span class="month-peek">{% for se in ours %}{% assign se_key = se.start | date: "%Y-%m" %}{% if se_key == month_key %}{% assign swd = se.start | date: "%u" | minus: 1 %}{% assign sm = se.start | date: "%-m" | minus: 1 %}<span class="peek" data-end="{{ se.end | default: se.start | date: '%Y-%m-%d' }}" data-time="{{ se.time | escape }}"><b>{{ weekdays[swd] }} {{ se.start | date: "%-d" }} {{ month_short[sm] }}</b> {{ se.time }} · {{ se.title | escape }}<a class="reg" href="{{ se.url }}">Anmäl dig</a></span>{% endif %}{% endfor %}</span></summary>
 <p class="month-past" hidden><button type="button" class="toggle-past" aria-expanded="false"></button></p>
 <table class="events">
 <thead><tr><th scope="col">Dag</th><th scope="col">Tid</th><th scope="col">Evenemang</th><th scope="col">Plats</th><th scope="col">Arrangör</th><th scope="col">Kostnad och anmälan</th></tr></thead>
@@ -137,6 +138,12 @@ wide: true
     day.querySelector(".day-in").textContent = text;
   });
   if (current) { current.open = true; } else { document.getElementById("no-upcoming").hidden = false; }
+  each(document.querySelectorAll("span.peek"), function (peek) {
+    if (isOver(peek)) { peek.hidden = true; }
+  });
+  each(document.querySelectorAll(".month-peek a"), function (link) {
+    link.addEventListener("click", function (ev) { ev.stopPropagation(); });
+  });
   each(months, function (month) {
     month.addEventListener("toggle", function () {
       if (!month.open) { return; }
