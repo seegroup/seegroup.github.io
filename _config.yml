@@ -18,3 +18,14 @@ defaults:
       path: ""
     values:
       layout: default
+
+# Dokument som bara är instruktioner till en agent, inte sidor på webbplatsen.
+# De innehåller Liquid-exempel som annars körs som kod när Jekyll bygger.
+exclude:
+  - cursor_agent_instruction_miun_inspired_site.md
+  - BRIEF-regional-tech-kalender.md
+  - notes.txt
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - download_profile_images.rb
