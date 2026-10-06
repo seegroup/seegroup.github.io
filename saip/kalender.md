@@ -42,7 +42,7 @@ wide: true
 <tbody class="day">
 {% for e in items %}
 {% assign last_day = e.end | default: e.start %}
-<tr class="event" data-end="{{ last_day | date: '%Y-%m-%d' }}" data-time="{{ e.time | escape }}">
+<tr class="event{% if e.saip %} is-saip{% endif %}" data-end="{{ last_day | date: '%Y-%m-%d' }}" data-time="{{ e.time | escape }}">
 {% if forloop.first %}<th scope="rowgroup" class="c-day" rowspan="{{ items.size }}"><time datetime="{{ day.name }}">{{ weekdays[wd] }} {{ first.start | date: "%-d" }} {{ month_short[m1] }}</time><span class="day-in"></span>{% if day_series %}<span class="day-series">{{ day_series | escape }}</span>{% endif %}</th>{% endif %}
 <td class="c-time">{{ e.time }}</td>
 <td class="c-title"><a href="{{ e.url }}">{{ e.title | escape }}</a>{% if e.saip %}<span class="mark" title="Ordnas av SAIP">SAIP</span>{% endif %}{% if e.end and e.end != e.start %}{% assign d2 = e.end | date: "%-d" %}{% assign m2 = e.end | date: "%-m" | minus: 1 %}<span class="sub">Till och med {{ d2 }} {{ month_short[m2] }}</span>{% endif %}{% if e.series and day_series == nil %}<span class="sub">{{ e.series | escape }}</span>{% endif %}{% if e.note %}<span class="sub">{{ e.note | escape }}</span>{% endif %}</td>

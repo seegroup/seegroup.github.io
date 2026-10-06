@@ -397,3 +397,63 @@
   url: https://sv-se.eu.invajo.com/event/tillvaxtanalys/sapaverkaraisvenskekonomiocharbetsmarknad
   category: ai
 
+
+# SAIP:s egna evenemang hösten 2026. saip: true ger dem SAIP-märket, en svag
+# ton och en accentlinje i kalendern. Tider och lokaler som står som
+# "Meddelas senare" fylls i när de är bestämda.
+
+- title: "Let's talk Software Engineering, and not AI today"
+  start: 2026-10-21
+  time: "17:00–19:00"
+  place: Östersund
+  organiser: "SAIP, Mittuniversitetet"
+  url: https://seegroup.github.io/saip/villvetamer/
+  category: tech
+  saip: true
+  cost: Gratis
+  note: "Veckan efter Northern Devs Week tar vi en kväll om mjukvaran under. Lokal meddelas."
+
+- title: "Transforming HR"
+  start: 2026-11-03
+  time: "Meddelas senare"
+  place: Östersund
+  organiser: "SAIP, Mittuniversitetet"
+  url: https://seegroup.github.io/saip/villvetamer/
+  category: ai
+  saip: true
+  cost: Gratis
+  note: "Seminarium med Lucas Gren, adjungerad i SEE-gruppen. Tid och lokal meddelas."
+
+- title: "What employers want? The role of AI."
+  start: 2026-11-18
+  time: "16:00–19:00"
+  place: Östersund
+  venue: Lärcentrum
+  organiser: "SAIP, Mittuniversitetet och Östersunds kommun"
+  url: https://seegroup.github.io/saip/villvetamer/
+  category: ai
+  saip: true
+  cost: Gratis
+  note: "Öppen träff om vilken kompetens arbetsgivarna i länet behöver när AI kommer in i verksamheten."
+
+- title: "Large scale software projects: what the research says about good practice"
+  start: 2026-11-26
+  time: "Meddelas senare"
+  place: Östersund
+  organiser: "SAIP, Mittuniversitetet"
+  url: https://seegroup.github.io/saip/villvetamer/
+  category: tech
+  saip: true
+  cost: Gratis
+  note: "Seminarium med Torgeir Dingsøyr, gästprofessor i SEE-gruppen. Tid och lokal meddelas."
+
+- title: "SAIP-träff i december"
+  start: 2026-12-09
+  time: "16:00–20:00"
+  place: Östersund
+  organiser: "SAIP, Mittuniversitetet"
+  url: https://seegroup.github.io/saip/villvetamer/
+  category: tech
+  saip: true
+  cost: Gratis
+  note: "Innehåll och lokal meddelas."
