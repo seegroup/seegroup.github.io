@@ -4,7 +4,8 @@
 # Alltid: title, start (ISO-datum), time, place, organiser, url (arrangörens egen sida),
 # category (ai, tech, digitalisering, saip).
 # När det finns: series (namnet på veckan eller serien som passet ingår i), series_url (seriens egen sida), end (flerdagars), venue, cost (pris, eller "Gratis" när sidan säger det),
-# deadline (sista anmälningsdag, ISO-datum), saip (true för SAIP:s egna), note (en kort rad).
+# deadline (sista anmälningsdag, ISO-datum), saip (true för SAIP:s egna), note (en kort rad),
+# signup (länk till anmälan för SAIP:s egna; utan den visas knappen Anmäl dig grå tills anmälan öppnar).
 # Ta inte bort passerade evenemang. Sidan flyttar dem själv till "Tidigare evenemang",
 # där en serie visas som en rad.
 # Alla uppgifter nedan lästes på arrangörens sida den 2 oktober 2026.
