@@ -38,7 +38,7 @@ Vi vill lika gärna lyssna som prata. Hur håller ni koll på er arkitektur i da
 
 <img class="event-inline" src="{{ '/assets/images/saip/events/round-1-fight.png' | relative_url }}" alt="Round 1, fight, i arkadstil" width="1200" height="320" />
 
-**17:00 Pizza, dryck och samtal.** Resten av tiden är er. Vilka mått och verktyg använder ni, vad säger de er, och vad skulle ni vilja kunna se som ni inte ser i dag? Felix och kollegor från SEE-gruppen går runt och lyssnar, och det ni berättar blir en del av SAIP:s behovsanalys. Vi håller på till 18:00.
+**17:00 Pizza, dryck och samtal.** Resten av tiden är er, och samtalet har två spår. Det ena är koden: vilka mått och verktyg använder ni, vad säger de er, och vad skulle ni vilja kunna se som ni inte ser i dag? Det andra är vad SAIP kan göra för er. Projektet pågår till 2029 och kan ordna seminarier och workshops kring det ni behöver, komma ut till er och lyssna, koppla ihop er med studenter för examensarbeten och projekt, och med forskare när ni vill prova något på allvar. Felix och kollegor från SEE-gruppen går runt och lyssnar. Berätta vad som skulle hjälpa er, så blir det en del av planeringen för våren. Vi håller på till 18:00.
 
 ## Att läsa före eller efter
 
