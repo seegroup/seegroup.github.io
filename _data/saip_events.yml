@@ -6,6 +6,7 @@
 # När det finns: series (namnet på veckan eller serien som passet ingår i), series_url (seriens egen sida), end (flerdagars), venue, cost (pris, eller "Gratis" när sidan säger det),
 # deadline (sista anmälningsdag, ISO-datum), saip (true för SAIP:s egna), note (en kort rad),
 # För SAIP:s egna pekar url på träffens egen sida under /saip/events/ (datum-handle), där anmälan finns.
+# Tom url för en egen träff som inte har någon sida än: titeln visas då utan länk, med "Mer information kommer".
 # Ta inte bort passerade evenemang. Sidan flyttar dem själv till "Tidigare evenemang",
 # där en serie visas som en rad.
 # Alla uppgifter nedan lästes på arrangörens sida den 2 oktober 2026.
@@ -420,7 +421,7 @@
   time: "Meddelas senare"
   place: Östersund
   organiser: "SAIP, Mittuniversitetet"
-  url: https://seegroup.github.io/saip/villvetamer/
+  url:
   category: ai
   saip: true
   cost: Gratis
@@ -432,7 +433,7 @@
   place: Östersund
   venue: Lärcentrum
   organiser: "SAIP, Mittuniversitetet och Östersunds kommun"
-  url: https://seegroup.github.io/saip/villvetamer/
+  url:
   category: ai
   saip: true
   cost: Gratis
@@ -443,7 +444,7 @@
   time: "Meddelas senare"
   place: Östersund
   organiser: "SAIP, Mittuniversitetet"
-  url: https://seegroup.github.io/saip/villvetamer/
+  url:
   category: tech
   saip: true
   cost: Gratis
@@ -454,7 +455,7 @@
   time: "16:00–20:00"
   place: Östersund
   organiser: "SAIP, Mittuniversitetet"
-  url: https://seegroup.github.io/saip/villvetamer/
+  url:
   category: tech
   saip: true
   cost: Gratis
