@@ -12,7 +12,7 @@ venue: Q-huset, campus Östersund, entré B
 address: "Mittuniversitetet. Vi möter upp vid entrén från 15:55."
 cost: Gratis, pizza och dryck ingår
 language: Föredraget på engelska, samtalet på svenska och engelska
-signup: https://forms.cloud.microsoft/e/wDK96bY4Lz  # platshållare: intresseformuläret, byt till träffens egen anmälan
+signup: https://forms.cloud.microsoft/e/hmx4gnmD7G
 deadline: 2026-10-19
 image: /assets/images/saip/events/2026-10-21-architectural-smells.jpg
 image_alt: "Krzywy Domek i Sopot, ett hus med böjda väggar och sneda fönster, upplyst i skymningen"
@@ -26,19 +26,19 @@ speakers:
     bio: "Felix leder forskargruppen SEE vid Mittuniversitetet och forskar om testning och kvalitet i mjukvara, på senare år med fokus på system där AI är en del. Han har arbetat med Volvo Trucks, Getinge och Statens servicecenter. Han är medförfattare till studien som kvällen utgår från."
 ---
 
-Alla pratar AI. Vi också, det är halva namnet på projektet. Men första träffen handlar om det ni ska leva med i många år: koden, arkitekturen och vad som gör den lätt eller svår att ändra.
+Alla pratar AI. Vi också, det är halva namnet på projektet. Men första träffen handlar om mer grundläggande saker: koden, arkitekturen och vad som gör den lätt eller svår att ändra.
 
-Vi vill lika gärna lyssna som prata. Hur håller ni koll på er arkitektur i dag? Använder ni verktyg som SonarQube, CodeScene eller något eget? Vet ni vad era code health-mått egentligen mäter, och litar ni på dem? Ta med era exempel, era frågor och gärna ett system ni är lite skamsna över.
+Vi vill lika gärna lyssna som prata. Hur håller ni koll på er arkitektur i dag? Använder ni verktyg som SonarQube, CodeScene eller något eget? Vet ni vad era code health-mått egentligen mäter, och litar ni på dem? Ta med era exempel, era frågor och gärna berättelser och erfarenheter kring illa luktande kod.
 
 ## Program
 
-**16:00 Vad är SAIP?** Tio minuter om projektet, varför Mittuniversitetet gör det, och hur ni kan påverka vad vi gör i höst.
+**16:10 Vad är SAIP?** Kort om projektet, varför SEE/Mittuniversitetet gör det, och hur tech-community:n och andra näringar kan ta del av det och påverka.
 
-**16:10 Architectural smells, code health, and what any of this has to do with Street Fighter 3.** Föredrag på engelska, cirka 45 minuter med frågor. En arkitekturlukt är ett återkommande mönster i hur ett system hänger ihop, till exempel paket som beror på varandra i en cirkel. Koden fungerar, men varje ändring blir lite dyrare än den borde. I en studie från 2025 följde vi sju sådana lukter genom 378 versioner av åtta öppna projekt. Sedan tar vi steget till i dag: CodeScene lät AI-agenter refaktorera 300 000 rader C-kod, Street Fighter III, med måttet Code Health som enda kvalitetssignal. Vad säger ett sådant mått, och hur långt kan man lita på det?
+**16:25 Architectural smells, code health, and what any of this has to do with Street Fighter 3.** Föredrag på engelska, cirka 45 minuter med frågor. En arkitekturlukt är ett återkommande mönster i hur ett system hänger ihop, till exempel paket som beror på varandra i en cirkel. Koden fungerar, men varje ändring blir lite dyrare än den borde. I en studie från 2025 följde vi sju sådana lukter genom 378 versioner av åtta öppna projekt. Sedan tar vi steget till i dag: CodeScene lät AI-agenter refaktorera 300 000 rader C-kod, Street Fighter III, med måttet Code Health som enda kvalitetssignal. Vad säger ett sådant mått, och hur långt kan man lita på det?
 
 <img class="event-inline" src="{{ '/assets/images/saip/events/round-1-fight.png' | relative_url }}" alt="Round 1, fight, i arkadstil" width="1200" height="320" />
 
-**17:00 Pizza, dryck och samtal.** Resten av tiden är er, och samtalet har två spår. Det ena är koden: vilka mått och verktyg använder ni, vad säger de er, och vad skulle ni vilja kunna se som ni inte ser i dag? Det andra är vad SAIP kan göra för er. Projektet pågår till 2029 och kan ordna seminarier och workshops kring det ni behöver, komma ut till er och lyssna, koppla ihop er med studenter för examensarbeten och projekt, och med forskare när ni vill prova något på allvar. Felix och kollegor från SEE-gruppen går runt och lyssnar. Berätta vad som skulle hjälpa er, så blir det en del av planeringen för våren. Vi håller på till 18:00.
+**17:00 Pizza, dryck och samtal.** Resten av tiden är er, och samtalet har två spår. Det ena är koden: vilka mått och verktyg använder ni, vad säger de er, och vad skulle ni vilja kunna se som ni inte ser i dag? Det andra är vad SAIP kan göra. Projektet pågår till 2029 och kan ordna seminarier och workshops kring uppfattade behov, som kan koppla ihop er med studenter för examensarbeten och projekt, och med forskare när man vill ta sig an större utmaningar i obekanta terräng. Felix och kollegor från SEE-gruppen går runt och lyssnar. Berätta vad som skulle hjälpa er, så blir det en del av planeringen för våren. Vi håller på till 18:00.
 
 ## Att läsa före eller efter
 
