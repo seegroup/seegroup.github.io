@@ -34,7 +34,7 @@ Vi vill lika gärna lyssna som prata. Hur håller ni koll på er arkitektur i da
 
 **16:00 Vad är SAIP?** Tio minuter om projektet, varför Mittuniversitetet gör det, och hur ni kan påverka vad vi gör i höst.
 
-**16:10 Architectural smells, code health, and what any of this has to do with Street Fighter 3.** Föredrag på engelska, cirka 45 minuter med frågor. En arkitekturlukt är ett återkommande mönster i hur ett system hänger ihop, som paket som beror på varandra i en cirkel. Koden fungerar, men varje ändring blir lite dyrare än den borde. I en studie från 2025 följde vi sju sådana lukter genom 378 versioner av åtta öppna projekt och mätte vad som hände med testbarhet och modularitet. En del stämde med vad alla antagit, en del gjorde det inte. Sedan tar vi steget till i dag: CodeScene lät i höstas AI-agenter refaktorera 300 000 rader C-kod på tre veckor, med måttet Code Health som enda kvalitetssignal. Koden var Street Fighter III: 3rd Strike. Vad säger ett sådant mått egentligen, och hur långt kan man lita på det när en agent styr efter det?
+**16:10 Architectural smells, code health, and what any of this has to do with Street Fighter 3.** Föredrag på engelska, cirka 45 minuter med frågor. En arkitekturlukt är ett återkommande mönster i hur ett system hänger ihop, till exempel paket som beror på varandra i en cirkel. Koden fungerar, men varje ändring blir lite dyrare än den borde. I en studie från 2025 följde vi sju sådana lukter genom 378 versioner av åtta öppna projekt. Sedan tar vi steget till i dag: CodeScene lät AI-agenter refaktorera 300 000 rader C-kod, Street Fighter III, med måttet Code Health som enda kvalitetssignal. Vad säger ett sådant mått, och hur långt kan man lita på det?
 
 <img class="event-inline" src="{{ '/assets/images/saip/events/round-1-fight.png' | relative_url }}" alt="Round 1, fight, i arkadstil" width="1200" height="320" />
 
@@ -44,4 +44,4 @@ Vi vill lika gärna lyssna som prata. Hur håller ni koll på er arkitektur i da
 
 Rodi Jolak, Simon Karlsson och Felix Dobslaw, *An empirical investigation of the impact of architectural smells on software maintainability*, Journal of Systems and Software, 2025. Öppet tillgänglig: [doi.org/10.1016/j.jss.2025.112382](https://doi.org/10.1016/j.jss.2025.112382).
 
-Adam Tornhill, *Case study: Refactoring at scale with agents*, CodeScene, september 2026. [codescene.com/blog/case-study-refactoring-at-scale-with-agents](https://codescene.com/blog/case-study-refactoring-at-scale-with-agents).
+För den som ändå inte kan hålla sig borta från AI: Adam Tornhill, *Case study: Refactoring at scale with agents*, CodeScene, september 2026. [codescene.com/blog/case-study-refactoring-at-scale-with-agents](https://codescene.com/blog/case-study-refactoring-at-scale-with-agents).
