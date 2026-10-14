@@ -416,16 +416,17 @@
   cost: Gratis
   note: "SAIP:s första träff. Föredrag på engelska om arkitekturlukter och code health, sedan pizza och samtal om vad ni mäter."
 
-- title: "Transforming HR"
+- title: "AI Transformation Is a Leadership Problem, Not a Tech Problem"
   start: 2026-11-03
-  time: "Meddelas senare"
+  time: "17:00–19:00"
   place: Östersund
+  venue: "Lokal meddelas senare"
   organiser: "SAIP, Mittuniversitetet"
-  url:
+  url: https://seegroup.github.io/saip/events/2026-11-03-ai-transformation-leadership/
   category: ai
   saip: true
   cost: Gratis
-  note: "Seminarium med Lucas Gren, adjungerad i SEE-gruppen. Tid och lokal meddelas."
+  note: "SAIP:s andra träff. Föredrag på engelska av Lucas Gren, adjungerad lektor i SEE-gruppen, om AI-transformation som ledarskapsfråga, sedan pizza och samtal."
 
 - title: "What employers want? The role of AI."
   start: 2026-11-18
