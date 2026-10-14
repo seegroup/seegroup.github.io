@@ -114,6 +114,7 @@
   url: https://www.eventbrite.se/e/northern-devs-week-ssg-lyfter-kreativitet-och-innovation-tickets-2002112065082
   category: tech
   cost: Gratis
+  note: Fullbokat
 
 - title: "After work"
   series: Northern Devs Week
@@ -121,6 +122,7 @@
   start: 2026-10-15
   time: "17:00–22:00"
   place: Östersund
+  venue: "Hus U, Campus Östersund"
   organiser: Samling Näringsliv
   url: https://www.eventbrite.se/e/northern-devs-week-after-work-tickets-2001839468739
   category: tech
@@ -241,14 +243,6 @@
   url: https://wasp-hs.org/event3/kan-ai-infrastruktur-styras-i-valfarden/
   category: ai
 
-- title: "GenAI Lunch n' Learn: Meet your AI coworker (på engelska)"
-  start: 2026-10-23
-  time: "12:00–13:00"
-  place: Online
-  organiser: "AI Sweden"
-  url: https://www.ai.se/sv/event/gen-ai-lunch-n-learn-meet-your-ai-coworker-pa-engelska
-  category: ai
-
 - title: "När AI införs i välfärden räcker inte principer"
   start: 2026-11-06
   time: "10:00–10:30"
@@ -283,14 +277,6 @@
   url: https://www.sverigesingenjorer.se/kalendarium/261113-nar-ai-skriver-koden-sa-forandras-utvecklarens-roll-i-grunden/
   category: ai
 
-- title: "GenAI Lunch n' Learn: The always-on AI agent (på engelska)"
-  start: 2026-11-20
-  time: "12:00–13:00"
-  place: Online
-  organiser: "AI Sweden"
-  url: https://www.ai.se/sv/event/genai-lunch-n-learn-always-ai-agent-pa-engelska
-  category: ai
-
 - title: "AI för ekonomer – smartare arbetsflöden och nya möjligheter"
   start: 2026-11-25
   time: "12:00–12:35"
@@ -309,14 +295,6 @@
   category: ai
   cost: 500 kr exkl. moms
   deadline: 2026-11-30
-
-- title: "GenAI Lunch n' Learn: How to lead a team of AI agents"
-  start: 2026-12-04
-  time: "12:00–13:00"
-  place: Online
-  organiser: "AI Sweden"
-  url: https://www.ai.se/sv/event/genai-lunch-n-learn-how-lead-team-ai-agents
-  category: ai
 
 - title: "Digital morgonträff – AI förändrar spelplanen – är ditt företag redo?"
   start: 2026-12-10
@@ -461,3 +439,32 @@
   saip: true
   cost: Gratis
   note: "Innehåll och lokal meddelas."
+
+# Tillagda 14 oktober 2026, lästa på arrangörernas sidor samma dag.
+
+- title: "Webbinarie: Går det att påverka AI-utvecklingen med standardisering?"
+  start: 2026-11-12
+  time: "08:30–09:30"
+  place: Online
+  organiser: "SKA-rådet med SIS, SEK och ITS"
+  url: https://www.skaradet.se/aktuellt/gar-det-att-paverka-ai-utvecklingen-med-standardisering/
+  category: ai
+  cost: Gratis
+
+- title: "AI-studion: Lokal AI för känslig data – så kommer du igång"
+  start: 2026-11-18
+  time: "09:00–10:30"
+  place: Online
+  organiser: "AI Sweden"
+  url: https://www.ai.se/sv/event/lokal-ai-kanslig-data-sa-kommer-du-igang
+  category: ai
+  cost: Gratis
+
+- title: "AI i byggarbetsmiljöarbetet – möjligheter och fallgropar"
+  start: 2026-12-03
+  time: "12:00–12:35"
+  place: Online
+  organiser: "BG Institute"
+  url: https://www.bginstitute.se/webbinarium/ai-i-byggarbetsmiljoarbetet-mojligheter-och-fallgropar/
+  category: ai
+  cost: Gratis
