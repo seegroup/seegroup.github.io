@@ -44,5 +44,3 @@ form_urls:
   <p>Mittuniversitetet är personuppgiftsansvarig. Vi använder ditt namn, din e-postadress och din organisation för att skicka information och inbjudningar från projektet SAIP. Du kan när som helst be oss ta bort dig från listan genom att mejla <a href="mailto:felix.dobslaw@miun.se">felix.dobslaw@miun.se</a>. Uppgifterna sparas som längst till projektets slut den 30 juni 2029.</p>
   <p>Mittuniversitetet är en myndighet, vilket betyder att det du skickar in blir en allmän handling. Projektets finansiärer, Svenska ESF-rådet och Region Jämtland Härjedalen, kan få ta del av uppgifterna när de följer upp projektet. Läs mer på <a href="https://www.miun.se/kontakt/personuppgifter">www.miun.se/kontakt/personuppgifter</a>. Dataskyddsombudet nås på <a href="mailto:dataskyddsombud@miun.se">dataskyddsombud@miun.se</a>.</p>
 </details>
-
-<p class="small">Du kan också mejla Felix Dobslaw, projektledare, på <a href="mailto:felix.dobslaw@miun.se">felix.dobslaw@miun.se</a>.</p>

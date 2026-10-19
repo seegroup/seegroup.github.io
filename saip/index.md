@@ -18,5 +18,3 @@ permalink: /saip/
 ## Vad SAIP ska leda till
 
 <p>En mötesplats för mjukvara och AI i Jämtlands län som lever vidare efter projektet. En återkommande serie seminarier och workshops där företag, offentlig sektor, forskare och studenter möts kring konkreta frågor. En nationell software-unconference i Jämtland 2028 som samlar praktiker och forskare från hela landet. Arbetet sker i samverkan med bland andra Samling Näringsliv, IUC Jämtland Härjedalen, och regionens utvecklarnätverk NorthernDevs och NorthernUX.</p>
-
-<p class="small">Projektet leds av Felix Dobslaw tillsammans med Anna Sörensson vid Mittuniversitetet.</p>
