@@ -392,6 +392,7 @@
   category: tech
   saip: true
   cost: Gratis
+  deadline: 2026-10-21
   note: "SAIP:s första träff. Föredrag på engelska om arkitekturlukter och code health, sedan pizza och samtal om vad ni mäter."
 
 - title: "AI Transformation Is a Leadership Problem, Not a Tech Problem"
@@ -404,6 +405,7 @@
   category: ai
   saip: true
   cost: Gratis
+  deadline: 2026-11-01
   note: "SAIP:s andra träff. Föredrag på engelska av Lucas Gren, adjungerad lektor i SEE-gruppen, om AI-transformation som ledarskapsfråga, sedan pizza och samtal."
 
 - title: "What employers want? The role of AI."

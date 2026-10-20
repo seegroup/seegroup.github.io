@@ -13,7 +13,7 @@ address: "Mittuniversitetet. Vi möter upp vid entrén från 15:55."
 cost: Gratis, pizza och dryck ingår
 language: Föredraget på engelska, samtalet på svenska och engelska
 signup: https://forms.cloud.microsoft/e/hmx4gnmD7G
-deadline: 2026-10-19
+deadline: 2026-10-21
 image: /assets/images/saip/events/2026-10-21-architectural-smells.jpg
 image_alt: "Krzywy Domek i Sopot, ett hus med böjda väggar och sneda fönster, upplyst i skymningen"
 image_credit: "Krzywy Domek, Sopot. Foto från Wikimedia Commons, CC0."
