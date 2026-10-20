@@ -11,9 +11,8 @@ place: Östersund
 venue: Lokal meddelas senare
 cost: Gratis, pizza och dryck ingår
 language: Föredraget på engelska, samtalet på svenska och engelska
-# Anmälan öppnar senare. Länken till formuläret är klar, ta bort kommentarstecknet när det är dags:
-# signup: https://forms.cloud.microsoft/e/7YycixYA3M
-# deadline: 2026-11-01
+signup: https://forms.cloud.microsoft/e/7YycixYA3M
+deadline: 2026-11-01
 kalender_id: ev-20261103-ai-transformation-is-a-leadership-problem-not-a-tech-problem
 speakers:
   - name: Lucas Gren
