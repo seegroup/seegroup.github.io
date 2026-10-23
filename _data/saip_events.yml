@@ -470,3 +470,25 @@
   url: https://www.bginstitute.se/webbinarium/ai-i-byggarbetsmiljoarbetet-mojligheter-och-fallgropar/
   category: ai
   cost: Gratis
+
+# Tillagda 23 oktober 2026, lästa på arrangörernas sidor samma dag.
+
+- title: "Gör nyttoanalyser för välfärdsteknik med hjälp av AI"
+  start: 2026-11-13
+  time: "10:00–11:00"
+  place: Online
+  organiser: "SKR"
+  url: https://skr.se/evenemang/evenemangskalender/gornyttoanalyserforvalfardsteknikmedhjalpavai.12080.html
+  category: ai
+  cost: Gratis
+  deadline: 2026-11-12
+
+- title: "Från datakraft till livskraft – AI-center och regionalt samhällsbyggande"
+  start: 2026-11-26
+  time: "08:00–09:00"
+  place: Online
+  organiser: "Mittuniversitetet, CER, med Bomorrow"
+  url: https://www.miun.se/Forskning/forskningscentra/cer/Events/kalender/2026-11/fran-datakraft-till-livskraft----ai-center-och-regionalt-samhallsbyggande/
+  category: ai
+  cost: Gratis
+  deadline: 2026-11-25
