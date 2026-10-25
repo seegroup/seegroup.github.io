@@ -399,13 +399,13 @@
   start: 2026-11-03
   time: "17:00–19:00"
   place: Östersund
-  venue: "Lokal meddelas senare"
+  venue: "Sal B312, Styrelserummet, Entrébyggnaden hus B"
   organiser: "SAIP, Mittuniversitetet"
   url: https://seegroup.github.io/saip/events/2026-11-03-ai-transformation-leadership/
   category: ai
   saip: true
   cost: Gratis
-  deadline: 2026-11-01
+  deadline: 2026-11-02
   note: "SAIP:s andra träff. Föredrag på engelska av Lucas Gren, adjungerad lektor i SEE-gruppen, om AI-transformation som ledarskapsfråga, sedan pizza och samtal."
 
 - title: "What employers want? The role of AI."
