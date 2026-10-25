@@ -25,7 +25,7 @@ permalink: /saip/
     </div>
   </div>
   <div class="speaker">
-    <span class="speaker-photo" style="display: flex; align-items: center; justify-content: center; background: var(--tint); color: var(--accent-dark); font-weight: 700; letter-spacing: 0.02em;" aria-hidden="true">AS</span>
+    <img class="speaker-photo" src="{{ '/assets/images/people/anna-sorensson.jpg' | relative_url }}" alt="Anna Sörensson" width="96" height="96" />
     <div>
       <p class="speaker-name"><a href="https://www.miun.se/Personal/s/annasorensson/">Anna Sörensson</a> <span class="speaker-role">Arbetspaketsansvarig · Docent i företagsekonomi</span></p>
     </div>
