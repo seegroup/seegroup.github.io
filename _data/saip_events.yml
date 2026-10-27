@@ -3,6 +3,7 @@
 # och nationella evenemang om AI som hålls enbart online.
 # Alltid: title, start (ISO-datum), time, place, organiser, url (arrangörens egen sida),
 # category (ai, tech, digitalisering, saip).
+# Bara evenemang som är gratis, eller där arrangören inte anger något pris (Felix, 27 oktober 2026).
 # När det finns: series (namnet på veckan eller serien som passet ingår i), series_url (seriens egen sida), end (flerdagars), venue, cost (pris, eller "Gratis" när sidan säger det),
 # deadline (sista anmälningsdag, ISO-datum), saip (true för SAIP:s egna), note (en kort rad),
 # För SAIP:s egna pekar url på träffens egen sida under /saip/events/ (datum-handle), där anmälan finns.
@@ -259,16 +260,6 @@
   url: https://www.miun.se/Forskning/forskningscentra/rcr/kalendarium/2026-3/lunchseminarium-niklas-humble/
   category: ai
 
-- title: "AI i HR-arbetet – del 1: Från prompt till arbetsflöde"
-  start: 2026-11-13
-  time: "10:00–11:30"
-  place: Online
-  organiser: "SKR"
-  url: https://skr.se/evenemang/evenemangskalender/aiihrarbetetdel1franprompttillarbetsflode.11780.html
-  category: ai
-  cost: 500 kr exkl. moms
-  deadline: 2026-11-11
-
 - title: "När AI skriver koden: så förändras utvecklarens roll i grunden"
   start: 2026-11-13
   time: "12:00–12:50"
@@ -286,16 +277,6 @@
   category: ai
   cost: Gratis
 
-- title: "AI i HR-arbetet – del 2: AI som samarbetspartner"
-  start: 2026-12-02
-  time: "13:00–14:30"
-  place: Online
-  organiser: "SKR"
-  url: https://skr.se/evenemang/evenemangskalender/aiihrarbetetdel2aisomsamarbetspartner.11781.html
-  category: ai
-  cost: 500 kr exkl. moms
-  deadline: 2026-11-30
-
 - title: "Digital morgonträff – AI förändrar spelplanen – är ditt företag redo?"
   start: 2026-12-10
   time: "07:45–08:45"
@@ -303,16 +284,6 @@
   organiser: "Luleå tekniska universitet"
   url: https://www.ltu.se/aktuellt/kalender/event/2026-06-18-digital-morgontraff---ai-forandrar-spelplanen---ar-ditt-foretag-redo
   category: ai
-
-- title: "AI i HR-arbetet – del 3: Ansvarsfull AI-användning"
-  start: 2027-01-21
-  time: "13:00–14:30"
-  place: Online
-  organiser: "SKR"
-  url: https://skr.se/evenemang/evenemangskalender/aiihrarbetetdel3ansvarsfullaianvandning.11782.html
-  category: ai
-  cost: 500 kr exkl. moms
-  deadline: 2027-01-19
 
 # September 2026, då SAIP startade. Lagt till i efterhand, lästa på arrangörernas sidor den 2 oktober 2026.
 
