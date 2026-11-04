@@ -9,8 +9,8 @@ start: 2026-11-18
 time: "12:00–13:30"
 place: Östersund
 venue: "Lärcentrum, hus X"
-address: "Mittuniversitetet, campus Östersund."
-cost: Gratis
+address: "Mittuniversitetet, campus Östersund. Akademigatan 2."
+cost: Gratis, lättare lunch ingår
 language: Samtalet på svenska
 signup: https://forms.cloud.microsoft/e/42v52cyUWt
 deadline: 2026-11-16
@@ -28,12 +28,10 @@ Träffen ordnas tillsammans med Östersunds kommun. Den är till för dig som re
 
 ## Program
 
-**12:00 Välkommen och kort om SAIP.** Tio minuter om projektet och om hur ni kan påverka vad vi gör framöver.
+**12:00 Välkommen och kort om SAIP.** Tio minuter om projektet och om hur ni kan gynnas och påverka vad vi gör framöver.
 
-**12:10 Paneldiskussion.** Tre företagsledare, en moderator och en timme, med tre frågor som utgångspunkt: vad har förändrats i arbetet hos er sedan AI kom in, vilken kompetens söker ni när ni rekryterar i dag, och vad skulle ni behöva hjälp med för att ta nästa steg?
+**12:10 Paneldiskussion.** Vi behandlar tre huvudsakliga frågor: vad har förändrats i arbetet hos er sedan AI kom in, vilken kompetens söker ni när ni rekryterar i dag, och vad skulle ni behöva hjälp med för att ta nästa steg?
 
 **13:10 Frågor och samtal i rummet.** Ta med era egna erfarenheter, och gärna de frågor ni inte har svar på.
 
-**13:30 Slut.** Vi stannar kvar en stund för den som vill prata vidare.
-
-Bakom träffen står SAIP vid Mittuniversitetet, en miljö som arbetar med organisationer mitt i sitt förändringsarbete kring AI. Vi ordnar seminarier och workshops utifrån vad länet behöver, kopplar ihop verksamheter med våra forskare och med examensarbeten hos oss, och vi håller på till 2029. Det ni säger den 18 november följer med in i planeringen för våren.
+Bakom träffen står SAIP projektet vid Mittuniversitetet, som arbetar med organisationer mitt i sitt förändringsarbete kring AI. Vi ordnar seminarier och workshops utifrån vad länet behöver och kopplar ihop verksamheter med våra forskare de kommande 3 ären.
