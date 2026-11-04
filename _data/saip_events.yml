@@ -379,17 +379,18 @@
   deadline: 2026-11-02
   note: "SAIP:s andra träff. Föredrag på engelska av Lucas Gren, adjungerad lektor i SEE-gruppen, om AI-transformation som ledarskapsfråga, sedan pizza och samtal."
 
-- title: "What employers want? The role of AI."
+- title: "AI is changing the work market – what competencies do employers look for?"
   start: 2026-11-18
   time: "12:00–13:30"
   place: Östersund
   venue: "Lärcentrum, hus X, campus Östersund"
   organiser: "SAIP, Mittuniversitetet och Östersunds kommun"
-  url:
+  url: https://seegroup.github.io/saip/events/2026-11-18-what-employers-want/
   category: ai
   saip: true
   cost: Gratis
-  note: "Öppen träff om vilken kompetens arbetsgivarna i länet behöver när AI kommer in i verksamheten."
+  deadline: 2026-11-16
+  note: "SAIP:s tredje träff. Lunchträff där tre företagsledare delar sina perspektiv i en paneldiskussion om vilken kompetens de söker när AI förändrar arbetet."
 
 - title: "SAIP-träff i december"
   start: 2026-12-09
