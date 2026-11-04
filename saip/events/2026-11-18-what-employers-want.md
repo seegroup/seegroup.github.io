@@ -34,4 +34,4 @@ Träffen ordnas tillsammans med Östersunds kommun. Den är till för dig som re
 
 **13:10 Frågor och samtal i rummet.** Ta med era egna erfarenheter, och gärna de frågor ni inte har svar på.
 
-Bakom träffen står SAIP projektet vid Mittuniversitetet, som arbetar med organisationer mitt i sitt förändringsarbete kring AI. Vi ordnar seminarier och workshops utifrån vad länet behöver och kopplar ihop verksamheter med våra forskare de kommande 3 ären.
+Bakom träffen står SAIP-projektet vid Mittuniversitetet, som arbetar med organisationer mitt i sitt förändringsarbete kring AI. Vi ordnar seminarier och workshops utifrån vad länet behöver och kopplar ihop verksamheter med våra forskare de kommande 3 åren.
