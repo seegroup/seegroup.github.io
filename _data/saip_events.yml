@@ -444,12 +444,44 @@
   cost: Gratis
   deadline: 2026-11-12
 
-- title: "Från datakraft till livskraft – AI-center och regionalt samhällsbyggande"
-  start: 2026-11-26
-  time: "08:00–09:00"
+# Tillagd 10 november 2026 på Felix begäran, läst på Mittuniversitetets sidor samma dag.
+
+- title: "Mötesplats Campus arbetsgivarmingel: Sofia Thunberg om hur AI förändrar arbetsmarknaden"
+  start: 2026-12-03
+  time: "15:00–18:00"
+  place: Östersund
+  venue: "F229, Campus Östersund"
+  organiser: "Mittuniversitetet, Studentkåren i Östersund och Östersunds kommun"
+  url: https://www.miun.se/student/studentnyheter/2026-11/ai-pizza-och-kanske-en-kontakt-till-framtidsjobbet/
+  category: ai
+  deadline: 2026-11-25
+  note: "Föreläsning 15:10–16:10. Minglet efteråt är för studenter och arbetsgivare."
+
+# Tillagda 10 november 2026, lästa på arrangörernas sidor samma dag.
+
+- title: "Webbinarium: Vilken påverkan har AI och datacenter på klimatet?"
+  start: 2026-11-19
+  time: "12:10–13:10"
   place: Online
-  organiser: "Mittuniversitetet, CER, med Bomorrow"
-  url: https://www.miun.se/Forskning/forskningscentra/cer/Events/kalender/2026-11/fran-datakraft-till-livskraft----ai-center-och-regionalt-samhallsbyggande/
+  organiser: "Region Jämtland Härjedalen, projektet Fossilfria besöksmål och destinationer"
+  url: https://www.regionjh.se/arkiv/utbildningar-och-evenemang/evenemangsarkiv/energikontoret-kalender/2026-10-26-webbinarium--vilken-paverkan-har-ai-och-datacenter-pa-klimatet
+  category: ai
+
+- title: "Dela erfarenheter av AI i hemtjänsten"
+  start: 2026-11-25
+  time: "13:00–14:20"
+  place: Online
+  organiser: "Socialstyrelsen"
+  url: https://www.socialstyrelsen.se/kalendariet/dela-erfarenheter-av-ai-i-hemtjansten/
   category: ai
   cost: Gratis
-  deadline: 2026-11-25
+  note: "Ingen föranmälan, anslut via Teams."
+
+- title: "IBIC – digital inspirationsträff – IBIC och AI"
+  start: 2027-02-11
+  time: "09:00–10:00"
+  place: Online
+  organiser: "Socialstyrelsen"
+  url: https://www.socialstyrelsen.se/kalendariet/ibic-digital-inspirationstraff--ibic-och-ai/
+  category: ai
+  note: "Lunds kommun om AI-transkribering i dokumentationen. Ingen föranmälan."
